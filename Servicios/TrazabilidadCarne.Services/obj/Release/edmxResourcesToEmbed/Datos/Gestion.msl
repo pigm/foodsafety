@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DWH_VW_GestionDYSModelStoreContainer" CdmEntityContainer="GestionContenedor">
+    <EntitySetMapping Name="vw_DM_LOCAL">
+      <EntityTypeMapping TypeName="GestionModel.vw_DM_LOCAL">
+        <MappingFragment StoreEntitySet="vw_DM_LOCAL">
+          <ScalarProperty Name="LOCAL_ID" ColumnName="LOCAL_ID" />
+          <ScalarProperty Name="LOCAL_COD" ColumnName="LOCAL_COD" />
+          <ScalarProperty Name="LOCAL_DESC" ColumnName="LOCAL_DESC" />
+          <ScalarProperty Name="LOCAL_DESC_COMPL" ColumnName="LOCAL_DESC_COMPL" />
+          <ScalarProperty Name="LOCAL_TIPO_ID" ColumnName="LOCAL_TIPO_ID" />
+          <ScalarProperty Name="CADENA_ID" ColumnName="CADENA_ID" />
+          <ScalarProperty Name="MERCADO_ID" ColumnName="MERCADO_ID" />
+          <ScalarProperty Name="MERCADO_COD" ColumnName="MERCADO_COD" />
+          <ScalarProperty Name="MERCADO_DESC" ColumnName="MERCADO_DESC" />
+          <ScalarProperty Name="FORMATO_ID" ColumnName="FORMATO_ID" />
+          <ScalarProperty Name="FORMATO_COD" ColumnName="FORMATO_COD" />
+          <ScalarProperty Name="FORMATO_DESC" ColumnName="FORMATO_DESC" />
+          <ScalarProperty Name="COMUNA_ID" ColumnName="COMUNA_ID" />
+          <ScalarProperty Name="CIUDAD_ID" ColumnName="CIUDAD_ID" />
+          <ScalarProperty Name="REGION_ID" ColumnName="REGION_ID" />
+          <ScalarProperty Name="PAIS_ID" ColumnName="PAIS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

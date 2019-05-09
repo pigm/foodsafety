@@ -1,0 +1,16 @@
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.dll
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.pdb
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\Elmah.dll
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\obj\Release\TrazabilidadCarne.Services.dll
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\obj\Release\TrazabilidadCarne.Services.pdb
+C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.dll
+C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.pdb
+C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\Elmah.dll
+C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\obj\Release\TrazabilidadCarne.Services.dll
+C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\obj\Release\TrazabilidadCarne.Services.pdb
+C:\Users\dsac\Documents\GitHub\refreshtrazabilidad\Servicios\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.dll
+C:\Users\dsac\Documents\GitHub\refreshtrazabilidad\Servicios\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.pdb
+C:\Users\dsac\Documents\GitHub\refreshtrazabilidad\Servicios\TrazabilidadCarne.Services\bin\Elmah.dll
+C:\Users\dsac\Documents\GitHub\refreshtrazabilidad\Servicios\TrazabilidadCarne.Services\obj\Release\TrazabilidadCarne.Services.dll
+C:\Users\dsac\Documents\GitHub\refreshtrazabilidad\Servicios\TrazabilidadCarne.Services\obj\Release\TrazabilidadCarne.Services.pdb
+C:\Users\dsac\Documents\GitHub\refreshtrazabilidad\Servicios\TrazabilidadCarne.Services\obj\Release\TrazabilidadCarne.Services.csprojResolveAssemblyReference.cache

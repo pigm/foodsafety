@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\Administrador\Desktop\TrazabilidadCarneServicev3" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Perfil1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
+    <file relUrl="Web.config" publishTime="09/25/2018 12:40:07" />
+    <file relUrl="Barra.svc" publishTime="08/17/2017 18:17:06" />
+    <file relUrl="bin/TrazabilidadCarne.Services.pdb" publishTime="09/28/2018 17:34:59" />
+    <file relUrl="Local.svc" publishTime="08/17/2017 18:17:06" />
+    <file relUrl="InventarioCarnes.svc" publishTime="08/17/2017 18:17:06" />
+    <file relUrl="bin/TrazabilidadCarne.Services.dll" publishTime="09/28/2018 17:34:59" />
+    <file relUrl="InventarioRefresh.svc" publishTime="08/30/2018 10:17:07" />
+    <file relUrl="packages.config" publishTime="08/17/2017 18:17:06" />
+    <file relUrl="bin/Elmah.dll" publishTime="08/17/2017 18:17:06" />
+    <file relUrl="App_Readme/Elmah.txt" publishTime="08/17/2017 18:17:06" />
+  </publishProfile>
+  <publishProfile publishUrl="C:\Users\dsac\Desktop\releases\trazabilidadv6" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Perfil2" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="12/18/2018 14:30:27" />
+    <file relUrl="Barra.svc" publishTime="08/17/2017 16:17:08" />
+    <file relUrl="bin/TrazabilidadCarne.Services.pdb" publishTime="12/20/2018 09:13:48" />
+    <file relUrl="Local.svc" publishTime="08/17/2017 16:17:08" />
+    <file relUrl="InventarioCarnes.svc" publishTime="08/17/2017 16:17:08" />
+    <file relUrl="bin/TrazabilidadCarne.Services.dll" publishTime="12/20/2018 09:13:48" />
+    <file relUrl="InventarioRefresh.svc" publishTime="08/30/2018 08:17:08" />
+    <file relUrl="packages.config" publishTime="08/17/2017 16:17:08" />
+    <file relUrl="bin/Elmah.dll" publishTime="08/17/2017 16:17:08" />
+    <file relUrl="App_Readme/Elmah.txt" publishTime="08/17/2017 16:17:08" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+    <ScrollView
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+            
+                <LinearLayout
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content"       
+                    android:paddingBottom="30dp"
+                    android:background="@color/blanco"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/lblTituloDialogoAgregarProdConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Se va a agregar el siguiente producto"
+                        android:textSize="20dp"
+                        android:textColor="@color/negro"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Producto"
+                        android:textSize="13dp"
+                        android:textColor="@color/gris" />
+                    <TextView
+                        android:id="@+id/lblNombreProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:text="Nombre Producto"
+                        android:textSize="16dp"
+                        android:textColor="@color/gris"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Item"
+                        android:textSize="13dp"
+                        android:textColor="@color/gris" />
+                    <TextView
+                        android:id="@+id/lblItemProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:text="1234567890"
+                        android:textSize="16dp"
+                        android:textColor="@color/gris"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Departamento"
+                        android:textSize="13dp"
+                        android:textColor="@color/gris" />
+                    <TextView
+                        android:id="@+id/lblDepartamentoProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:text="Nombre departamento"
+                        android:textSize="16dp"
+                        android:textColor="@color/gris"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Fecha descongelación"
+                        android:textSize="13dp"
+                        android:textColor="@color/gris" />
+                    <TextView
+                        android:id="@+id/lblFechaDescongelacionProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:text="XX/XX/XXXX"
+                        android:textSize="16dp"
+                        android:textColor="@color/gris"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Fecha de vencimiento del producto descongelado"
+                        android:textSize="13dp"
+                        android:textColor="@color/gris" />
+                    <TextView
+                        android:id="@+id/lblFechaVencimientoDescongelacionProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:text="XX/XX/XXXX"
+                        android:textSize="16dp"
+                        android:textColor="@color/gris"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/lblHintCantidadDeUnidadesProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Cantidad de unidades"
+                        android:textSize="13dp"
+                        android:textColor="@color/gris" />
+                    <TextView
+                        android:id="@+id/lblCantidadDeUnidadesProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:text="100"
+                        android:textSize="16dp"
+                        android:textColor="@color/gris"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/lblHintLoteProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Lote"
+                        android:textSize="13dp"
+                        android:textColor="@color/gris" />
+                    <TextView
+                        android:id="@+id/lblLoteProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:text="XXXX"
+                        android:textSize="16dp"
+                        android:textColor="@color/gris"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/lblHintFechaElaboracionProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Fecha Elaboración"
+                        android:textSize="13dp"
+                        android:textColor="@color/gris"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/lblFechaElaboracionProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:text="XX/XX/XXXX"
+                        android:textSize="16dp"
+                        android:textColor="@color/gris"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/lblHintTemperaturaIdealProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Temperatura ideal"
+                        android:textSize="13dp"
+                        android:textColor="@color/gris" />
+                    <TextView
+                        android:id="@+id/lblTemperaturaIdealProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:text="2 ºC"
+                        android:textSize="16dp"
+                        android:textColor="@color/gris"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/lblHintTemperaturaProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Temperatura registrada"
+                        android:textSize="13dp"
+                        android:textColor="@color/gris" />
+                    <LinearLayout
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                       
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/lblTemperaturaProductoConfirmacion"
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:text="XX ºC"
+                            android:textSize="16dp"
+                            android:textColor="@color/gris"
+                            android:textStyle="bold"/>
+                        <ImageView
+                            android:layout_marginLeft="12dp"
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content"                            
+                            android:layout_gravity="center"
+                            android:id="@+id/imgDanger"
+                            android:src="@drawable/danger"/>
+                    </LinearLayout>
+        
+                    <TextView
+                        android:id="@+id/lblHintComentarioProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Comentario"
+                        android:textSize="13dp"
+                        android:textColor="@color/gris" />
+                    <TextView
+                        android:id="@+id/lblComentarioProductoConfirmacion"
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Lorem ipsum donor est"
+                        android:textSize="16dp"
+                        android:textColor="@color/gris"
+                        android:textStyle="bold"/>
+                    <LinearLayout
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"                    
+                        android:background="#868686"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/llMensajeProductoExistente">
+                        <LinearLayout
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginBottom="50dp"                            
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content" 
+                                android:layout_height="wrap_content"                                                   
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"                                 
+                                    android:text="¿Este producto"
+                                    android:textSize="16.5dp"
+                                    android:textColor="@color/blanco"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"                                   
+                                    android:text="corresponde"
+                                    android:textSize="16.5dp"
+                                    android:textColor="@color/blanco"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"                                   
+                                    android:text="a una nueva descongelación?."
+                                    android:textSize="16.5dp"
+                                    android:textColor="@color/blanco"/>                                                                                      
+                            </LinearLayout>
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:gravity="center"
+                                android:layout_marginLeft="40dp"
+                                android:layout_gravity="center"
+                                android:id="@+id/imgtermometro"
+                                android:src="@drawable/termometro"
+                                />
+                        </LinearLayout>
+                </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_gravity="right"
+                        android:paddingRight="40dp"
+                        android:paddingTop="45dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="45dp"
+                            android:text="@string/btnCancelar"
+                            android:textColor="@color/fontBotonCancelar"
+                            android:id="@+id/btnCancelarProductoConfirmacion"
+                            android:textSize="14dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/transparente" />
+                        <Button
+                            android:visibility="gone"
+                            android:layout_width="100dp"
+                            android:layout_height="45dp"
+                            android:text="ES EL MISMO"
+                            android:textColor="@color/blanco"
+                            android:id="@+id/btnEsElMismoProducto"
+                            android:textSize="14dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/cssbotonagregarproducto" />
+                        <Button
+                            android:visibility="gone"
+                            android:layout_width="100dp"
+                            android:layout_height="45dp"
+                            android:text="ES NUEVO"
+                            android:textColor="@color/blanco"
+                            android:id="@+id/btnEsUnNuevoProducto"
+                            android:textSize="14dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/cssbotonagregarproducto" />
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:id="@+id/llBtnAgregarProductoConfirmacion"
+                            android:background="@drawable/cssbotonagregarproducto">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CONFIRMAR"
+                                android:id="@+id/lblBtnAgregarProductoConfirmacion"
+                                android:textSize="14dp"
+                                android:textColor="@color/blanco"/>
+                            <ImageView
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:id="@+id/imgLoadingBtnAgregaPruductoConfirmacion"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout> 
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

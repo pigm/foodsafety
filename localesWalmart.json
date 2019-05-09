@@ -1,0 +1,712 @@
+[
+{
+"id": 3,
+"location": {
+"country": {
+"code": "CL",
+"name": "CHILE"
+},
+"region": {
+"name": "Metropolitana de Santiago",
+"srmsId": 13,
+"omsId": "RM"
+},
+"city": "Santiago",
+"commune": {
+"name": "Ñuñoa",
+"srmsId": 320
+},
+"address": "Av. Irarrázaval 2928",
+"position": {
+"type": "Point",
+"coordinates": [
+-70.600702,
+-33.453275
+]
+},
+"street": "Av. Irarrázaval 2928",
+"number": ""
+},
+"format": "LIDER",
+"homeDelivery": false,
+"homeDeliveryCommunes": [],
+"name": "Lider Irarrázaval",
+"openingHours": [
+{
+"day": 1,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 2,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 3,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 4,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 5,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 6,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 7,
+"openTime": "9:00",
+"closeTime": "22:00"
+}
+],
+"pickup": true
+},
+{
+"id": 4,
+"location": {
+"country": {
+"code": "CL",
+"name": "CHILE"
+},
+"region": {
+"name": "Metropolitana de Santiago",
+"srmsId": 13,
+"omsId": "RM"
+},
+"city": "Santiago",
+"commune": {
+"name": "Vitacura",
+"srmsId": 334
+},
+"address": "Vitacura 4100",
+"position": {
+"type": "Point",
+"coordinates": [
+-70.590651,
+-33.399471
+]
+},
+"street": "Vitacura 4100",
+"number": ""
+},
+"format": "EXPRESS",
+"homeDelivery": false,
+"homeDeliveryCommunes": [],
+"name": "Vitacura",
+"openingHours": [
+{
+"day": 1,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 2,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 3,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 4,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 5,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 6,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 7,
+"openTime": "8:30",
+"closeTime": "22:00"
+}
+],
+"pickup": false
+},
+{
+"id": 60,
+"location": {
+"country": {
+"code": "CL",
+"name": "CHILE"
+},
+"region": {
+"name": "Metropolitana de Santiago",
+"srmsId": 13,
+"omsId": "RM"
+},
+"city": "Santiago",
+"commune": {
+"name": "Las Condes",
+"srmsId": 311
+},
+"address": "A. Vespucio Sur 1790",
+"position": {
+"type": "Point",
+"coordinates": [
+-70.574552,
+-33.42858
+]
+},
+"street": "A. Vespucio Sur 1790",
+"number": ""
+},
+"format": "EXPRESS",
+"homeDelivery": false,
+"homeDeliveryCommunes": [],
+"name": "Latadia",
+"openingHours": [
+{
+"day": 1,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 2,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 3,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 4,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 5,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 6,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 7,
+"openTime": "8:30",
+"closeTime": "22:00"
+}
+],
+"pickup": false
+},
+{
+"id": 64,
+"location": {
+"country": {
+"code": "CL",
+"name": "CHILE"
+},
+"region": {
+"name": "Metropolitana de Santiago",
+"srmsId": 13,
+"omsId": "RM"
+},
+"city": "Santiago",
+"commune": {
+"name": "Las Condes",
+"srmsId": 311
+},
+"address": "Apoquindo 6060",
+"position": {
+"type": "Point",
+"coordinates": [
+-70.56792,
+-33.408559
+]
+},
+"street": "Apoquindo 6060",
+"number": ""
+},
+"format": "EXPRESS",
+"homeDelivery": false,
+"homeDeliveryCommunes": [],
+"name": "Apoquindo",
+"openingHours": [
+{
+"day": 1,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 2,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 3,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 4,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 5,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 6,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 7,
+"openTime": "8:30",
+"closeTime": "22:00"
+}
+],
+"pickup": false
+},
+{
+"id": 65,
+"location": {
+"country": {
+"code": "CL",
+"name": "CHILE"
+},
+"region": {
+"name": "Metropolitana de Santiago",
+"srmsId": 13,
+"omsId": "RM"
+},
+"city": "Santiago",
+"commune": {
+"name": "Providencia",
+"srmsId": 324
+},
+"address": "Rancagua 0180",
+"position": {
+"type": "Point",
+"coordinates": [
+-70.630439,
+-33.440755
+]
+},
+"street": "Rancagua 0180",
+"number": ""
+},
+"format": "EXPRESS",
+"homeDelivery": false,
+"homeDeliveryCommunes": [],
+"name": "Seminario",
+"openingHours": [
+{
+"day": 1,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 2,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 3,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 4,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 5,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 6,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 7,
+"openTime": "8:30",
+"closeTime": "22:00"
+}
+],
+"pickup": false
+},
+{
+"id": 8,
+"location": {
+"country": {
+"code": "CL",
+"name": "CHILE"
+},
+"region": {
+"name": "Metropolitana de Santiago",
+"srmsId": 13,
+"omsId": "RM"
+},
+"city": "Santiago",
+"commune": {
+"name": "Las Condes",
+"srmsId": 311
+},
+"address": "Cuarto Centenario 1016",
+"position": {
+"type": "Point",
+"coordinates": [
+-70.551738,
+-33.418471
+]
+},
+"street": "Cuarto Centenario 1016",
+"number": ""
+},
+"format": "EXPRESS",
+"homeDelivery": false,
+"homeDeliveryCommunes": [],
+"name": "Colon",
+"openingHours": [
+{
+"day": 1,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 2,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 3,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 4,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 5,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 6,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 7,
+"openTime": "8:30",
+"closeTime": "22:00"
+}
+],
+"pickup": false
+},
+{
+"id": 2,
+"location": {
+"country": {
+"code": "CL",
+"name": "CHILE"
+},
+"region": {
+"name": "Metropolitana de Santiago",
+"srmsId": 13,
+"omsId": "RM"
+},
+"city": "Santiago",
+"commune": {
+"name": "Providencia",
+"srmsId": 324
+},
+"address": "Pedro de Valdivia 1885",
+"position": {
+"type": "Point",
+"coordinates": [
+-70.608275,
+-33.440084
+]
+},
+"street": "Pedro de Valdivia 1885",
+"number": ""
+},
+"format": "EXPRESS",
+"homeDelivery": false,
+"homeDeliveryCommunes": [],
+"name": "Express de Lider Pedro De Valdivia",
+"openingHours": [
+{
+"day": 1,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 2,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 3,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 4,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 5,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 6,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 7,
+"openTime": "8:30",
+"closeTime": "22:00"
+}
+],
+"pickup": true
+},
+{
+"id": 57,
+"location": {
+"country": {
+"code": "CL",
+"name": "CHILE"
+},
+"region": {
+"name": "Metropolitana de Santiago",
+"srmsId": 13,
+"omsId": "RM"
+},
+"city": "Santiago",
+"commune": {
+"name": "Vitacura",
+"srmsId": 334
+},
+"address": "Buenaventura 1770",
+"position": {
+"type": "Point",
+"coordinates": [
+-70.5682,
+-33.386958
+]
+},
+"street": "Buenaventura 1770",
+"number": ""
+},
+"format": "LIDER",
+"homeDelivery": false,
+"homeDeliveryCommunes": [],
+"name": "Lider Buenaventura",
+"openingHours": [
+{
+"day": 1,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 2,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 3,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 4,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 5,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 6,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 7,
+"openTime": "8:30",
+"closeTime": "22:00"
+}
+],
+"pickup": true
+},
+{
+"id": 1,
+"location": {
+"country": {
+"code": "CL",
+"name": "CHILE"
+},
+"region": {
+"name": "Metropolitana de Santiago",
+"srmsId": 13,
+"omsId": "RM"
+},
+"city": "Santiago",
+"commune": {
+"name": "Providencia",
+"srmsId": 324
+},
+"address": "Av.11 de Septiembre 2249",
+"position": {
+"type": "Point",
+"coordinates": [
+-70.608672,
+-33.422986
+]
+},
+"street": "Av.11 de Septiembre 2249",
+"number": ""
+},
+"format": "EXPRESS",
+"homeDelivery": false,
+"homeDeliveryCommunes": [],
+"name": "Plaza Lyon",
+"openingHours": [
+{
+"day": 1,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 2,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 3,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 4,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 5,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 6,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 7,
+"openTime": "8:30",
+"closeTime": "22:00"
+}
+],
+"pickup": false
+},
+{
+"id": 15,
+"location": {
+"country": {
+"code": "CL",
+"name": "CHILE"
+},
+"region": {
+"name": "Metropolitana de Santiago",
+"srmsId": 13,
+"omsId": "RM"
+},
+"city": "Santiago",
+"commune": {
+"name": "Las Condes",
+"srmsId": 311
+},
+"address": "Av. Las Condes 10295",
+"position": {
+"type": "Point",
+"coordinates": [
+-70.533562,
+-33.384864
+]
+},
+"street": "Av. Las Condes 10295",
+"number": ""
+},
+"format": "EXPRESS",
+"homeDelivery": false,
+"homeDeliveryCommunes": [],
+"name": "Express de Lider Estoril",
+"openingHours": [
+{
+"day": 1,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 2,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 3,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 4,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 5,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 6,
+"openTime": "8:30",
+"closeTime": "22:00"
+},
+{
+"day": 7,
+"openTime": "8:30",
+"closeTime": "22:00"
+}
+],
+"pickup": true
+}
+]

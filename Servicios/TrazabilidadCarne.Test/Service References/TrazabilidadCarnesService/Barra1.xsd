@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dsac.dyndns.info:8084/TrazabilidadCarnesService/Barra.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TrazabilidadCarne.Services" />
+  <xs:element name="ProcesaBarras">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="barra1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="barra2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigoLocal" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProcesaBarrasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/TrazabilidadCarne.Services" minOccurs="0" name="ProcesaBarrasResult" nillable="true" type="q1:ResultadoProceso" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneItemBalanza">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneItemBalanzaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/TrazabilidadCarne.Services" minOccurs="0" name="ObtieneItemBalanzaResult" nillable="true" type="q2:ArrayOfEntidadItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneProcedencia">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneProcedenciaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/TrazabilidadCarne.Services" minOccurs="0" name="ObtieneProcedenciaResult" nillable="true" type="q3:ArrayOfEntidadProcedencia" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneFrigorificos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneFrigorificosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/TrazabilidadCarne.Services" minOccurs="0" name="ObtieneFrigorificosResult" nillable="true" type="q4:ArrayOfEntidadFrigorifico" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneParidades">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneParidadesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/TrazabilidadCarne.Services" minOccurs="0" name="ObtieneParidadesResult" nillable="true" type="q5:ArrayOfEntidadParidad" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProcesaBarrasMSG">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigoLocal" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProcesaBarrasMSGResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/TrazabilidadCarne.Services" minOccurs="0" name="ProcesaBarrasMSGResult" nillable="true" type="q6:ResultadoProceso" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,64 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSafety.TrazabilidadCarnes", "FoodSafety\FoodSafety.TrazabilidadCarnes.csproj", "{08ED978F-99F1-46B9-959C-C45AA06AE74C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Presentacion", "01. Presentacion", "{1C00A8B0-7E61-47C0-AA94-4B942F9F099B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Negocio", "02. Negocio", "{A493F1F9-29BF-47C4-8D16-1D31C2D7068C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Datos", "03. Datos", "{74C5BC17-102C-4B55-B160-019B690C7FF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Transversal", "04. Transversal", "{BCF466CF-BD6E-4B85-9523-F68B69DC515E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Servicios", "05. Servicios", "{E73B155D-C3F6-4756-84FD-D8E87033C5DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06. Documentacion", "06. Documentacion", "{3DD8F8E7-8742-4C73-B892-E6C6C2402644}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07. Test", "07. Test", "{C5BDF3C2-07D9-4C96-AF16-2895C12C3141}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. External", "08. External", "{4F37ADAB-A7B6-4AAA-8D11-317E0D9B83D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSafety.Common.Models", "FoodSafety.Common.Models\FoodSafety.Common.Models.csproj", "{B388D9CC-750F-40E1-B261-5EB8D1B41181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSafety.Common.Services", "FoodSafety.Common.Services\FoodSafety.Common.Services.csproj", "{C3CDA545-D4E2-4C1A-92E6-05865BED47CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSafety.Common.Utils", "FoodSafety.Common.Utils\FoodSafety.Common.Utils.csproj", "{FEB904F0-BA73-4EE6-9347-622D4DFF3E1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSafety.ProductosRefresh", "FoodSafety\FoodSafety.ProductosRefresh\FoodSafety.ProductosRefresh.csproj", "{4F226166-43BC-4F5E-98DD-79E74248A4CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08ED978F-99F1-46B9-959C-C45AA06AE74C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08ED978F-99F1-46B9-959C-C45AA06AE74C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08ED978F-99F1-46B9-959C-C45AA06AE74C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08ED978F-99F1-46B9-959C-C45AA06AE74C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B388D9CC-750F-40E1-B261-5EB8D1B41181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B388D9CC-750F-40E1-B261-5EB8D1B41181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B388D9CC-750F-40E1-B261-5EB8D1B41181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B388D9CC-750F-40E1-B261-5EB8D1B41181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3CDA545-D4E2-4C1A-92E6-05865BED47CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3CDA545-D4E2-4C1A-92E6-05865BED47CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3CDA545-D4E2-4C1A-92E6-05865BED47CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3CDA545-D4E2-4C1A-92E6-05865BED47CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB904F0-BA73-4EE6-9347-622D4DFF3E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB904F0-BA73-4EE6-9347-622D4DFF3E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB904F0-BA73-4EE6-9347-622D4DFF3E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB904F0-BA73-4EE6-9347-622D4DFF3E1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F226166-43BC-4F5E-98DD-79E74248A4CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F226166-43BC-4F5E-98DD-79E74248A4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F226166-43BC-4F5E-98DD-79E74248A4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F226166-43BC-4F5E-98DD-79E74248A4CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{08ED978F-99F1-46B9-959C-C45AA06AE74C} = {1C00A8B0-7E61-47C0-AA94-4B942F9F099B}
+		{B388D9CC-750F-40E1-B261-5EB8D1B41181} = {74C5BC17-102C-4B55-B160-019B690C7FF7}
+		{C3CDA545-D4E2-4C1A-92E6-05865BED47CA} = {E73B155D-C3F6-4756-84FD-D8E87033C5DF}
+		{FEB904F0-BA73-4EE6-9347-622D4DFF3E1A} = {BCF466CF-BD6E-4B85-9523-F68B69DC515E}
+		{4F226166-43BC-4F5E-98DD-79E74248A4CE} = {1C00A8B0-7E61-47C0-AA94-4B942F9F099B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="700dp"
+    android:background="@color/white"
+    android:visibility="gone"
+    android:id="@+id/llGalleryFragment">
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="700dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"  
+            android:gravity="center"
+            android:layout_marginTop="35dp"
+            android:id="@+id/relativeLayout">         
+                <TextView
+                    android:id="@+id/tittleBarDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:text="Para llenar el formulario de ingreso, en trazabilidad de carnes necesitas capturar la imagen de la etiqueta del producto."
+                    android:textSize="17dp"
+                    android:textColor="@color/colorFondoRefresh"
+                    android:gravity="center"/>           
+            </LinearLayout>
+            <ImageView
+                android:src="@drawable/ic_photo"
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/photoView" />
+        <LinearLayout
+            android:layout_height="140.0dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:layout_gravity="center"           
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:id="@+id/relativeLayoutButtons">
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="70dp"
+                android:layout_marginTop="3dp"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                android:background="@android:color/transparent"
+                android:id="@+id/galeryBtn" />
+            <ImageView
+                android:src="@drawable/ic_camara"
+                android:layout_width="80dp"
+                android:layout_height="80dp"                
+                android:background="@android:color/transparent"
+                android:id="@+id/fotoBtn" />
+            <TextView
+                android:id="@+id/txtImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="GALERIA"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/txtMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="FOTO"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+        <Button
+            android:visibility="gone"
+            android:text="CONTINUAR"
+            android:layout_width="130dp"
+            android:layout_height="36dp"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/buttonSendFoto"
+            android:layout_marginRight="10dp"
+            android:shadowColor="@color/white"
+            android:textColor="@color/white"
+            android:background="@color/colorFondoRefresh" />
+        <Button
+            android:text="CANCELAR"
+            android:layout_width="130dp"
+            android:layout_height="36dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/buttonCancelFoto"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent" />
+    </LinearLayout>  
+    </LinearLayout>
+</FrameLayout>

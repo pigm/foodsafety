@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:background="@color/grisToolbar">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnVolver"
+        android:layout_gravity="left"
+        android:layout_marginLeft="27dp"
+        android:src="@drawable/iconovolver" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_marginLeft="36dp"
+        android:id="@+id/lblNombreActivity"
+        android:text="Refresh"
+        android:textSize="20dp"
+        android:textColor="@color/blanco" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayoutBtnCambiarUser"
+        android:visibility="gone"
+        android:layout_gravity="right"
+        android:gravity="right">
+    
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:id="@+id/lblHintNombreUsuarioToolbar"
+                android:text="USUARIO"
+                android:textSize="10dp"
+                android:textColor="@color/blanco" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Usuario Walmart"
+                android:textSize="14dp"
+                android:textColor="@color/blanco"
+                android:id="@+id/lblNombreUsuarioToolbar"
+                android:visibility="visible"/>         
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/ic_userr"
+            android:background="@color/transparente"
+            android:id="@+id/btnLogout" />    
+  </LinearLayout> 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayoutBtnIrAMapasDeTienda"
+        android:layout_gravity="right"
+        android:gravity="right">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:id="@+id/lblTipoTienda"
+                android:text="Lider Express"
+                android:textSize="10dp"
+                android:textColor="@color/blanco" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/lblNombreTienda"
+                android:text="Nombre de la Tienda"
+                android:textSize="14dp"
+                android:textColor="@color/blanco" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnIrAMapas"
+            android:layout_gravity="center"
+            android:layout_marginRight="27dp"
+            android:src="@drawable/iconoubicaciontienda" />
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>     
+    <string name="google_maps_key">AIzaSyD_vRNF8Wm12JwbCErKD1ofeyX2ZD4KhMI</string>
+    <string name="suc_busqueda_sin_resultado">Sin resultados para la búsqueda ingresada</string>
+    <string name="app_name">Trazabilidad</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnHomeAgregarProducto">AGREGAR PRODUCTO</string>
+    <string name="btnBuscar">BUSCAR</string>
+    <string name="btnAgregar">AGREGAR</string>
+    <string name="btnCancelar">CANCELAR</string>
+    <string name="txtCodigoBlanza">Código de balanza</string>
+    <string name="lblProductoAgregado">ha sido agregado con 20,38 kg</string>
+    <string name="txtProcedenciaProducto">Procedencia</string>
+    <string name="txtFrigorificoProducto">Frigorifico</string>
+    <string name="txtFechaFaenaProducto">Fecha de faena</string>
+    <string name="txtPesoNetoProducto">Peso neto en kg</string>
+    <string name="btnDeshacer">DESHACER</string>
+    <string name="btnCerrar">CERRAR</string> 
+    <string name="hello">Hello World, Click Me!</string>
+</resources>

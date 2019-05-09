@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <include
+        layout="@layout/app_bar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:id="@+id/linearLayoutEtiquetaProductosNoEnviados"
+        android:background="@color/azulFondoPanelProductosNoIngresados">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/iconoSinInternet"
+                android:src="@drawable/iconodesconectado" />
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/iconoCargandoAlServidor"
+                android:src="@drawable/iconocargando"
+                android:visibility="gone" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="2 productos pendientes por cargar al servidor"
+                android:textSize="13dp"
+                android:textColor="@color/blanco"
+                android:layout_gravity="center"
+                android:layout_marginLeft="9dp"
+                android:id="@+id/lblMensajeCargaYContadorDeProductosPendientesACargar" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="400dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:background="@color/blanco"
+        android:id="@+id/linearLayoutProductoAgregadoOK"
+        android:layout_marginTop="220dp"
+        android:visibility="visible">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconook"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOMBRE DEL PRODUCTO"
+            android:textSize="20dp"
+            android:textColor="@color/negro"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            android:id="@+id/lblNombreProducto" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblProductoAgregado"
+            android:textSize="20dp"
+            android:id="@+id/lblCantidadProductoKg"
+            android:textColor="@color/negro"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="55dp">
+           
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/btnCerrar"
+                android:textColor="@color/azullider"
+                android:layout_marginLeft="8dp"
+                android:textSize="14dp"
+                android:id="@+id/btnCerrar"
+                android:background="@color/transparente" />
+        </LinearLayout>
+    </LinearLayout>
+   
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+        <ImageButton
+            android:layout_marginTop="130dp"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnHomeAgregarProducto"
+            android:background="@drawable/botonagregarproducto" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp">
+             <ImageView
+                android:src="@drawable/footercarnes"
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="291dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

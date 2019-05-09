@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/TrazabilidadCarne.Services" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/TrazabilidadCarne.Services" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfEntidadLocal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntidadLocal" nillable="true" type="tns:EntidadLocal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntidadLocal" nillable="true" type="tns:ArrayOfEntidadLocal" />
+  <xs:complexType name="EntidadLocal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoFormato" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoLocal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreFormato" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreLocal" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EntidadLocal" nillable="true" type="tns:EntidadLocal" />
+</xs:schema>

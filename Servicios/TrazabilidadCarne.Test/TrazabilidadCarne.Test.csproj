@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88E3A135-F461-4618-8D99-3F41E3433AEC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrazabilidadCarne.Test</RootNamespace>
+    <AssemblyName>TrazabilidadCarne.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Elmah">
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InventarioCarnesTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServiceInventarioCarnes\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TrazabilidadCarnesSericeLocal\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TrazabilidadCarnesService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UnitTest1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\TrazabilidadCarne.Services.EntidadFrigorifico.datasource" />
+    <None Include="Properties\DataSources\TrazabilidadCarne.Services.EntidadItem.datasource" />
+    <None Include="Properties\DataSources\TrazabilidadCarne.Services.EntidadItemCarniceria.datasource" />
+    <None Include="Properties\DataSources\TrazabilidadCarne.Services.EntidadLocal.datasource" />
+    <None Include="Properties\DataSources\TrazabilidadCarne.Services.EntidadMotivoInventario.datasource" />
+    <None Include="Properties\DataSources\TrazabilidadCarne.Services.EntidadParidad.datasource" />
+    <None Include="Properties\DataSources\TrazabilidadCarne.Services.EntidadProcedencia.datasource" />
+    <None Include="Properties\DataSources\TrazabilidadCarne.Services.ResultadoProceso.datasource" />
+    <None Include="Service References\ServiceInventarioCarnes\InventarioCarnes.wsdl" />
+    <None Include="Service References\ServiceInventarioCarnes\InventarioCarnes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceInventarioCarnes\InventarioCarnes1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceInventarioCarnes\InventarioCarnes2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceInventarioCarnes\TrazabilidadCarne.Test.ServiceInventarioCarnes.EntidadItemCarniceria.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceInventarioCarnes\TrazabilidadCarne.Test.ServiceInventarioCarnes.EntidadMotivoInventario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceInventarioCarnes\TrazabilidadCarne.Test.ServiceInventarioCarnes.ResultadoProceso.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TrazabilidadCarnesSericeLocal\Local.wsdl" />
+    <None Include="Service References\TrazabilidadCarnesSericeLocal\Local.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TrazabilidadCarnesSericeLocal\Local1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TrazabilidadCarnesSericeLocal\Local2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceInventarioCarnes\" />
+    <WCFMetadataStorage Include="Service References\TrazabilidadCarnesSericeLocal\" />
+    <WCFMetadataStorage Include="Service References\TrazabilidadCarnesService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrazabilidadCarnesService\Barra.wsdl" />
+    <None Include="Service References\TrazabilidadCarnesService\Barra.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TrazabilidadCarnesService\Barra1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TrazabilidadCarnesService\Barra2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TrazabilidadCarnesService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrazabilidadCarnesService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrazabilidadCarnesService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrazabilidadCarnesSericeLocal\Local.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrazabilidadCarnesSericeLocal\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrazabilidadCarnesSericeLocal\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrazabilidadCarnesSericeLocal\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrazabilidadCarne.Services\TrazabilidadCarne.Services.csproj">
+      <Project>{75DE6754-B934-4E00-A390-1E0BC9A277B3}</Project>
+      <Name>TrazabilidadCarne.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TrazabilidadCarnesService\Barra.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceInventarioCarnes\InventarioCarnes.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceInventarioCarnes\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceInventarioCarnes\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceInventarioCarnes\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

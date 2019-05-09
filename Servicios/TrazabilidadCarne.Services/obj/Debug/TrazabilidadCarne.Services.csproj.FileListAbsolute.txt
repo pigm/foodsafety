@@ -1,0 +1,24 @@
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.dll
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.pdb
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\Elmah.dll
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\obj\Debug\TrazabilidadCarne.Services.dll
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\obj\Debug\TrazabilidadCarne.Services.pdb
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\obj\Debug\TrazabilidadCarne.Services.csprojResolveAssemblyReference.cache
+C:\Users\CarlosTognarell\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.dll
+C:\Users\CarlosTognarell\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.pdb
+C:\Users\CarlosTognarell\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\Elmah.dll
+C:\Users\CarlosTognarell\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\obj\Debug\TrazabilidadCarne.Services.dll
+C:\Users\CarlosTognarell\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\obj\Debug\TrazabilidadCarne.Services.pdb
+C:\Users\CarlosTognarell\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.dll.config
+C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.dll
+C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.pdb
+C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\Elmah.dll
+C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\obj\Debug\TrazabilidadCarne.Services.dll
+C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\obj\Debug\TrazabilidadCarne.Services.pdb
+C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\obj\Debug\TrazabilidadCarne.Services.csprojResolveAssemblyReference.cache
+C:\Users\dsac\Documents\GitHub\refreshtrazabilidad\Servicios\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.dll
+C:\Users\dsac\Documents\GitHub\refreshtrazabilidad\Servicios\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.pdb
+C:\Users\dsac\Documents\GitHub\refreshtrazabilidad\Servicios\TrazabilidadCarne.Services\bin\Elmah.dll
+C:\Users\dsac\Documents\GitHub\refreshtrazabilidad\Servicios\TrazabilidadCarne.Services\obj\Debug\TrazabilidadCarne.Services.dll
+C:\Users\dsac\Documents\GitHub\refreshtrazabilidad\Servicios\TrazabilidadCarne.Services\obj\Debug\TrazabilidadCarne.Services.pdb
+C:\Users\dsac\Documents\GitHub\refreshtrazabilidad\Servicios\TrazabilidadCarne.Services\obj\Debug\TrazabilidadCarne.Services.csprojResolveAssemblyReference.cache

@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BalanzasModelStoreContainer" CdmEntityContainer="BalanzasContenedor">
+    <EntitySetMapping Name="Item_Hijo">
+      <EntityTypeMapping TypeName="BalanzasModel.Item_Hijo">
+        <MappingFragment StoreEntitySet="Item_Hijo">
+          <ScalarProperty Name="NU1pA" ColumnName="NU1pA" />
+          <ScalarProperty Name="OLD_NBR" ColumnName="OLD_NBR" />
+          <ScalarProperty Name="INDEST" ColumnName="INDEST" />
+          <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+          <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+          <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+          <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+          <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+          <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Item_Padre">
+      <EntityTypeMapping TypeName="BalanzasModel.Item_Padre">
+        <MappingFragment StoreEntitySet="Item_Padre">
+          <ScalarProperty Name="OLD_NBR" ColumnName="OLD_NBR" />
+          <ScalarProperty Name="INDEST" ColumnName="INDEST" />
+          <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+          <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+          <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+          <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+          <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+          <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paridads">
+      <EntityTypeMapping TypeName="BalanzasModel.Paridad">
+        <MappingFragment StoreEntitySet="Paridad">
+          <ScalarProperty Name="Item_Compra" ColumnName="Item_Compra" />
+          <ScalarProperty Name="Item_Venta" ColumnName="Item_Venta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Informacion_Art_Local_Sesma">
+      <EntityTypeMapping TypeName="BalanzasModel.Informacion_Art_Local_Sesma">
+        <MappingFragment StoreEntitySet="Informacion_Art_Local_Sesma">
+          <ScalarProperty Name="CodigoTipoEtiqueta" ColumnName="CodigoTipoEtiqueta" />
+          <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+          <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+          <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+          <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+          <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+          <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+          <ScalarProperty Name="Origen_Frigorifico" ColumnName="Origen_Frigorifico" />
+          <ScalarProperty Name="Certificado_Embarque" ColumnName="Certificado_Embarque" />
+          <ScalarProperty Name="PRCVTAOL" ColumnName="PRCVTAOL" />
+          <ScalarProperty Name="INDVIGE" ColumnName="INDVIGE" />
+          <ScalarProperty Name="INDPROC" ColumnName="INDPROC" />
+          <ScalarProperty Name="NRDIAPE" ColumnName="NRDIAPE" />
+          <ScalarProperty Name="FECFAE" ColumnName="FECFAE" />
+          <ScalarProperty Name="BUFOUT" ColumnName="BUFOUT" />
+          <ScalarProperty Name="DEPT_CATEGORY_NBR" ColumnName="DEPT_CATEGORY_NBR" />
+          <ScalarProperty Name="DEPT_NBR" ColumnName="DEPT_NBR" />
+          <ScalarProperty Name="MDSE_SUBGROUP_NBR" ColumnName="MDSE_SUBGROUP_NBR" />
+          <ScalarProperty Name="RESSNS" ColumnName="RESSNS" />
+          <ScalarProperty Name="ORIGEN" ColumnName="ORIGEN" />
+          <ScalarProperty Name="OLD_NBR" ColumnName="OLD_NBR" />
+          <ScalarProperty Name="STORE_NBR" ColumnName="STORE_NBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WM_Barra_Carga">
+      <EntityTypeMapping TypeName="BalanzasModel.WM_Barra_Carga">
+        <MappingFragment StoreEntitySet="WM_Barra_Carga">
+          <ScalarProperty Name="FOTOETIQUETA" ColumnName="FOTOETIQUETA" />
+          <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+          <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+          <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+          <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+          <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+          <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+          <ScalarProperty Name="INDPROC" ColumnName="INDPROC" />
+          <ScalarProperty Name="Barra_Larga" ColumnName="Barra_Larga" />
+          <ScalarProperty Name="Peso_Bruto" ColumnName="Peso_Bruto" />
+          <ScalarProperty Name="Peso_Neto" ColumnName="Peso_Neto" />
+          <ScalarProperty Name="Fecha_Faena" ColumnName="Fecha_Faena" />
+          <ScalarProperty Name="Certificado_Embarque" ColumnName="Certificado_Embarque" />
+          <ScalarProperty Name="Origen_Frigorifico" ColumnName="Origen_Frigorifico" />
+          <ScalarProperty Name="ORIGEN" ColumnName="ORIGEN" />
+          <ScalarProperty Name="STORE_NBR" ColumnName="STORE_NBR" />
+          <ScalarProperty Name="Item_Barras" ColumnName="Item_Barras" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Procedencia">
+      <EntityTypeMapping TypeName="BalanzasModel.Procedencia">
+        <MappingFragment StoreEntitySet="Procedencia">
+          <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+          <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+          <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+          <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+          <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+          <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+          <ScalarProperty Name="DESORI" ColumnName="DESORI" />
+          <ScalarProperty Name="ORIGEN" ColumnName="ORIGEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITEM_BALANZA">
+      <EntityTypeMapping TypeName="BalanzasModel.ITEM_BALANZA">
+        <MappingFragment StoreEntitySet="ITEM_BALANZA">
+          <ScalarProperty Name="BUYER_FULL_NAME" ColumnName="BUYER_FULL_NAME" />
+          <ScalarProperty Name="BUYER_USERID" ColumnName="BUYER_USERID" />
+          <ScalarProperty Name="BASE_DIV_NBR" ColumnName="BASE_DIV_NBR" />
+          <ScalarProperty Name="FINELINE_DESC" ColumnName="FINELINE_DESC" />
+          <ScalarProperty Name="FINELINE_NBR" ColumnName="FINELINE_NBR" />
+          <ScalarProperty Name="DEPT_SUBCATG_DESC" ColumnName="DEPT_SUBCATG_DESC" />
+          <ScalarProperty Name="DEPT_SUBCATG_NBR" ColumnName="DEPT_SUBCATG_NBR" />
+          <ScalarProperty Name="DEPT_CATEGORY_DESC" ColumnName="DEPT_CATEGORY_DESC" />
+          <ScalarProperty Name="DEPT_CATEGORY_NBR" ColumnName="DEPT_CATEGORY_NBR" />
+          <ScalarProperty Name="DEPT_DESC" ColumnName="DEPT_DESC" />
+          <ScalarProperty Name="DEPT_NBR" ColumnName="DEPT_NBR" />
+          <ScalarProperty Name="MDSE_SUBGROUP_DESC" ColumnName="MDSE_SUBGROUP_DESC" />
+          <ScalarProperty Name="MDSE_SUBGROUP_NBR" ColumnName="MDSE_SUBGROUP_NBR" />
+          <ScalarProperty Name="MDSE_SEGMENT_DESC" ColumnName="MDSE_SEGMENT_DESC" />
+          <ScalarProperty Name="MDSE_SEGMENT_NBR" ColumnName="MDSE_SEGMENT_NBR" />
+          <ScalarProperty Name="MIN_WHSE_LIFE_QTY" ColumnName="MIN_WHSE_LIFE_QTY" />
+          <ScalarProperty Name="SELL_UOM_CODE" ColumnName="SELL_UOM_CODE" />
+          <ScalarProperty Name="SELL_QTY" ColumnName="SELL_QTY" />
+          <ScalarProperty Name="VNPK_QTY" ColumnName="VNPK_QTY" />
+          <ScalarProperty Name="SHLFLBL1_COLR_DESC" ColumnName="SHLFLBL1_COLR_DESC" />
+          <ScalarProperty Name="VARIABLE_WT_IND" ColumnName="VARIABLE_WT_IND" />
+          <ScalarProperty Name="BACKRM_SCALE_IND" ColumnName="BACKRM_SCALE_IND" />
+          <ScalarProperty Name="BRAND_ID" ColumnName="BRAND_ID" />
+          <ScalarProperty Name="ITEM1_DESC" ColumnName="ITEM1_DESC" />
+          <ScalarProperty Name="UPC_FORMAT_CODE" ColumnName="UPC_FORMAT_CODE" />
+          <ScalarProperty Name="UPC_NBR" ColumnName="UPC_NBR" />
+          <ScalarProperty Name="VENDOR_STOCK_ID" ColumnName="VENDOR_STOCK_ID" />
+          <ScalarProperty Name="PLU_NBR" ColumnName="PLU_NBR" />
+          <ScalarProperty Name="OLD_NBR" ColumnName="OLD_NBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Procedencia_Proveedor">
+      <EntityTypeMapping TypeName="BalanzasModel.Procedencia_Proveedor">
+        <MappingFragment StoreEntitySet="Procedencia_Proveedor">
+          <ScalarProperty Name="DIAS_DURACION" ColumnName="DIAS_DURACION" />
+          <ScalarProperty Name="Descripcion_SAG" ColumnName="Descripcion_SAG" />
+          <ScalarProperty Name="Nro_Unico_SAG" ColumnName="Nro_Unico_SAG" />
+          <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+          <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+          <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+          <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+          <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+          <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+          <ScalarProperty Name="INDFRIG" ColumnName="INDFRIG" />
+          <ScalarProperty Name="RAZSOC30" ColumnName="RAZSOC30" />
+          <ScalarProperty Name="Origen_Frigorifico" ColumnName="Origen_Frigorifico" />
+          <ScalarProperty Name="ORIGEN" ColumnName="ORIGEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Informacion_Articulo_Prov">
+      <EntityTypeMapping TypeName="BalanzasModel.Informacion_Articulo_Prov">
+        <MappingFragment StoreEntitySet="Informacion_Articulo_Prov">
+          <ScalarProperty Name="TEXTOCONTINGENCIA" ColumnName="TEXTOCONTINGENCIA" />
+          <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+          <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+          <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+          <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+          <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+          <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+          <ScalarProperty Name="INDFRIG" ColumnName="INDFRIG" />
+          <ScalarProperty Name="FECTER" ColumnName="FECTER" />
+          <ScalarProperty Name="FECINI" ColumnName="FECINI" />
+          <ScalarProperty Name="RAZSOC30" ColumnName="RAZSOC30" />
+          <ScalarProperty Name="DPLPRV" ColumnName="DPLPRV" />
+          <ScalarProperty Name="DEPT_CATEGORY_NBR" ColumnName="DEPT_CATEGORY_NBR" />
+          <ScalarProperty Name="DEPT_NBR" ColumnName="DEPT_NBR" />
+          <ScalarProperty Name="MDSE_SUBGROUP_NBR" ColumnName="MDSE_SUBGROUP_NBR" />
+          <ScalarProperty Name="RESSNS" ColumnName="RESSNS" />
+          <ScalarProperty Name="ORIGEN" ColumnName="ORIGEN" />
+          <ScalarProperty Name="OLD_NBR" ColumnName="OLD_NBR" />
+          <ScalarProperty Name="STORE_NBR" ColumnName="STORE_NBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Actualiza_ArtLocalSesma" FunctionName="BalanzasModel.Store.Actualiza_ArtLocalSesma" />
+    <FunctionImportMapping FunctionImportName="Actualiza_ArticuloProveedor" FunctionName="BalanzasModel.Store.Actualiza_ArticuloProveedor" />
+    <FunctionImportMapping FunctionImportName="Lista_ItemCarniceria" FunctionName="BalanzasModel.Store.Lista_ItemCarniceria">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BalanzasModel.ItemCarniceria_Result">
+          <ScalarProperty Name="OLD_NBR" ColumnName="OLD_NBR" />
+          <ScalarProperty Name="ITEM1_DESC" ColumnName="ITEM1_DESC" />
+          <ScalarProperty Name="FINELINE_NBR" ColumnName="FINELINE_NBR" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Inventario_Carnes">
+      <EntityTypeMapping TypeName="BalanzasModel.Inventario_Carnes">
+        <MappingFragment StoreEntitySet="Inventario_Carnes">
+          <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+          <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+          <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+          <ScalarProperty Name="IdMotivoInventario" ColumnName="IdMotivoInventario" />
+          <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+          <ScalarProperty Name="Cajas" ColumnName="Cajas" />
+          <ScalarProperty Name="Peso_Bruto" ColumnName="Peso_Bruto" />
+          <ScalarProperty Name="Peso_Neto" ColumnName="Peso_Neto" />
+          <ScalarProperty Name="Fecha_Faena" ColumnName="Fecha_Faena" />
+          <ScalarProperty Name="Certificado_Embarque" ColumnName="Certificado_Embarque" />
+          <ScalarProperty Name="Origen_Frigorifico" ColumnName="Origen_Frigorifico" />
+          <ScalarProperty Name="Fecha_Lectura" ColumnName="Fecha_Lectura" />
+          <ScalarProperty Name="Fecha_Inventario" ColumnName="Fecha_Inventario" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="STORE_NBR" ColumnName="STORE_NBR" />
+          <ScalarProperty Name="Item_Padre" ColumnName="Item_Padre" />
+          <ScalarProperty Name="IdInventario" ColumnName="IdInventario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Motivo_Inventario">
+      <EntityTypeMapping TypeName="BalanzasModel.Motivo_Inventario">
+        <MappingFragment StoreEntitySet="Motivo_Inventario">
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="IdMotivoInventario" ColumnName="IdMotivoInventario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Informacion_Refresh">
+      <EntityTypeMapping TypeName="BalanzasModel.Informacion_Refresh">
+        <MappingFragment StoreEntitySet="Informacion_Refresh">
+          <ScalarProperty Name="CORRELATIVO" ColumnName="CORRELATIVO" />
+          <ScalarProperty Name="FOTOETIQUETA" ColumnName="FOTOETIQUETA" />
+          <ScalarProperty Name="COMENTARIO" ColumnName="COMENTARIO" />
+          <ScalarProperty Name="CANTIDAD_UNIDADES" ColumnName="CANTIDAD_UNIDADES" />
+          <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+          <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+          <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+          <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+          <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+          <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+          <ScalarProperty Name="ETIQ_PROPIA" ColumnName="ETIQ_PROPIA" />
+          <ScalarProperty Name="TEMPERATURA" ColumnName="TEMPERATURA" />
+          <ScalarProperty Name="ID_PARAMETRO" ColumnName="ID_PARAMETRO" />
+          <ScalarProperty Name="FECHADESCONGELADO" ColumnName="FECHADESCONGELADO" />
+          <ScalarProperty Name="LOTEPRODUCCION" ColumnName="LOTEPRODUCCION" />
+          <ScalarProperty Name="FECHA_ELABORACION" ColumnName="FECHA_ELABORACION" />
+          <ScalarProperty Name="OLD_NBR" ColumnName="OLD_NBR" />
+          <ScalarProperty Name="ID_INFO_REFRESH" ColumnName="ID_INFO_REFRESH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Lista_ItemRefresh" FunctionName="BalanzasModel.Store.Lista_ItemRefresh">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BalanzasModel.Lista_ItemRefresh_Result">
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="OldNumber" ColumnName="OldNumber" />
+          <ScalarProperty Name="CodigoBalanza" ColumnName="CodigoBalanza" />
+          <ScalarProperty Name="Barra" ColumnName="Barra" />
+          <ScalarProperty Name="NumeroDepartamento" ColumnName="NumeroDepartamento" />
+          <ScalarProperty Name="NombreDepartamento" ColumnName="NombreDepartamento" />
+          <ScalarProperty Name="DescripcionItem1" ColumnName="DescripcionItem1" />
+          <ScalarProperty Name="DescripcionItem2" ColumnName="DescripcionItem2" />
+          <ScalarProperty Name="DiasPericibilidad" ColumnName="DiasPericibilidad" />
+          <ScalarProperty Name="Temperatura" ColumnName="Temperatura" />
+          <ScalarProperty Name="TemperaturaIdeal" ColumnName="TemperaturaIdeal" />
+          <ScalarProperty Name="HoraTemperaturaIdeal" ColumnName="HoraTemperaturaIdeal" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="WM_Barra_Carga_Bitacora">
+      <EntityTypeMapping TypeName="BalanzasModel.WM_Barra_Carga_Bitacora">
+        <MappingFragment StoreEntitySet="WM_Barra_Carga_Bitacora">
+          <ScalarProperty Name="FOTOETIQUETA" ColumnName="FOTOETIQUETA" />
+          <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+          <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+          <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+          <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+          <ScalarProperty Name="INDPROC" ColumnName="INDPROC" />
+          <ScalarProperty Name="Barra_Larga" ColumnName="Barra_Larga" />
+          <ScalarProperty Name="Peso_Bruto" ColumnName="Peso_Bruto" />
+          <ScalarProperty Name="Peso_Neto" ColumnName="Peso_Neto" />
+          <ScalarProperty Name="Fecha_Faena" ColumnName="Fecha_Faena" />
+          <ScalarProperty Name="Certificado_Embarque" ColumnName="Certificado_Embarque" />
+          <ScalarProperty Name="Origen_Frigorifico" ColumnName="Origen_Frigorifico" />
+          <ScalarProperty Name="ORIGEN" ColumnName="ORIGEN" />
+          <ScalarProperty Name="STORE_NBR" ColumnName="STORE_NBR" />
+          <ScalarProperty Name="Item_Barras" ColumnName="Item_Barras" />
+          <ScalarProperty Name="IdBitacora" ColumnName="IdBitacora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

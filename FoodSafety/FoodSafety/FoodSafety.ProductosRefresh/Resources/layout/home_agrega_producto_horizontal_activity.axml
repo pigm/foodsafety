@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <include
+        layout="@layout/app_bar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:id="@+id/linearLayoutEtiquetaProductosNoEnviados"
+        android:background="@color/azulFondoPanelProductosNoIngresados">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/iconoSinInternet"
+                android:src="@drawable/iconodesconectado" />
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/iconoCargandoAlServidor"
+                android:src="@drawable/iconocargando"
+                android:visibility="gone" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="2 productos pendientes por cargar al servidor"
+                android:textSize="15dp"
+                android:textColor="@color/blanco"
+                android:layout_gravity="center"
+                android:layout_marginLeft="9dp"
+                android:id="@+id/lblMensajeCargaYContadorDeProductosPendientesACargar" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/blanco"
+            android:id="@+id/linearLayoutProductoAgregadoOK"
+            android:layout_marginTop="52dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:visibility="visible">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imgIcProductoAgregado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iconook"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"                        
+                        android:text="NOMBRE DEL PRODUCTO"
+                        android:textSize="24dp"                        
+                        android:textColor="@color/negro"
+                        android:id="@+id/lblNombreProducto" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="35dp"
+                        android:text="quedó registrado pero deberá esperar aproximadamente XX horas hasta que llegue a su temperatura ideal de 0ºC"
+                        android:textSize="24dp"
+                        android:id="@+id/lblCantidadProductoKg"
+                        android:textColor="@color/negro" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right|bottom"               
+                android:gravity="center_vertical|bottom"
+                android:layout_marginTop="15dp">
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/btnCerrar"
+                    android:textColor="@color/azullider"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/btnCerrar"
+                    android:background="@color/transparente" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="420dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btnHomeAgregarProducto"
+                android:background="@drawable/botonagregarproducto" />
+             <ImageButton                
+                android:layout_width="420dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btnHomeProductoPendientes"
+                android:background="@drawable/botonproductopendiente" />
+        </LinearLayout>       
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp">
+             <ImageView
+                android:src="@drawable/footerrefreshh"
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="290dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorGris">#BBBDC0</color>
+    <color name="lightGrey">#f7f7f7</color>
+    <color name="colorRed">#c20000</color>
+    <color name="colorNaranja">#FABA32</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#007DC6</color>
+    <color name="colorMenuLogin">#EBEBEB</color> 
+    <color name="colorButtonLogin">#d0d515</color>
+    <color name="colorBlanco">#ffffff</color>
+    <color name="CustomPrimaryDark">#000000</color>
+    <color name="highlight_light">#2196F3</color>
+    <color name="colorTextoButton">#16507b</color>
+    <color name="colorGreenButton">#cdd828</color>
+    <color name="color_divider_item">#EBEBEB</color>
+    <color name="color_divider_item_login">#B6B6B6</color>
+    <color name="color_btn_gris_ios">#F3F3F4</color>
+    <color name="boton_login">#f6c34b</color>
+    <!--TEXT-->
+    <color name="colorTextBlanco">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="color_text_negro">#000000</color>
+    <color name="black">#000000</color>
+    <!--BUTTON-->
+    <color name="colorFab">#EC7427</color>
+
+    <color name="error_view">#f36f32</color>
+    <color name="text_gris_view_disable">#BDBEC0</color>
+    <color name="negro">#000000</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="gris">#999999</color>
+    <color name="grisMedio">#555555</color>
+    <color name="transparente">#00FFFFFF</color>
+    <color name="azulFondoPanelProductosNoIngresados">#004c91</color>
+    <color name="grisBotonPanelProductoAgregado">#4d4d4d</color>
+    <color name="grisTituloProducto">#303030</color>
+    <color name="grisToolbar">#212121</color>
+    <color name="fontBotonCancelar">#007dc6</color>
+    <color name="background">#303030</color>
+    <color name="azullider">#007DC6</color>
+    <color name="green">#36AF00</color>
+    <color name="rojo">#E60D2E</color>
+    <color name="calipso">#48A1AF</color>
+    <color name="edittextbloqueado">#bbbbbb</color>
+    <color name="edittexthintbloqueado">#cdcdcd</color>
+    <color name="botonBuscarBloqueado">#70b0d8</color> 
+    <color name="colorFondoTrazabilidad">#62231E</color>   
+</resources>

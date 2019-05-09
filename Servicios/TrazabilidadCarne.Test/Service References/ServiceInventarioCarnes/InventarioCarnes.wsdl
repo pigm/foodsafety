@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="InventarioCarnes" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://dsac.dyndns.info:8084/TrazabilidadCarnesService/InventarioCarnes.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://dsac.dyndns.info:8084/TrazabilidadCarnesService/InventarioCarnes.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://dsac.dyndns.info:8084/TrazabilidadCarnesService/InventarioCarnes.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TrazabilidadCarne.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IInventarioCarnes_ObtieneItemCaniceria_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneItemCaniceria" />
+  </wsdl:message>
+  <wsdl:message name="IInventarioCarnes_ObtieneItemCaniceria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneItemCaniceriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventarioCarnes_ObtieneMotivoInventario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneMotivoInventario" />
+  </wsdl:message>
+  <wsdl:message name="IInventarioCarnes_ObtieneMotivoInventario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneMotivoInventarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventarioCarnes_IngresoItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:IngresoItem" />
+  </wsdl:message>
+  <wsdl:message name="IInventarioCarnes_IngresoItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IngresoItemResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IInventarioCarnes">
+    <wsdl:operation name="ObtieneItemCaniceria">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventarioCarnes/ObtieneItemCaniceria" message="tns:IInventarioCarnes_ObtieneItemCaniceria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventarioCarnes/ObtieneItemCaniceriaResponse" message="tns:IInventarioCarnes_ObtieneItemCaniceria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneMotivoInventario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventarioCarnes/ObtieneMotivoInventario" message="tns:IInventarioCarnes_ObtieneMotivoInventario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventarioCarnes/ObtieneMotivoInventarioResponse" message="tns:IInventarioCarnes_ObtieneMotivoInventario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IngresoItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventarioCarnes/IngresoItem" message="tns:IInventarioCarnes_IngresoItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventarioCarnes/IngresoItemResponse" message="tns:IInventarioCarnes_IngresoItem_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IInventarioCarnes" type="tns:IInventarioCarnes">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtieneItemCaniceria">
+      <soap:operation soapAction="http://tempuri.org/IInventarioCarnes/ObtieneItemCaniceria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneMotivoInventario">
+      <soap:operation soapAction="http://tempuri.org/IInventarioCarnes/ObtieneMotivoInventario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IngresoItem">
+      <soap:operation soapAction="http://tempuri.org/IInventarioCarnes/IngresoItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InventarioCarnes">
+    <wsdl:port name="BasicHttpBinding_IInventarioCarnes" binding="tns:BasicHttpBinding_IInventarioCarnes">
+      <soap:address location="http://dsac.dyndns.info:8084/TrazabilidadCarnesService/InventarioCarnes.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

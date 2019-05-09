@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Barra" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://dsac.dyndns.info:8084/TrazabilidadCarnesService/Barra.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://dsac.dyndns.info:8084/TrazabilidadCarnesService/Barra.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://dsac.dyndns.info:8084/TrazabilidadCarnesService/Barra.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TrazabilidadCarne.Services" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBarra_ProcesaBarras_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcesaBarras" />
+  </wsdl:message>
+  <wsdl:message name="IBarra_ProcesaBarras_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcesaBarrasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBarra_ObtieneItemBalanza_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneItemBalanza" />
+  </wsdl:message>
+  <wsdl:message name="IBarra_ObtieneItemBalanza_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneItemBalanzaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBarra_ObtieneProcedencia_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneProcedencia" />
+  </wsdl:message>
+  <wsdl:message name="IBarra_ObtieneProcedencia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneProcedenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBarra_ObtieneFrigorificos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneFrigorificos" />
+  </wsdl:message>
+  <wsdl:message name="IBarra_ObtieneFrigorificos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneFrigorificosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBarra_ObtieneParidades_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneParidades" />
+  </wsdl:message>
+  <wsdl:message name="IBarra_ObtieneParidades_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneParidadesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBarra_ProcesaBarrasMSG_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcesaBarrasMSG" />
+  </wsdl:message>
+  <wsdl:message name="IBarra_ProcesaBarrasMSG_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcesaBarrasMSGResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBarra">
+    <wsdl:operation name="ProcesaBarras">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBarra/ProcesaBarras" message="tns:IBarra_ProcesaBarras_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBarra/ProcesaBarrasResponse" message="tns:IBarra_ProcesaBarras_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneItemBalanza">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBarra/ObtieneItemBalanza" message="tns:IBarra_ObtieneItemBalanza_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBarra/ObtieneItemBalanzaResponse" message="tns:IBarra_ObtieneItemBalanza_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneProcedencia">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBarra/ObtieneProcedencia" message="tns:IBarra_ObtieneProcedencia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBarra/ObtieneProcedenciaResponse" message="tns:IBarra_ObtieneProcedencia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneFrigorificos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBarra/ObtieneFrigorificos" message="tns:IBarra_ObtieneFrigorificos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBarra/ObtieneFrigorificosResponse" message="tns:IBarra_ObtieneFrigorificos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneParidades">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBarra/ObtieneParidades" message="tns:IBarra_ObtieneParidades_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBarra/ObtieneParidadesResponse" message="tns:IBarra_ObtieneParidades_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcesaBarrasMSG">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBarra/ProcesaBarrasMSG" message="tns:IBarra_ProcesaBarrasMSG_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBarra/ProcesaBarrasMSGResponse" message="tns:IBarra_ProcesaBarrasMSG_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBarra" type="tns:IBarra">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcesaBarras">
+      <soap:operation soapAction="http://tempuri.org/IBarra/ProcesaBarras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneItemBalanza">
+      <soap:operation soapAction="http://tempuri.org/IBarra/ObtieneItemBalanza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneProcedencia">
+      <soap:operation soapAction="http://tempuri.org/IBarra/ObtieneProcedencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneFrigorificos">
+      <soap:operation soapAction="http://tempuri.org/IBarra/ObtieneFrigorificos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneParidades">
+      <soap:operation soapAction="http://tempuri.org/IBarra/ObtieneParidades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesaBarrasMSG">
+      <soap:operation soapAction="http://tempuri.org/IBarra/ProcesaBarrasMSG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Barra">
+    <wsdl:port name="BasicHttpBinding_IBarra" binding="tns:BasicHttpBinding_IBarra">
+      <soap:address location="http://dsac.dyndns.info:8084/TrazabilidadCarnesService/Barra.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

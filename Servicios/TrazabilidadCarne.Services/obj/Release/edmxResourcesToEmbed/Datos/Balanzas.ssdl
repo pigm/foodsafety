@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BalanzasModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="BalanzasModelStoreContainer">
+    <EntitySet Name="Informacion_Art_Local_Sesma" EntityType="BalanzasModel.Store.Informacion_Art_Local_Sesma" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Informacion_Articulo_Prov" EntityType="BalanzasModel.Store.Informacion_Articulo_Prov" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Informacion_Refresh" EntityType="BalanzasModel.Store.Informacion_Refresh" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inventario_Carnes" EntityType="BalanzasModel.Store.Inventario_Carnes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Item_Hijo" EntityType="BalanzasModel.Store.Item_Hijo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Item_Padre" EntityType="BalanzasModel.Store.Item_Padre" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Motivo_Inventario" EntityType="BalanzasModel.Store.Motivo_Inventario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Paridad" EntityType="BalanzasModel.Store.Paridad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Procedencia" EntityType="BalanzasModel.Store.Procedencia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Procedencia_Proveedor" EntityType="BalanzasModel.Store.Procedencia_Proveedor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WM_Barra_Carga" EntityType="BalanzasModel.Store.WM_Barra_Carga" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WM_Barra_Carga_Bitacora" EntityType="BalanzasModel.Store.WM_Barra_Carga_Bitacora" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ITEM_BALANZA" EntityType="BalanzasModel.Store.ITEM_BALANZA" store:Type="Views" store:Schema="dbo" store:Name="ITEM_BALANZA">
+      <DefiningQuery>SELECT 
+      [ITEM_BALANZA].[OLD_NBR] AS [OLD_NBR], 
+      [ITEM_BALANZA].[PLU_NBR] AS [PLU_NBR], 
+      [ITEM_BALANZA].[VENDOR_STOCK_ID] AS [VENDOR_STOCK_ID], 
+      [ITEM_BALANZA].[UPC_NBR] AS [UPC_NBR], 
+      [ITEM_BALANZA].[UPC_FORMAT_CODE] AS [UPC_FORMAT_CODE], 
+      [ITEM_BALANZA].[ITEM1_DESC] AS [ITEM1_DESC], 
+      [ITEM_BALANZA].[BRAND_ID] AS [BRAND_ID], 
+      [ITEM_BALANZA].[BACKRM_SCALE_IND] AS [BACKRM_SCALE_IND], 
+      [ITEM_BALANZA].[VARIABLE_WT_IND] AS [VARIABLE_WT_IND], 
+      [ITEM_BALANZA].[SHLFLBL1_COLR_DESC] AS [SHLFLBL1_COLR_DESC], 
+      [ITEM_BALANZA].[VNPK_QTY] AS [VNPK_QTY], 
+      [ITEM_BALANZA].[SELL_QTY] AS [SELL_QTY], 
+      [ITEM_BALANZA].[SELL_UOM_CODE] AS [SELL_UOM_CODE], 
+      [ITEM_BALANZA].[MIN_WHSE_LIFE_QTY] AS [MIN_WHSE_LIFE_QTY], 
+      [ITEM_BALANZA].[MDSE_SEGMENT_NBR] AS [MDSE_SEGMENT_NBR], 
+      [ITEM_BALANZA].[MDSE_SEGMENT_DESC] AS [MDSE_SEGMENT_DESC], 
+      [ITEM_BALANZA].[MDSE_SUBGROUP_NBR] AS [MDSE_SUBGROUP_NBR], 
+      [ITEM_BALANZA].[MDSE_SUBGROUP_DESC] AS [MDSE_SUBGROUP_DESC], 
+      [ITEM_BALANZA].[DEPT_NBR] AS [DEPT_NBR], 
+      [ITEM_BALANZA].[DEPT_DESC] AS [DEPT_DESC], 
+      [ITEM_BALANZA].[DEPT_CATEGORY_NBR] AS [DEPT_CATEGORY_NBR], 
+      [ITEM_BALANZA].[DEPT_CATEGORY_DESC] AS [DEPT_CATEGORY_DESC], 
+      [ITEM_BALANZA].[DEPT_SUBCATG_NBR] AS [DEPT_SUBCATG_NBR], 
+      [ITEM_BALANZA].[DEPT_SUBCATG_DESC] AS [DEPT_SUBCATG_DESC], 
+      [ITEM_BALANZA].[FINELINE_NBR] AS [FINELINE_NBR], 
+      [ITEM_BALANZA].[FINELINE_DESC] AS [FINELINE_DESC], 
+      [ITEM_BALANZA].[BASE_DIV_NBR] AS [BASE_DIV_NBR], 
+      [ITEM_BALANZA].[BUYER_USERID] AS [BUYER_USERID], 
+      [ITEM_BALANZA].[BUYER_FULL_NAME] AS [BUYER_FULL_NAME]
+      FROM [dbo].[ITEM_BALANZA] AS [ITEM_BALANZA]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Inventario_Carnes_Motivo_Inventario" Association="BalanzasModel.Store.FK_Inventario_Carnes_Motivo_Inventario">
+      <End Role="Motivo_Inventario" EntitySet="Motivo_Inventario" />
+      <End Role="Inventario_Carnes" EntitySet="Inventario_Carnes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Informacion_Art_Local_Sesma">
+    <Key>
+      <PropertyRef Name="STORE_NBR" />
+      <PropertyRef Name="OLD_NBR" />
+      <PropertyRef Name="ORIGEN" />
+    </Key>
+    <Property Name="STORE_NBR" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="OLD_NBR" Type="numeric" Nullable="false" Precision="10" />
+    <Property Name="ORIGEN" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="RESSNS" Type="char" MaxLength="25" />
+    <Property Name="MDSE_SUBGROUP_NBR" Type="numeric" Precision="5" />
+    <Property Name="DEPT_NBR" Type="numeric" Precision="5" />
+    <Property Name="DEPT_CATEGORY_NBR" Type="numeric" Precision="10" />
+    <Property Name="BUFOUT" Type="varchar" MaxLength="3000" />
+    <Property Name="FECFAE" Type="numeric" Precision="8" />
+    <Property Name="NRDIAPE" Type="numeric" Precision="3" />
+    <Property Name="INDPROC" Type="char" MaxLength="1" />
+    <Property Name="INDVIGE" Type="char" MaxLength="1" />
+    <Property Name="PRCVTAOL" Type="float" />
+    <Property Name="Certificado_Embarque" Type="numeric" Precision="17" />
+    <Property Name="Origen_Frigorifico" Type="numeric" Precision="3" />
+    <Property Name="USUCRE" Type="char" MaxLength="10" />
+    <Property Name="FECCRE" Type="numeric" Precision="8" />
+    <Property Name="HORCRE" Type="numeric" Precision="6" />
+    <Property Name="USUACT" Type="char" MaxLength="10" />
+    <Property Name="FECACT" Type="numeric" Precision="8" />
+    <Property Name="HORACT" Type="numeric" Precision="6" />
+    <Property Name="CodigoTipoEtiqueta" Type="int" />
+  </EntityType>
+  <EntityType Name="Informacion_Articulo_Prov">
+    <Key>
+      <PropertyRef Name="STORE_NBR" />
+      <PropertyRef Name="OLD_NBR" />
+      <PropertyRef Name="ORIGEN" />
+    </Key>
+    <Property Name="STORE_NBR" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="OLD_NBR" Type="numeric" Nullable="false" Precision="10" />
+    <Property Name="ORIGEN" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="RESSNS" Type="char" MaxLength="40" />
+    <Property Name="MDSE_SUBGROUP_NBR" Type="numeric" Precision="5" />
+    <Property Name="DEPT_NBR" Type="numeric" Precision="5" />
+    <Property Name="DEPT_CATEGORY_NBR" Type="numeric" Precision="10" />
+    <Property Name="DPLPRV" Type="char" MaxLength="40" />
+    <Property Name="RAZSOC30" Type="char" MaxLength="30" />
+    <Property Name="FECINI" Type="numeric" Precision="8" />
+    <Property Name="FECTER" Type="numeric" Precision="8" />
+    <Property Name="INDFRIG" Type="char" MaxLength="1" />
+    <Property Name="USUCRE" Type="char" MaxLength="10" />
+    <Property Name="FECCRE" Type="numeric" Precision="8" />
+    <Property Name="HORCRE" Type="numeric" Precision="6" />
+    <Property Name="USUACT" Type="char" MaxLength="10" />
+    <Property Name="FECACT" Type="numeric" Precision="8" />
+    <Property Name="HORACT" Type="numeric" Precision="6" />
+    <Property Name="TEXTOCONTINGENCIA" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="Informacion_Refresh">
+    <Key>
+      <PropertyRef Name="ID_INFO_REFRESH" />
+    </Key>
+    <Property Name="ID_INFO_REFRESH" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OLD_NBR" Type="numeric" Nullable="false" Precision="9" />
+    <Property Name="FECHA_ELABORACION" Type="datetime" />
+    <Property Name="LOTEPRODUCCION" Type="varchar" MaxLength="50" />
+    <Property Name="FECHADESCONGELADO" Type="datetime" Nullable="false" />
+    <Property Name="ID_PARAMETRO" Type="int" Nullable="false" />
+    <Property Name="CANTIDAD_UNIDADES" Type="int" Nullable="false" />
+    <Property Name="TEMPERATURA" Type="numeric" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="ETIQ_PROPIA" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="COMENTARIO" Type="varchar" MaxLength="200" />
+    <Property Name="USUCRE" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="FECCRE" Type="numeric" Nullable="false" Precision="8" />
+    <Property Name="HORCRE" Type="numeric" Nullable="false" Precision="8" />
+    <Property Name="USUACT" Type="char" MaxLength="10" />
+    <Property Name="FECACT" Type="numeric" Precision="8" />
+    <Property Name="HORACT" Type="numeric" Precision="8" />
+    <Property Name="FOTOETIQUETA" Type="varbinary(max)" />
+    <Property Name="CORRELATIVO" Type="int" />
+  </EntityType>
+  <EntityType Name="Inventario_Carnes">
+    <Key>
+      <PropertyRef Name="IdInventario" />
+    </Key>
+    <Property Name="IdInventario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Item_Padre" Type="numeric" Nullable="false" Precision="10" />
+    <Property Name="STORE_NBR" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="Item" Type="numeric" Nullable="false" Precision="10" />
+    <Property Name="Fecha_Inventario" Type="datetime" Nullable="false" />
+    <Property Name="Fecha_Lectura" Type="datetime" Nullable="false" />
+    <Property Name="Origen_Frigorifico" Type="numeric" Precision="3" />
+    <Property Name="Certificado_Embarque" Type="numeric" Precision="17" />
+    <Property Name="Fecha_Faena" Type="numeric" Precision="6" />
+    <Property Name="Peso_Neto" Type="numeric" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="Peso_Bruto" Type="numeric" Nullable="false" Precision="10" Scale="4" />
+    <Property Name="Cajas" Type="int" Nullable="false" />
+    <Property Name="Responsable" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="IdMotivoInventario" Type="int" Nullable="false" />
+    <Property Name="USUCRE" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="FECCRE" Type="numeric" Nullable="false" Precision="8" />
+    <Property Name="HORCRE" Type="numeric" Nullable="false" Precision="6" />
+  </EntityType>
+  <EntityType Name="Item_Hijo">
+    <Key>
+      <PropertyRef Name="NU1pA" />
+      <PropertyRef Name="OLD_NBR" />
+    </Key>
+    <Property Name="NU1pA" Type="numeric" Nullable="false" Precision="10" />
+    <Property Name="OLD_NBR" Type="numeric" Nullable="false" Precision="10" />
+    <Property Name="INDEST" Type="char" MaxLength="1" />
+    <Property Name="USUCRE" Type="char" MaxLength="10" />
+    <Property Name="FECCRE" Type="numeric" Precision="8" />
+    <Property Name="HORCRE" Type="numeric" Precision="6" />
+    <Property Name="USUACT" Type="char" MaxLength="10" />
+    <Property Name="FECACT" Type="numeric" Precision="8" />
+    <Property Name="HORACT" Type="numeric" Precision="6" />
+  </EntityType>
+  <EntityType Name="Item_Padre">
+    <Key>
+      <PropertyRef Name="OLD_NBR" />
+    </Key>
+    <Property Name="OLD_NBR" Type="numeric" Nullable="false" Precision="10" />
+    <Property Name="INDEST" Type="char" MaxLength="1" />
+    <Property Name="USUCRE" Type="char" MaxLength="10" />
+    <Property Name="FECCRE" Type="numeric" Precision="8" />
+    <Property Name="HORCRE" Type="numeric" Precision="6" />
+    <Property Name="USUACT" Type="char" MaxLength="10" />
+    <Property Name="FECACT" Type="numeric" Precision="8" />
+    <Property Name="HORACT" Type="numeric" Precision="6" />
+  </EntityType>
+  <EntityType Name="Motivo_Inventario">
+    <Key>
+      <PropertyRef Name="IdMotivoInventario" />
+    </Key>
+    <Property Name="IdMotivoInventario" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Paridad">
+    <Key>
+      <PropertyRef Name="Item_Compra" />
+    </Key>
+    <Property Name="Item_Compra" Type="numeric" Nullable="false" Precision="6" />
+    <Property Name="Item_Venta" Type="numeric" Nullable="false" Precision="6" />
+  </EntityType>
+  <EntityType Name="Procedencia">
+    <Key>
+      <PropertyRef Name="ORIGEN" />
+    </Key>
+    <Property Name="ORIGEN" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="DESORI" Type="char" MaxLength="25" />
+    <Property Name="USUCRE" Type="char" MaxLength="10" />
+    <Property Name="FECCRE" Type="numeric" Precision="8" />
+    <Property Name="HORCRE" Type="numeric" Precision="6" />
+    <Property Name="USUACT" Type="char" MaxLength="10" />
+    <Property Name="FECACT" Type="numeric" Precision="8" />
+    <Property Name="HORACT" Type="numeric" Precision="6" />
+  </EntityType>
+  <EntityType Name="Procedencia_Proveedor">
+    <Key>
+      <PropertyRef Name="ORIGEN" />
+      <PropertyRef Name="Origen_Frigorifico" />
+    </Key>
+    <Property Name="ORIGEN" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="Origen_Frigorifico" Type="numeric" Nullable="false" Precision="3" />
+    <Property Name="RAZSOC30" Type="char" MaxLength="30" />
+    <Property Name="INDFRIG" Type="char" MaxLength="1" />
+    <Property Name="USUCRE" Type="char" MaxLength="10" />
+    <Property Name="FECCRE" Type="numeric" Precision="8" />
+    <Property Name="HORCRE" Type="numeric" Precision="6" />
+    <Property Name="USUACT" Type="char" MaxLength="10" />
+    <Property Name="FECACT" Type="numeric" Precision="8" />
+    <Property Name="HORACT" Type="numeric" Precision="6" />
+    <Property Name="Nro_Unico_SAG" Type="varchar" MaxLength="100" />
+    <Property Name="Descripcion_SAG" Type="varchar" MaxLength="200" />
+    <Property Name="DIAS_DURACION" Type="int" />
+  </EntityType>
+  <EntityType Name="WM_Barra_Carga">
+    <Key>
+      <PropertyRef Name="Item_Barras" />
+      <PropertyRef Name="STORE_NBR" />
+    </Key>
+    <Property Name="Item_Barras" Type="char" Nullable="false" MaxLength="6" />
+    <Property Name="STORE_NBR" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="ORIGEN" Type="char" MaxLength="3" />
+    <Property Name="Origen_Frigorifico" Type="numeric" Precision="3" />
+    <Property Name="Certificado_Embarque" Type="numeric" Precision="17" />
+    <Property Name="Fecha_Faena" Type="numeric" Precision="6" />
+    <Property Name="Peso_Neto" Type="numeric" Precision="6" />
+    <Property Name="Peso_Bruto" Type="numeric" Precision="6" />
+    <Property Name="Barra_Larga" Type="char" MaxLength="100" />
+    <Property Name="INDPROC" Type="char" MaxLength="1" />
+    <Property Name="USUCRE" Type="char" MaxLength="10" />
+    <Property Name="FECCRE" Type="numeric" Precision="8" />
+    <Property Name="HORCRE" Type="numeric" Precision="6" />
+    <Property Name="USUACT" Type="char" MaxLength="10" />
+    <Property Name="FECACT" Type="numeric" Precision="8" />
+    <Property Name="HORACT" Type="numeric" Precision="6" />
+    <Property Name="FOTOETIQUETA" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="WM_Barra_Carga_Bitacora">
+    <Key>
+      <PropertyRef Name="IdBitacora" />
+    </Key>
+    <Property Name="IdBitacora" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Item_Barras" Type="char" Nullable="false" MaxLength="6" />
+    <Property Name="STORE_NBR" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="ORIGEN" Type="char" MaxLength="3" />
+    <Property Name="Origen_Frigorifico" Type="numeric" Precision="3" />
+    <Property Name="Certificado_Embarque" Type="numeric" Precision="17" />
+    <Property Name="Fecha_Faena" Type="numeric" Precision="6" />
+    <Property Name="Peso_Neto" Type="numeric" Precision="6" />
+    <Property Name="Peso_Bruto" Type="numeric" Precision="6" />
+    <Property Name="Barra_Larga" Type="char" MaxLength="100" />
+    <Property Name="INDPROC" Type="char" MaxLength="1" />
+    <Property Name="USUCRE" Type="char" MaxLength="10" />
+    <Property Name="FECCRE" Type="numeric" Precision="8" />
+    <Property Name="HORCRE" Type="numeric" Precision="6" />
+    <Property Name="Responsable" Type="varchar" MaxLength="100" />
+    <Property Name="FOTOETIQUETA" Type="varbinary(max)" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'dbBalanzasQA.dbo.ITEM_BALANZA' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="ITEM_BALANZA">
+    <Key>
+      <PropertyRef Name="OLD_NBR" />
+    </Key>
+    <Property Name="OLD_NBR" Type="numeric" Precision="10" Nullable="false" />
+    <Property Name="PLU_NBR" Type="numeric" Precision="10" />
+    <Property Name="VENDOR_STOCK_ID" Type="varchar" MaxLength="20" />
+    <Property Name="UPC_NBR" Type="numeric" />
+    <Property Name="UPC_FORMAT_CODE" Type="numeric" Precision="5" />
+    <Property Name="ITEM1_DESC" Type="varchar" MaxLength="25" />
+    <Property Name="BRAND_ID" Type="numeric" Precision="10" />
+    <Property Name="BACKRM_SCALE_IND" Type="char" MaxLength="1" />
+    <Property Name="VARIABLE_WT_IND" Type="char" MaxLength="1" />
+    <Property Name="SHLFLBL1_COLR_DESC" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="VNPK_QTY" Type="numeric" Precision="10" />
+    <Property Name="SELL_QTY" Type="numeric" Precision="9" Scale="4" />
+    <Property Name="SELL_UOM_CODE" Type="char" MaxLength="2" />
+    <Property Name="MIN_WHSE_LIFE_QTY" Type="numeric" Precision="5" />
+    <Property Name="MDSE_SEGMENT_NBR" Type="numeric" Precision="5" />
+    <Property Name="MDSE_SEGMENT_DESC" Type="varchar" MaxLength="80" />
+    <Property Name="MDSE_SUBGROUP_NBR" Type="numeric" Precision="5" />
+    <Property Name="MDSE_SUBGROUP_DESC" Type="varchar" MaxLength="80" />
+    <Property Name="DEPT_NBR" Type="numeric" Precision="5" />
+    <Property Name="DEPT_DESC" Type="varchar" MaxLength="80" />
+    <Property Name="DEPT_CATEGORY_NBR" Type="numeric" Precision="5" />
+    <Property Name="DEPT_CATEGORY_DESC" Type="varchar" MaxLength="80" />
+    <Property Name="DEPT_SUBCATG_NBR" Type="numeric" Precision="5" />
+    <Property Name="DEPT_SUBCATG_DESC" Type="varchar" MaxLength="80" />
+    <Property Name="FINELINE_NBR" Type="numeric" Precision="5" />
+    <Property Name="FINELINE_DESC" Type="varchar" MaxLength="80" />
+    <Property Name="BASE_DIV_NBR" Type="numeric" Precision="5" />
+    <Property Name="BUYER_USERID" Type="char" MaxLength="8" />
+    <Property Name="BUYER_FULL_NAME" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK_Inventario_Carnes_Motivo_Inventario">
+    <End Role="Motivo_Inventario" Type="BalanzasModel.Store.Motivo_Inventario" Multiplicity="1" />
+    <End Role="Inventario_Carnes" Type="BalanzasModel.Store.Inventario_Carnes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Motivo_Inventario">
+        <PropertyRef Name="IdMotivoInventario" />
+      </Principal>
+      <Dependent Role="Inventario_Carnes">
+        <PropertyRef Name="IdMotivoInventario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="Actualiza_ArticuloProveedor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="STORE_NBR" Type="numeric" Mode="In" />
+    <Parameter Name="OLD_NBR" Type="numeric" Mode="In" />
+    <Parameter Name="ORIGEN" Type="char" Mode="In" />
+    <Parameter Name="ORIGEN_PROCEDENCIA" Type="numeric" Mode="In" />
+    <Parameter Name="RESSNS" Type="char" Mode="In" />
+    <Parameter Name="USUACT" Type="char" Mode="In" />
+    <Parameter Name="FECACT" Type="numeric" Mode="In" />
+    <Parameter Name="HORACT" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="Actualiza_ArtLocalSesma" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="STORE_NBR" Type="numeric" Mode="In" />
+    <Parameter Name="OLD_NBR" Type="numeric" Mode="In" />
+    <Parameter Name="ORIGEN" Type="char" Mode="In" />
+    <Parameter Name="RESSNS" Type="char" Mode="In" />
+    <Parameter Name="INDPROC" Type="char" Mode="In" />
+    <Parameter Name="USUACT" Type="char" Mode="In" />
+    <Parameter Name="FECACT" Type="numeric" Mode="In" />
+    <Parameter Name="HORACT" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="Lista_ItemCarniceria" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Lista_ItemRefresh" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

@@ -1,0 +1,3458 @@
+[
+  {
+    "id": 3,
+    "location": {
+      "address": "Av. Irarrázaval 2928",
+      "position": { "coordinates": [ -70.600702, -33.453275 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Irarrázaval"
+  },
+  {
+    "id": 4,
+    "location": {
+      "address": "Vitacura 4100",
+      "position": { "coordinates": [ -70.590651, -33.399471 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Vitacura"
+  },
+  {
+    "id": 60,
+    "location": {
+      "address": "A. Vespucio Sur 1790",
+      "position": { "coordinates": [ -70.574552, -33.42858 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Latadia"
+  },
+  {
+    "id": 64,
+    "location": {
+      "address": "Apoquindo 6060",
+      "position": { "coordinates": [ -70.56792, -33.408559 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Apoquindo"
+  },
+  {
+    "id": 65,
+    "location": {
+      "address": "Rancagua 0180",
+      "position": { "coordinates": [ -70.630439, -33.440755 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Seminario"
+  },
+  {
+    "id": 8,
+    "location": {
+      "address": "Cuarto Centenario 1016",
+      "position": { "coordinates": [ -70.551738, -33.418471 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Colon"
+  },
+  {
+    "id": 2,
+    "location": {
+      "address": "Pedro de Valdivia 1885",
+      "position": { "coordinates": [ -70.608275, -33.440084 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Express de Lider Pedro De Valdivia"
+  },
+  {
+    "id": 57,
+    "location": {
+      "address": "Buenaventura 1770",
+      "position": { "coordinates": [ -70.5682, -33.386958 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Buenaventura"
+  },
+  {
+    "id": 1,
+    "location": {
+      "address": "Av.11 de Septiembre 2249",
+      "position": { "coordinates": [ -70.608672, -33.422986 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Plaza Lyon"
+  },
+  {
+    "id": 15,
+    "location": {
+      "address": "Av. Las Condes 10295",
+      "position": { "coordinates": [ -70.533562, -33.384864 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Express de Lider Estoril"
+  },
+  {
+    "id": 51,
+    "location": {
+      "address": "Las Camelias 2875",
+      "position": { "coordinates": [ -70.596492, -33.422831 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Tobalaba"
+  },
+  {
+    "id": 52,
+    "location": {
+      "address": "Av. Grecia 245",
+      "position": { "coordinates": [ -70.627002, -33.455788 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Grecia"
+  },
+  {
+    "id": 54,
+    "location": {
+      "address": "V. Mackenna 7196",
+      "position": { "coordinates": [ -70.602147, -33.519396 ] }
+    },
+    "format": "LIDER",
+    "name": "Vicuña Mackenna"
+  },
+  {
+    "id": 55,
+    "location": {
+      "address": "Av. José Pedro Alessandri 2127",
+      "position": { "coordinates": [ -70.599274, -33.474417 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Macul"
+  },
+  {
+    "id": 56,
+    "location": {
+      "address": "Gran Avenida 4004",
+      "position": { "coordinates": [ -70.650427, -33.491155 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Gran Avenida"
+  },
+  {
+    "id": 58,
+    "location": {
+      "address": "Av. 15 Norte 961",
+      "position": { "coordinates": [ -71.544832, -33.007215 ] }
+    },
+    "format": "LIDER",
+    "name": "Viña Del Mar"
+  },
+  {
+    "id": 61,
+    "location": {
+      "address": "Ramón Freire 1790",
+      "position": { "coordinates": [ -70.757753, -33.511099 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Maipu"
+  },
+  {
+    "id": 16,
+    "location": {
+      "address": "El Rodeo 12850",
+      "position": { "coordinates": [ -70.520168, -33.352354 ] }
+    },
+    "format": "EXPRESS",
+    "name": "La Dehesa"
+  },
+  {
+    "id": 71,
+    "location": {
+      "address": "Americo Vespucio Sur 881",
+      "position": { "coordinates": [ -70.575221, -33.463418 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Vespucio Sur Ñuñoa"
+  },
+  {
+    "id": 72,
+    "location": {
+      "address": "Av. Padre Alberto Hurtado 060",
+      "position": { "coordinates": [ -70.692137, -33.452886 ] }
+    },
+    "format": "LIDER",
+    "name": "Alameda"
+  },
+  {
+    "id": 74,
+    "location": {
+      "address": "Tomás Moro 1590",
+      "position": { "coordinates": [ -70.553664, -33.424825 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Express de Lider Tomás Moro"
+  },
+  {
+    "id": 73,
+    "location": {
+      "address": "Av. Concha y Toro 1149",
+      "position": { "coordinates": [ -70.575558, -33.599233 ] }
+    },
+    "format": "LIDER",
+    "name": "Puente Alto"
+  },
+  {
+    "id": 75,
+    "location": {
+      "address": "Av. Pajaritos 4500",
+      "position": { "coordinates": [ -70.746866, -33.480826 ] }
+    },
+    "format": "LIDER",
+    "name": "Maipu"
+  },
+  {
+    "id": 32,
+    "location": {
+      "address": "Gran Avenida 6150",
+      "position": { "coordinates": [ -70.656277, -33.512565 ] }
+    },
+    "format": "LIDER",
+    "name": "Gran Avenida"
+  },
+  {
+    "id": 76,
+    "location": {
+      "address": "Américo Vespucio 6325",
+      "position": { "coordinates": [ -70.591595, -33.511841 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Departamental"
+  },
+  {
+    "id": 77,
+    "location": {
+      "address": "Independencia 4142",
+      "position": { "coordinates": [ -70.676376, -33.390952 ] }
+    },
+    "format": "LIDER",
+    "name": "Independencia"
+  },
+  {
+    "id": 78,
+    "location": {
+      "address": "Av. Héroes de la Concepción 2653",
+      "position": { "coordinates": [ -70.142767, -20.234261 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Iquique"
+  },
+  {
+    "id": 18,
+    "location": {
+      "address": "Manuel Montt 80",
+      "position": { "coordinates": [ -70.619733, -33.429429 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Manuel Montt"
+  },
+  {
+    "id": 80,
+    "location": {
+      "address": "Riquelme 69",
+      "position": { "coordinates": [ -70.667614, -33.546338 ] }
+    },
+    "format": "LIDER",
+    "name": "Los Morros"
+  },
+  {
+    "id": 81,
+    "location": {
+      "address": "Diego Portales 2291",
+      "position": { "coordinates": [ -70.293023, -18.482992 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Arica"
+  },
+  {
+    "id": 83,
+    "location": {
+      "address": "Santa Amalia 1763",
+      "position": { "coordinates": [ -70.570921, -33.544791 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Santa Amalia"
+  },
+  {
+    "id": 82,
+    "location": {
+      "address": "San José 69",
+      "position": { "coordinates": [ -70.699592, -33.597853 ] }
+    },
+    "format": "LIDER",
+    "name": "San Bernardo"
+  },
+  {
+    "id": 88,
+    "location": {
+      "address": "Camino El Alba 11865",
+      "position": { "coordinates": [ -70.516158, -33.402026 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Los Dominicos"
+  },
+  {
+    "id": 84,
+    "location": {
+      "address": "Av. Ramón Freire 1351",
+      "position": { "coordinates": [ -71.418297, -33.046236 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider El Belloto"
+  },
+  {
+    "id": 85,
+    "location": {
+      "address": "Américo Vespucio 2500",
+      "position": { "coordinates": [ -70.708632, -33.516551 ] }
+    },
+    "format": "LIDER",
+    "name": "Oeste"
+  },
+  {
+    "id": 86,
+    "location": {
+      "address": "Recoleta 3501",
+      "position": { "coordinates": [ -70.641326, -33.393457 ] }
+    },
+    "format": "LIDER",
+    "name": "Recoleta"
+  },
+  {
+    "id": 87,
+    "location": {
+      "address": "Santa Rosa 9233",
+      "position": { "coordinates": [ -70.634417, -33.545695 ] }
+    },
+    "format": "LIDER",
+    "name": "Santa Rosa"
+  },
+  {
+    "id": 89,
+    "location": {
+      "address": "Av. Autopista Concepción Talcahuano 9000",
+      "position": { "coordinates": [ -73.069987, -36.796483 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Biobío"
+  },
+  {
+    "id": 91,
+    "location": {
+      "address": "Zenteno 21",
+      "position": { "coordinates": [ -70.396265, -23.637179 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Antofagasta"
+  },
+  {
+    "id": 79,
+    "location": {
+      "address": "9 Oriente 1241",
+      "position": { "coordinates": [ -71.65483, -35.425791 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Talca"
+  },
+  {
+    "id": 93,
+    "location": {
+      "address": "Errázuriz 1358",
+      "position": { "coordinates": [ -73.126953, -40.572715 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Osorno"
+  },
+  {
+    "id": 92,
+    "location": {
+      "address": "Av. Francisco de Aguirre 02",
+      "position": { "coordinates": [ -71.257606, -29.901542 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider La Serena"
+  },
+  {
+    "id": 95,
+    "location": {
+      "address": "Jorge Alessandri 1131",
+      "position": { "coordinates": [ -70.543882, -33.460415 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider La Reina"
+  },
+  {
+    "id": 96,
+    "location": {
+      "address": "Prieto Norte 0320",
+      "position": { "coordinates": [ -72.600218, -38.728883 ] }
+    },
+    "format": "LIDER",
+    "name": "Temuco"
+  },
+  {
+    "id": 97,
+    "location": {
+      "address": "Av. Las Condes 12916",
+      "position": { "coordinates": [ -70.512186, -33.370496 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Puente Nuevo"
+  },
+  {
+    "id": 98,
+    "location": {
+      "address": "Av. Arturo Prat 651",
+      "position": { "coordinates": [ -73.060479, -36.828938 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Concepción"
+  },
+  {
+    "id": 99,
+    "location": {
+      "address": "Av. Parque Industrial 400",
+      "position": { "coordinates": [ -72.95066, -41.459823 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Puerto Montt"
+  },
+  {
+    "id": 33,
+    "location": {
+      "address": "Balmaceda 3242",
+      "position": { "coordinates": [ -68.92135, -22.450436 ] }
+    },
+    "format": "LIDER",
+    "name": "Calama"
+  },
+  {
+    "id": 94,
+    "location": {
+      "address": "Bueras 1400",
+      "position": { "coordinates": [ -73.236331, -39.827927 ] }
+    },
+    "format": "LIDER",
+    "name": "Valdivia"
+  },
+  {
+    "id": 34,
+    "location": {
+      "address": "Eduardo Frei 4025",
+      "position": { "coordinates": [ -71.508671, -33.022784 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Miraflores"
+  },
+  {
+    "id": 35,
+    "location": {
+      "address": "Av. Eduardo Frei Montalva 190",
+      "position": { "coordinates": [ -70.73212, -34.180467 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Rancagua"
+  },
+  {
+    "id": 36,
+    "location": {
+      "address": "Ricardo Vicuña 284",
+      "position": { "coordinates": [ -72.349099, -37.473929 ] }
+    },
+    "format": "LIDER",
+    "name": "Los Angeles"
+  },
+  {
+    "id": 37,
+    "location": {
+      "address": "Matucana 1202",
+      "position": { "coordinates": [ -70.681079, -33.432376 ] }
+    },
+    "format": "LIDER",
+    "name": "Matucana"
+  },
+  {
+    "id": 38,
+    "location": {
+      "address": "Einstein 263",
+      "position": { "coordinates": [ -70.716899, -34.172223 ] }
+    },
+    "format": "LIDER",
+    "name": "Einstein"
+  },
+  {
+    "id": 39,
+    "location": {
+      "address": "Recreo 620",
+      "position": { "coordinates": [ -70.737841, -34.159357 ] }
+    },
+    "format": "LIDER",
+    "name": "Recreo"
+  },
+  {
+    "id": 40,
+    "location": {
+      "address": "Av. Brasil 1303",
+      "position": { "coordinates": [ -71.622412, -33.0436 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Valparaiso"
+  },
+  {
+    "id": 41,
+    "location": {
+      "address": "Av. Américo Vespucio 1737",
+      "position": { "coordinates": [ -70.679279, -33.364118 ] }
+    },
+    "format": "LIDER",
+    "name": "Huechuraba"
+  },
+  {
+    "id": 43,
+    "location": {
+      "address": "Av. San Miguel 3355 (Mall Plaza Maule)",
+      "position": { "coordinates": [ -71.630356, -35.432752 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Plaza Maule"
+  },
+  {
+    "id": 42,
+    "location": {
+      "address": "Carmen 1190 al 1196 Loc.101-125",
+      "position": { "coordinates": [ -71.238932, -34.977574 ] }
+    },
+    "format": "LIDER",
+    "name": "Curico"
+  },
+  {
+    "id": 49,
+    "location": {
+      "address": "Av. Ohiggins 314",
+      "position": { "coordinates": [ -70.727657, -33.35625 ] }
+    },
+    "format": "LIDER",
+    "name": "Quilicura"
+  },
+  {
+    "id": 44,
+    "location": {
+      "address": "Av. Américo Vespucio 3100",
+      "position": { "coordinates": [ -70.577967, -33.485902 ] }
+    },
+    "format": "LIDER",
+    "name": "Quilin"
+  },
+  {
+    "id": 45,
+    "location": {
+      "address": "Av. Américo Vespucio Norte 1955",
+      "position": { "coordinates": [ -70.758375, -33.472002 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Vespucio Norte Maipú"
+  },
+  {
+    "id": 46,
+    "location": {
+      "address": "Av. Pajarito 2689",
+      "position": { "coordinates": [ -70.756898, -33.502686 ] }
+    },
+    "format": "LIDER",
+    "name": "Av. Central"
+  },
+  {
+    "id": 48,
+    "location": {
+      "address": "Av. Los Toros 05441",
+      "position": { "coordinates": [ -70.558091, -33.56724 ] }
+    },
+    "format": "LIDER",
+    "name": "Cordillera"
+  },
+  {
+    "id": 53,
+    "location": {
+      "address": "Av. Domeyko 55",
+      "position": { "coordinates": [ -71.332491, -29.967152 ] }
+    },
+    "format": "LIDER",
+    "name": "Coquimbo"
+  },
+  {
+    "id": 120,
+    "location": {
+      "address": "Gabriela Mistral 02621",
+      "position": { "coordinates": [ -72.640708, -38.734492 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Temuco"
+  },
+  {
+    "id": 62,
+    "location": {
+      "address": "Froilan Roa 7107 Local 64",
+      "position": { "coordinates": [ -70.597522, -33.51729 ] }
+    },
+    "format": "LIDER",
+    "name": "Pza.Vespucio"
+  },
+  {
+    "id": 122,
+    "location": {
+      "address": "Av. 21 de Mayo 311",
+      "position": { "coordinates": [ -71.241822, -32.874553 ] }
+    },
+    "format": "LIDER",
+    "name": "Quillota"
+  },
+  {
+    "id": 121,
+    "location": {
+      "address": "Av. Edo. Frei Montalva 01110",
+      "position": { "coordinates": [ -70.907575, -53.129646 ] }
+    },
+    "format": "LIDER",
+    "name": "Punta Arenas"
+  },
+  {
+    "id": 66,
+    "location": {
+      "address": "Av. Bdo. O´Higgins 807",
+      "position": { "coordinates": [ -70.925532, -33.662076 ] }
+    },
+    "format": "LIDER",
+    "name": "Talagante"
+  },
+  {
+    "id": 125,
+    "location": {
+      "address": "Calle Recinto Interior Estacion 48",
+      "position": { "coordinates": [ -71.197216, -30.597594 ] }
+    },
+    "format": "LIDER",
+    "name": "Ovalle"
+  },
+  {
+    "id": 129,
+    "location": {
+      "address": "Suc.Avda. Gramado 565",
+      "position": { "coordinates": [ -72.98743, -41.317304 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Puerto Varas"
+  },
+  {
+    "id": 126,
+    "location": {
+      "address": "Chacabuco 120",
+      "position": { "coordinates": [ -70.335551, -27.369433 ] }
+    },
+    "format": "LIDER",
+    "name": "Copiapo"
+  },
+  {
+    "id": 127,
+    "location": {
+      "address": "Av. Anibal Leon Bustos 0221",
+      "position": { "coordinates": [ -71.60625, -35.842937 ] }
+    },
+    "format": "LIDER",
+    "name": "Linares"
+  },
+  {
+    "id": 124,
+    "location": {
+      "address": "Huérfanos 827",
+      "position": { "coordinates": [ -70.649378, -33.4391 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Huerfanos"
+  },
+  {
+    "id": 142,
+    "location": {
+      "address": "Calle 2 Sur 2015",
+      "position": { "coordinates": [ -71.645057, -35.4288 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Talca Terminal"
+  },
+  {
+    "id": 143,
+    "location": {
+      "address": "Av. Colín 240",
+      "position": { "coordinates": [ -71.683291, -35.441128 ] }
+    },
+    "format": "LIDER",
+    "name": "Talca La Florida"
+  },
+  {
+    "id": 144,
+    "location": {
+      "address": "Calle Anibal Pinto 299",
+      "position": { "coordinates": [ -71.828851, -36.139175 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Parral"
+  },
+  {
+    "id": 146,
+    "location": {
+      "address": "Calle Chorrillos 1821",
+      "position": { "coordinates": [ -71.732669, -35.600246 ] }
+    },
+    "format": "EXPRESS",
+    "name": "San Javier"
+  },
+  {
+    "id": 600,
+    "location": {
+      "address": "Santa Teresa 735",
+      "position": { "coordinates": [ -71.233694, -32.446547 ] }
+    },
+    "format": "EXPRESS",
+    "name": "La Ligua"
+  },
+  {
+    "id": 601,
+    "location": {
+      "address": "Papudo 261",
+      "position": { "coordinates": [ -70.599605, -32.83211 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Los Andes"
+  },
+  {
+    "id": 134,
+    "location": {
+      "address": "Calle Villagran 551",
+      "position": { "coordinates": [ -72.347263, -37.465989 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Los Angeles"
+  },
+  {
+    "id": 140,
+    "location": {
+      "address": "Av. Lib. Bernardo O´Higgins 5199",
+      "position": { "coordinates": [ -70.705328, -33.456499 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Las Rejas"
+  },
+  {
+    "id": 602,
+    "location": {
+      "address": "Av. Santa Teresa 683",
+      "position": { "coordinates": [ -70.604835, -32.835116 ] }
+    },
+    "format": "LIDER",
+    "name": "Los Andes Vecino"
+  },
+  {
+    "id": 137,
+    "location": {
+      "address": "Neptuno 720",
+      "position": { "coordinates": [ -70.724049, -33.44525 ] }
+    },
+    "format": "LIDER",
+    "name": "San Pablo"
+  },
+  {
+    "id": 139,
+    "location": {
+      "address": "Av. Chicureo s/n Sector Laguna Piedra Roja",
+      "position": { "coordinates": [ -70.627963, -33.276841 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Colina"
+  },
+  {
+    "id": 204,
+    "location": {
+      "address": "Providencia 1630",
+      "position": { "coordinates": [ -70.616212, -33.426777 ] }
+    },
+    "format": "EKONO",
+    "name": "Providencia & Antonio Bellet"
+  },
+  {
+    "id": 206,
+    "location": {
+      "address": "Alameda 2843",
+      "position": { "coordinates": [ -70.673669, -33.449125 ] }
+    },
+    "format": "EKONO",
+    "name": "Alameda & Ula"
+  },
+  {
+    "id": 202,
+    "location": {
+      "address": "Curicó 517",
+      "position": { "coordinates": [ -70.643052, -33.446027 ] }
+    },
+    "format": "EKONO",
+    "name": "Curico"
+  },
+  {
+    "id": 201,
+    "location": {
+      "address": "San Diego 219",
+      "position": { "coordinates": [ -70.651193, -33.447974 ] }
+    },
+    "format": "EKONO",
+    "name": "San Diego"
+  },
+  {
+    "id": 203,
+    "location": {
+      "address": "San Pablo 2902",
+      "position": { "coordinates": [ -70.676269, -33.435582 ] }
+    },
+    "format": "EKONO",
+    "name": "San Pablo"
+  },
+  {
+    "id": 209,
+    "location": {
+      "address": "P. de Valdivia 5359",
+      "position": { "coordinates": [ -70.606737, -33.47311 ] }
+    },
+    "format": "EKONO",
+    "name": "Pedro De Valdivia & Plaza ZañA"
+  },
+  {
+    "id": 208,
+    "location": {
+      "address": "Jose L. Coo 0158",
+      "position": { "coordinates": [ -70.574013, -33.608785 ] }
+    },
+    "format": "EKONO",
+    "name": "Plaza P. Alto & Jose Luis Coo"
+  },
+  {
+    "id": 210,
+    "location": {
+      "address": "Recoleta 2302",
+      "position": { "coordinates": [ -70.643477, -33.405548 ] }
+    },
+    "format": "EKONO",
+    "name": "Recoleta & Einstein"
+  },
+  {
+    "id": 213,
+    "location": {
+      "address": "Tobalaba 1177",
+      "position": { "coordinates": [ -70.592636, -33.425603 ] }
+    },
+    "format": "EKONO",
+    "name": "Tobalaba & Las Hortensias"
+  },
+  {
+    "id": 205,
+    "location": {
+      "address": "Bandera 814",
+      "position": { "coordinates": [ -70.653251, -33.434259 ] }
+    },
+    "format": "EKONO",
+    "name": "Bandera & San Pablo"
+  },
+  {
+    "id": 211,
+    "location": {
+      "address": "Coventry 601",
+      "position": { "coordinates": [ -70.580442, -33.448697 ] }
+    },
+    "format": "EKONO",
+    "name": "Coventry & Simon Bolivar"
+  },
+  {
+    "id": 207,
+    "location": {
+      "address": "Colombia 7111",
+      "position": { "coordinates": [ -70.590625, -33.521841 ] }
+    },
+    "format": "EKONO",
+    "name": "Colombia & Walker Martinez"
+  },
+  {
+    "id": 603,
+    "location": {
+      "address": "Consistorial 3349",
+      "position": { "coordinates": [ -70.549526, -33.487964 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Lider Consistorial"
+  },
+  {
+    "id": 223,
+    "location": {
+      "address": "San Fco 8520",
+      "position": { "coordinates": [ -70.746423, -33.436766 ] }
+    },
+    "format": "EKONO",
+    "name": "San Francisco & San Andres"
+  },
+  {
+    "id": 216,
+    "location": {
+      "address": "El Olimpo 1990",
+      "position": { "coordinates": [ -70.775818, -33.512295 ] }
+    },
+    "format": "EKONO",
+    "name": "El Olimpo"
+  },
+  {
+    "id": 217,
+    "location": {
+      "address": "General Jose Artigas 2877",
+      "position": { "coordinates": [ -70.599404, -33.445337 ] }
+    },
+    "format": "EKONO",
+    "name": "Los Leones"
+  },
+  {
+    "id": 605,
+    "location": {
+      "address": "Balmaceda 2154",
+      "position": { "coordinates": [ -71.254117, -29.92009 ] }
+    },
+    "format": "EXPRESS",
+    "name": "La Serena Express"
+  },
+  {
+    "id": 220,
+    "location": {
+      "address": "Arrieta 6682",
+      "position": { "coordinates": [ -70.560223, -33.462297 ] }
+    },
+    "format": "EKONO",
+    "name": "Arrieta"
+  },
+  {
+    "id": 606,
+    "location": {
+      "address": "Av. Manuel Montt 2328",
+      "position": { "coordinates": [ -73.161905, -36.994258 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Coronel"
+  },
+  {
+    "id": 607,
+    "location": {
+      "address": "Av. Vicuña Mackenna 0153",
+      "position": { "coordinates": [ -71.203466, -33.680299 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Melipilla"
+  },
+  {
+    "id": 608,
+    "location": {
+      "address": "Av. Collin 698",
+      "position": { "coordinates": [ -72.105864, -36.615696 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Chillán"
+  },
+  {
+    "id": 218,
+    "location": {
+      "address": "Santa Isabel 861",
+      "position": { "coordinates": [ -70.619797, -33.445387 ] }
+    },
+    "format": "EKONO",
+    "name": "Santa Isabel"
+  },
+  {
+    "id": 215,
+    "location": {
+      "address": "Grajales 2146",
+      "position": { "coordinates": [ -70.665422, -33.451963 ] }
+    },
+    "format": "EKONO",
+    "name": "Grajales"
+  },
+  {
+    "id": 229,
+    "location": {
+      "address": "Ramón Cruz 3219",
+      "position": { "coordinates": [ -70.585443, -33.484802 ] }
+    },
+    "format": "EKONO",
+    "name": "Ramon Cruz"
+  },
+  {
+    "id": 610,
+    "location": {
+      "address": "Av. Nonato Coo 3108",
+      "position": { "coordinates": [ -70.569465, -33.580527 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Nonato Coo"
+  },
+  {
+    "id": 214,
+    "location": {
+      "address": "V. Mackenna 9840",
+      "position": { "coordinates": [ -70.586824, -33.546702 ] }
+    },
+    "format": "EKONO",
+    "name": "Vicuna Mackenna & Trinidad"
+  },
+  {
+    "id": 500,
+    "location": {
+      "address": "Calle Estero Maitenlahue 925",
+      "position": { "coordinates": [ -71.500371, -32.995872 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Reñaca Alto"
+  },
+  {
+    "id": 228,
+    "location": {
+      "address": "Vitacura 5302",
+      "position": { "coordinates": [ -70.582004, -33.39629 ] }
+    },
+    "format": "EKONO",
+    "name": "Vitacura"
+  },
+  {
+    "id": 230,
+    "location": {
+      "address": "Irarrázaval 710",
+      "position": { "coordinates": [ -70.622531, -33.45334 ] }
+    },
+    "format": "EKONO",
+    "name": "Irarrazával"
+  },
+  {
+    "id": 233,
+    "location": {
+      "address": "Carrascal 4436",
+      "position": { "coordinates": [ -70.694165, -33.423426 ] }
+    },
+    "format": "EKONO",
+    "name": "Carrascal"
+  },
+  {
+    "id": 612,
+    "location": {
+      "address": "Av. Paul Harris 1155",
+      "position": { "coordinates": [ -72.084183, -36.590227 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Chillan Express"
+  },
+  {
+    "id": 501,
+    "location": {
+      "address": "Av. Manuel Antonio Matta 025",
+      "position": { "coordinates": [ -72.580428, -38.733814 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Temuco Terminal"
+  },
+  {
+    "id": 611,
+    "location": {
+      "address": "Av. Sanchez Fontecilla 8968",
+      "position": { "coordinates": [ -70.553601, -33.534489 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Rojas Magallanes"
+  },
+  {
+    "id": 616,
+    "location": {
+      "address": "Av. Tres Poniente 900",
+      "position": { "coordinates": [ -70.777789, -33.528372 ] }
+    },
+    "format": "LIDER",
+    "name": "Maipu 3 Poniente"
+  },
+  {
+    "id": 613,
+    "location": {
+      "address": "Av. Diego Portales 06303",
+      "position": { "coordinates": [ -70.551378, -33.560044 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Ciudad Del Este"
+  },
+  {
+    "id": 235,
+    "location": {
+      "address": "Primo de Rivera 1447",
+      "position": { "coordinates": [ -70.738382, -33.492954 ] }
+    },
+    "format": "EKONO",
+    "name": "Primo De Rivera"
+  },
+  {
+    "id": 234,
+    "location": {
+      "address": "Observatorio 645",
+      "position": { "coordinates": [ -70.670066, -33.560649 ] }
+    },
+    "format": "EKONO",
+    "name": "Observatorio"
+  },
+  {
+    "id": 236,
+    "location": {
+      "address": "Brasil 7073",
+      "position": { "coordinates": [ -70.744797, -33.400087 ] }
+    },
+    "format": "EKONO",
+    "name": "Brasil-La Punta"
+  },
+  {
+    "id": 241,
+    "location": {
+      "address": "Laguna Sur 8438",
+      "position": { "coordinates": [ -70.751655, -33.460479 ] }
+    },
+    "format": "EKONO",
+    "name": "Laguna Sur I"
+  },
+  {
+    "id": 240,
+    "location": {
+      "address": "Rinconada 2301",
+      "position": { "coordinates": [ -70.786981, -33.505587 ] }
+    },
+    "format": "EKONO",
+    "name": "Rinconada"
+  },
+  {
+    "id": 615,
+    "location": {
+      "address": "Pedro Montt 1875",
+      "position": { "coordinates": [ -71.616589, -33.04589 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Express Pedro Montt"
+  },
+  {
+    "id": 502,
+    "location": {
+      "address": "Januario Espinoza 759",
+      "position": { "coordinates": [ -71.589183, -35.8454 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Linares Terminal"
+  },
+  {
+    "id": 618,
+    "location": {
+      "address": "Av. Alcalde Rene Soriano 2855",
+      "position": { "coordinates": [ -73.104194, -40.589375 ] }
+    },
+    "format": "LIDER",
+    "name": "Casona Osorno"
+  },
+  {
+    "id": 238,
+    "location": {
+      "address": "Portales 1995",
+      "position": { "coordinates": [ -70.786963, -33.518273 ] }
+    },
+    "format": "EKONO",
+    "name": "Portales"
+  },
+  {
+    "id": 227,
+    "location": {
+      "address": "Galileo 1610",
+      "position": { "coordinates": [ -70.728617, -33.498349 ] }
+    },
+    "format": "EKONO",
+    "name": "Galileo"
+  },
+  {
+    "id": 239,
+    "location": {
+      "address": "Bagdad 855-877",
+      "position": { "coordinates": [ -70.76916, -33.544863 ] }
+    },
+    "format": "EKONO",
+    "name": "Bagdag"
+  },
+  {
+    "id": 619,
+    "location": {
+      "address": "Av.Monseñor Ramon Munita 1625",
+      "position": { "coordinates": [ -72.934817, -41.455411 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Puerto Montt  4° Terraza"
+  },
+  {
+    "id": 245,
+    "location": {
+      "address": "Laguna Sur - J. Guzmán",
+      "position": { "coordinates": [ -70.743408, -33.461598 ] }
+    },
+    "format": "EKONO",
+    "name": "Laguna Sur Ii"
+  },
+  {
+    "id": 246,
+    "location": {
+      "address": "San Pablo 9091",
+      "position": { "coordinates": [ -70.762331, -33.441416 ] }
+    },
+    "format": "EKONO",
+    "name": "San Pablo Ii"
+  },
+  {
+    "id": 242,
+    "location": {
+      "address": "Los Leones 1875",
+      "position": { "coordinates": [ -70.601338, -33.43666 ] }
+    },
+    "format": "EKONO",
+    "name": "Los Leones Ii"
+  },
+  {
+    "id": 503,
+    "location": {
+      "address": "Gabriela Poniente 03960",
+      "position": { "coordinates": [ -70.606052, -33.581814 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Gabriela"
+  },
+  {
+    "id": 275,
+    "location": {
+      "address": "Bellavista 257",
+      "position": { "coordinates": [ -70.643307, -33.433076 ] }
+    },
+    "format": "EKONO",
+    "name": "Bellavista"
+  },
+  {
+    "id": 262,
+    "location": {
+      "address": "Las Industrias 5155",
+      "position": { "coordinates": [ -70.627288, -33.503579 ] }
+    },
+    "format": "EKONO",
+    "name": "Las Industrias"
+  },
+  {
+    "id": 258,
+    "location": {
+      "address": "Las Rejas Sur 882",
+      "position": { "coordinates": [ -70.704771, -33.464001 ] }
+    },
+    "format": "EKONO",
+    "name": "Las Rejas Sur"
+  },
+  {
+    "id": 261,
+    "location": {
+      "address": "Santa Raquel 10968",
+      "position": { "coordinates": [ -70.599891, -33.561852 ] }
+    },
+    "format": "EKONO",
+    "name": "Santa Raquel"
+  },
+  {
+    "id": 504,
+    "location": {
+      "address": "Av. Travesía 7217",
+      "position": { "coordinates": [ -70.737816, -33.4578 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Travesia"
+  },
+  {
+    "id": 505,
+    "location": {
+      "address": "Av. Andalién 950",
+      "position": { "coordinates": [ -73.035633, -36.79322 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Andalien"
+  },
+  {
+    "id": 269,
+    "location": {
+      "address": "El Salto 1871",
+      "position": { "coordinates": [ -70.635476, -33.409635 ] }
+    },
+    "format": "EKONO",
+    "name": "El Salto"
+  },
+  {
+    "id": 506,
+    "location": {
+      "address": "Av. Latorre 280",
+      "position": { "coordinates": [ -71.185609, -32.789754 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba La Calera"
+  },
+  {
+    "id": 257,
+    "location": {
+      "address": "Eliodoro Yáñez 1405",
+      "position": { "coordinates": [ -70.616578, -33.433209 ] }
+    },
+    "format": "EKONO",
+    "name": "Eliodoro Yanez"
+  },
+  {
+    "id": 507,
+    "location": {
+      "address": "Av. Carrascal 6015",
+      "position": { "coordinates": [ -70.712066, -33.415652 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Carrascal"
+  },
+  {
+    "id": 256,
+    "location": {
+      "address": "Jorge Monckeberg 1911",
+      "position": { "coordinates": [ -70.587612, -33.472333 ] }
+    },
+    "format": "EKONO",
+    "name": "Monckeberg"
+  },
+  {
+    "id": 508,
+    "location": {
+      "address": "Avenida Lircay 2301",
+      "position": { "coordinates": [ -71.652432, -35.412269 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Talca Norte"
+  },
+  {
+    "id": 267,
+    "location": {
+      "address": "Vicuña Mackenna 1918",
+      "position": { "coordinates": [ -70.879182, -33.611481 ] }
+    },
+    "format": "EKONO",
+    "name": "Penaflor"
+  },
+  {
+    "id": 273,
+    "location": {
+      "address": "San Daniel / Sta Victoria",
+      "position": { "coordinates": [ -70.758072, -33.431417 ] }
+    },
+    "format": "EKONO",
+    "name": "San Daniel"
+  },
+  {
+    "id": 268,
+    "location": {
+      "address": "Independencia 650",
+      "position": { "coordinates": [ -70.655665, -33.42313 ] }
+    },
+    "format": "EKONO",
+    "name": "Independencia I"
+  },
+  {
+    "id": 620,
+    "location": {
+      "address": "Av. Santa Teresa 683",
+      "position": { "coordinates": [ -70.711648, -33.631415 ] }
+    },
+    "format": "LIDER",
+    "name": "Hiper Nos"
+  },
+  {
+    "id": 299,
+    "location": {
+      "address": "Metro Escuela Militar",
+      "position": { "coordinates": [ -70.584132, -33.414371 ] }
+    },
+    "format": "EKONO",
+    "name": "Sub-Centro"
+  },
+  {
+    "id": 247,
+    "location": {
+      "address": "V. Mackenna 8725-8799",
+      "position": { "coordinates": [ -70.59401, -33.535364 ] }
+    },
+    "format": "EKONO",
+    "name": "Vicuna Mackenna Ii"
+  },
+  {
+    "id": 295,
+    "location": {
+      "address": "Independencia 4553",
+      "position": { "coordinates": [ -70.678177, -33.386632 ] }
+    },
+    "format": "EKONO",
+    "name": "Independencia Ii"
+  },
+  {
+    "id": 510,
+    "location": {
+      "address": "Av. Padre Hurtado 13310",
+      "position": { "coordinates": [ -70.675388, -33.583279 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Los Morros"
+  },
+  {
+    "id": 280,
+    "location": {
+      "address": "Juan de Dios Malebrán 1750",
+      "position": { "coordinates": [ -70.588599, -33.597992 ] }
+    },
+    "format": "EKONO",
+    "name": "Ciudad Del Sol"
+  },
+  {
+    "id": 294,
+    "location": {
+      "address": "Primera Transversal 800",
+      "position": { "coordinates": [ -70.798972, -33.565312 ] }
+    },
+    "format": "EKONO",
+    "name": "1 Transversal - Ph"
+  },
+  {
+    "id": 511,
+    "location": {
+      "address": "Av. Fermín Vivaceta 827",
+      "position": { "coordinates": [ -70.661948, -33.422759 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Vivaceta"
+  },
+  {
+    "id": 512,
+    "location": {
+      "address": "Av. 21 de Mayo 4075",
+      "position": { "coordinates": [ -70.897423, -33.606556 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba PeñAflor"
+  },
+  {
+    "id": 274,
+    "location": {
+      "address": "Santa Luisa 366",
+      "position": { "coordinates": [ -70.738704, -33.352264 ] }
+    },
+    "format": "EKONO",
+    "name": "Santa Luisa"
+  },
+  {
+    "id": 293,
+    "location": {
+      "address": "Luis Matte Larraín 1734",
+      "position": { "coordinates": [ -70.600107, -33.588484 ] }
+    },
+    "format": "EKONO",
+    "name": "Luis Matte Larrain"
+  },
+  {
+    "id": 259,
+    "location": {
+      "address": "Av. Obispo Valdés Subercaseaux 1421, Local 1",
+      "position": { "coordinates": [ -71.576571, -33.123391 ] }
+    },
+    "format": "EKONO",
+    "name": "Curauma"
+  },
+  {
+    "id": 626,
+    "location": {
+      "address": "Av. Principales de Gales 9140",
+      "position": { "coordinates": [ -70.535484, -33.44081 ] }
+    },
+    "format": "LIDER",
+    "name": "Principe De Gales"
+  },
+  {
+    "id": 526,
+    "location": {
+      "address": "Maipón 873",
+      "position": { "coordinates": [ -72.099444, -36.610833 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Chillan Terminal"
+  },
+  {
+    "id": 420,
+    "location": {
+      "address": "Avenida Central 5960",
+      "position": { "coordinates": [ -70.687636, -33.498015 ] }
+    },
+    "format": "EKONO",
+    "name": "Av. Central"
+  },
+  {
+    "id": 422,
+    "location": {
+      "address": "Manquehue Sur 841",
+      "position": { "coordinates": [ -70.565911, -33.414232 ] }
+    },
+    "format": "EKONO",
+    "name": "Manquehue Sur"
+  },
+  {
+    "id": 531,
+    "location": {
+      "address": "Av. Manuel Rodriguez 2550",
+      "position": { "coordinates": [ -73.017504, -36.945106 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Chiguayante"
+  },
+  {
+    "id": 285,
+    "location": {
+      "address": "Segunda Transversal 1022",
+      "position": { "coordinates": [ -70.747798, -33.515733 ] }
+    },
+    "format": "EKONO",
+    "name": "Segunda Transversal"
+  },
+  {
+    "id": 419,
+    "location": {
+      "address": "El Cortijo 1981",
+      "position": { "coordinates": [ -70.688113, -33.378207 ] }
+    },
+    "format": "EKONO",
+    "name": "El Cortijo"
+  },
+  {
+    "id": 627,
+    "location": {
+      "address": "Germán Riesco esq Calle Diego Portales",
+      "position": { "coordinates": [ -71.073056, -34.440833 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Express San Vicente"
+  },
+  {
+    "id": 628,
+    "location": {
+      "address": "Rafael Casanova 344",
+      "position": { "coordinates": [ -71.37, -34.641667 ] }
+    },
+    "format": "LIDER",
+    "name": "Hiper Santa Cruz"
+  },
+  {
+    "id": 528,
+    "location": {
+      "address": "Av. Maipú 798",
+      "position": { "coordinates": [ -71.246306, -34.982559 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Curico Terminal"
+  },
+  {
+    "id": 527,
+    "location": {
+      "address": "Av. Camilo Henríquez 469",
+      "position": { "coordinates": [ -71.241465, -34.981064 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Curico Centro"
+  },
+  {
+    "id": 423,
+    "location": {
+      "address": "Rosales 0728",
+      "position": { "coordinates": [ -70.86207, -33.606651 ] }
+    },
+    "format": "EKONO",
+    "name": "Rosales"
+  },
+  {
+    "id": 621,
+    "location": {
+      "address": "Av. Merced 562",
+      "position": { "coordinates": [ -70.644252, -33.438004 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Express Merced"
+  },
+  {
+    "id": 529,
+    "location": {
+      "address": "Lo Ovalle  02356",
+      "position": { "coordinates": [ -70.677623, -33.508894 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Lo Ovalle"
+  },
+  {
+    "id": 624,
+    "location": {
+      "address": "Av. La Plaza 590",
+      "position": { "coordinates": [ -70.498438, -33.390335 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Express La Plaza"
+  },
+  {
+    "id": 537,
+    "location": {
+      "address": "Calle República 870",
+      "position": { "coordinates": [ -73.158611, -40.573611 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Rahue Osorno"
+  },
+  {
+    "id": 271,
+    "location": {
+      "address": "Lira 464",
+      "position": { "coordinates": [ -70.638985, -33.448695 ] }
+    },
+    "format": "EKONO",
+    "name": "Santa Isabel Ii"
+  },
+  {
+    "id": 539,
+    "location": {
+      "address": "Av. Vicuña Mackenna 998",
+      "position": { "coordinates": [ -70.746986, -33.409222 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Petersen"
+  },
+  {
+    "id": 533,
+    "location": {
+      "address": "Av. Sur 411",
+      "position": { "coordinates": [ -70.762336, -33.520659 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Carmen Maipu"
+  },
+  {
+    "id": 541,
+    "location": {
+      "address": "Av. Caupolicán 1520",
+      "position": { "coordinates": [ -70.702991, -33.402442 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Jaime Guzman"
+  },
+  {
+    "id": 544,
+    "location": {
+      "address": "Av. Maipú 1121",
+      "position": { "coordinates": [ -70.729751, -32.748102 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba San Felipe"
+  },
+  {
+    "id": 534,
+    "location": {
+      "address": "Calle Parque Alerce Andino 1901",
+      "position": { "coordinates": [ -72.914875, -41.407433 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Alerce"
+  },
+  {
+    "id": 438,
+    "location": {
+      "address": "Lo Cruzat 281",
+      "position": { "coordinates": [ -70.721331, -33.358278 ] }
+    },
+    "format": "EKONO",
+    "name": "Lo Cruzat"
+  },
+  {
+    "id": 291,
+    "location": {
+      "address": "Arneb 2520",
+      "position": { "coordinates": [ -71.395687, -33.058717 ] }
+    },
+    "format": "EKONO",
+    "name": "Troncos Viejos - V.A."
+  },
+  {
+    "id": 421,
+    "location": {
+      "address": "El Descanso 798",
+      "position": { "coordinates": [ -70.750629, -33.470215 ] }
+    },
+    "format": "EKONO",
+    "name": "El Descanso"
+  },
+  {
+    "id": 441,
+    "location": {
+      "address": "San Martín 414",
+      "position": { "coordinates": [ -70.737657, -33.366835 ] }
+    },
+    "format": "EKONO",
+    "name": "San Martin"
+  },
+  {
+    "id": 640,
+    "location": {
+      "address": "Av. 10 de Julio Huamachuco 1625",
+      "position": { "coordinates": [ -70.657413, -33.454192 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Express 10 De Julio"
+  },
+  {
+    "id": 436,
+    "location": {
+      "address": "El Tranque 1292",
+      "position": { "coordinates": [ -70.771143, -33.433323 ] }
+    },
+    "format": "EKONO",
+    "name": "El Tranque"
+  },
+  {
+    "id": 430,
+    "location": {
+      "address": "Portugal 225",
+      "position": { "coordinates": [ -70.636737, -33.445659 ] }
+    },
+    "format": "EKONO",
+    "name": "Portugal"
+  },
+  {
+    "id": 535,
+    "location": {
+      "address": "Camino Melipilla 18500",
+      "position": { "coordinates": [ -70.794261, -33.553841 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Ciudad Satelite"
+  },
+  {
+    "id": 435,
+    "location": {
+      "address": "El Mármol 10504",
+      "position": { "coordinates": [ -70.574547, -33.553295 ] }
+    },
+    "format": "EKONO",
+    "name": "San Jose De La Estrella"
+  },
+  {
+    "id": 458,
+    "location": {
+      "address": "Monjitas 728",
+      "position": { "coordinates": [ -70.647754, -33.436985 ] }
+    },
+    "format": "EKONO",
+    "name": "Monjitas"
+  },
+  {
+    "id": 558,
+    "location": {
+      "address": "Av Pedro Montt 4300",
+      "position": { "coordinates": [ -73.231389, -39.850556 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Fundadores"
+  },
+  {
+    "id": 562,
+    "location": {
+      "address": "Av. Manuel Rodríguez 770",
+      "position": { "coordinates": [ -70.98718, -34.58776 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba San Fernando"
+  },
+  {
+    "id": 554,
+    "location": {
+      "address": "Av. Cristobal Colón 8831",
+      "position": { "coordinates": [ -73.08536, -36.797666 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Hualpen"
+  },
+  {
+    "id": 431,
+    "location": {
+      "address": "Gabriel González Videla 2372",
+      "position": { "coordinates": [ -70.786537, -33.535988 ] }
+    },
+    "format": "EKONO",
+    "name": "Gabriel Gonzalez Videla"
+  },
+  {
+    "id": 538,
+    "location": {
+      "address": "Av. Tobalaba 10831",
+      "position": { "coordinates": [ -70.553282, -33.469605 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Orientales"
+  },
+  {
+    "id": 557,
+    "location": {
+      "address": "Av. El Sol 1071",
+      "position": { "coordinates": [ -70.714034, -34.154254 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba El Sol"
+  },
+  {
+    "id": 560,
+    "location": {
+      "address": "Aviador Acevedo 1258",
+      "position": { "coordinates": [ -72.229681, -39.291149 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Villarrica"
+  },
+  {
+    "id": 561,
+    "location": {
+      "address": "Av. J. B. Alberdi 2000",
+      "position": { "coordinates": [ -71.263859, -32.89613 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Quillota"
+  },
+  {
+    "id": 559,
+    "location": {
+      "address": "Picarte 2661",
+      "position": { "coordinates": [ -73.21463, -39.83449 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Picarte"
+  },
+  {
+    "id": 446,
+    "location": {
+      "address": "Julio Vrancken 2788",
+      "position": { "coordinates": [ -70.9456, -33.67479 ] }
+    },
+    "format": "EKONO",
+    "name": "Julio Vrancken"
+  },
+  {
+    "id": 631,
+    "location": {
+      "address": "Av. Juan Bosco 2084",
+      "position": { "coordinates": [ -73.029257, -36.814815 ] }
+    },
+    "format": "LIDER",
+    "name": "Hiper Collao"
+  },
+  {
+    "id": 551,
+    "location": {
+      "address": "Gomez Carreño 3425",
+      "position": { "coordinates": [ -73.095422, -36.745273 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Talcahuano"
+  },
+  {
+    "id": 647,
+    "location": {
+      "address": "Ruta F-30 E lote R-1",
+      "position": { "coordinates": [ -71.424861, -32.645552 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Maitencillo"
+  },
+  {
+    "id": 540,
+    "location": {
+      "address": "Av. Recoleta 5200",
+      "position": { "coordinates": [ -70.639301, -33.379142 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Recoleta Norte"
+  },
+  {
+    "id": 643,
+    "location": {
+      "address": "Av. México 1589",
+      "position": { "coordinates": [ -70.55889, -33.593698 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Mexico"
+  },
+  {
+    "id": 644,
+    "location": {
+      "address": "Tocornal s/n",
+      "position": { "coordinates": [ -70.708676, -32.753807 ] }
+    },
+    "format": "EXPRESS",
+    "name": "San Felipe"
+  },
+  {
+    "id": 645,
+    "location": {
+      "address": "Av. Santa María 172",
+      "position": { "coordinates": [ -70.749261, -34.16668 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Rancagua"
+  },
+  {
+    "id": 462,
+    "location": {
+      "address": "Pudeto 3170",
+      "position": { "coordinates": [ -71.257418, -32.88097 ] }
+    },
+    "format": "EKONO",
+    "name": "Pudeto"
+  },
+  {
+    "id": 625,
+    "location": {
+      "address": "Las Hiedras 765-715",
+      "position": { "coordinates": [ -71.545427, -32.943528 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Con Con"
+  },
+  {
+    "id": 442,
+    "location": {
+      "address": "Av Las Torres 1099",
+      "position": { "coordinates": [ -70.731855, -33.479114 ] }
+    },
+    "format": "EKONO",
+    "name": "Simon Bolivar"
+  },
+  {
+    "id": 460,
+    "location": {
+      "address": "Condell 875",
+      "position": { "coordinates": [ -71.242255, -32.887668 ] }
+    },
+    "format": "EKONO",
+    "name": "Condell"
+  },
+  {
+    "id": 448,
+    "location": {
+      "address": "Lo Seco sitio 7-B",
+      "position": { "coordinates": [ -70.663843, -33.191798 ] }
+    },
+    "format": "EKONO",
+    "name": "Lo Seco"
+  },
+  {
+    "id": 461,
+    "location": {
+      "address": "Recoleta 909",
+      "position": { "coordinates": [ -70.644321, -33.422023 ] }
+    },
+    "format": "EKONO",
+    "name": "Cerro Blanco"
+  },
+  {
+    "id": 553,
+    "location": {
+      "address": "Condell",
+      "position": { "coordinates": [ -70.739448, -33.731994 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Buin"
+  },
+  {
+    "id": 466,
+    "location": {
+      "address": "Martinez de Rozas",
+      "position": { "coordinates": [ -70.716235, -34.163834 ] }
+    },
+    "format": "EKONO",
+    "name": "Martines De Rosas"
+  },
+  {
+    "id": 568,
+    "location": {
+      "address": "Maipu 2083",
+      "position": { "coordinates": [ -71.277211, -35.115381 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Molina"
+  },
+  {
+    "id": 565,
+    "location": {
+      "address": "O´higgins esq Riquelme",
+      "position": { "coordinates": [ -72.683903, -37.812807 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Angol"
+  },
+  {
+    "id": 566,
+    "location": {
+      "address": "Av Los Puelches 1691",
+      "position": { "coordinates": [ -72.086629, -36.624656 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Los Puelches"
+  },
+  {
+    "id": 570,
+    "location": {
+      "address": "Claudina Urrutia",
+      "position": { "coordinates": [ -72.315397, -35.972399 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Cauquenes"
+  },
+  {
+    "id": 443,
+    "location": {
+      "address": "Lo Barnechea 1000",
+      "position": { "coordinates": [ -70.506225, -33.36003 ] }
+    },
+    "format": "EKONO",
+    "name": "Lo Barnechea"
+  },
+  {
+    "id": 573,
+    "location": {
+      "address": "Caupolican, esquina Yungay",
+      "position": { "coordinates": [ -73.315597, -37.249181 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Arauco"
+  },
+  {
+    "id": 653,
+    "location": {
+      "address": "Av Allesandri",
+      "position": { "coordinates": [ -71.220413, -34.974194 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Curico Alessandri"
+  },
+  {
+    "id": 574,
+    "location": {
+      "address": "Anibal Pinto / Arturo Prat",
+      "position": { "coordinates": [ -72.952343, -38.741488 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Nueva Imperial"
+  },
+  {
+    "id": 484,
+    "location": {
+      "address": "Independencia 1113",
+      "position": { "coordinates": [ -70.656379, -33.417409 ] }
+    },
+    "format": "EKONO",
+    "name": "Independencia Hospital"
+  },
+  {
+    "id": 571,
+    "location": {
+      "address": "Lo Errazuriz",
+      "position": { "coordinates": [ -70.722702, -33.489974 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Lo Errazuriz"
+  },
+  {
+    "id": 471,
+    "location": {
+      "address": "Wilkinson 202",
+      "position": { "coordinates": [ -71.59447, -33.047071 ] }
+    },
+    "format": "EKONO",
+    "name": "Wilkinson"
+  },
+  {
+    "id": 632,
+    "location": {
+      "address": "Av. Valparaíso 1070",
+      "position": { "coordinates": [ -71.5464, -33.02629 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Viña Centro"
+  },
+  {
+    "id": 482,
+    "location": {
+      "address": "Avenida Victoria 3073",
+      "position": { "coordinates": [ -71.603194, -33.050205 ] }
+    },
+    "format": "EKONO",
+    "name": "Argentina"
+  },
+  {
+    "id": 575,
+    "location": {
+      "address": "Av Viña del Mar 2.950",
+      "position": { "coordinates": [ -71.237494, -29.872171 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Las Compañías"
+  },
+  {
+    "id": 481,
+    "location": {
+      "address": "Marga Marga 1891",
+      "position": { "coordinates": [ -71.425777, -33.059209 ] }
+    },
+    "format": "EKONO",
+    "name": "Marga Marga"
+  },
+  {
+    "id": 650,
+    "location": {
+      "address": "Ignacio Carrera Pinto",
+      "position": { "coordinates": [ -71.669261, -33.369048 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Ex Algarrobo"
+  },
+  {
+    "id": 488,
+    "location": {
+      "address": "Gomez Carreño 1080",
+      "position": { "coordinates": [ -71.40535, -33.034518 ] }
+    },
+    "format": "EKONO",
+    "name": "Gomez CarreñO"
+  },
+  {
+    "id": 545,
+    "location": {
+      "address": "Pto Montt Terminal",
+      "position": { "coordinates": [ -72.949862, -41.477079 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba P.Montt  Terminal"
+  },
+  {
+    "id": 668,
+    "location": {
+      "address": "Av Carrera 1195",
+      "position": { "coordinates": [ -71.197869, -32.787669 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Ex La Calera"
+  },
+  {
+    "id": 646,
+    "location": {
+      "address": "San Pedro de La Paz",
+      "position": { "coordinates": [ -73.119435, -36.83861 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Ex Sn Pedro"
+  },
+  {
+    "id": 486,
+    "location": {
+      "address": "Guayanas, Los Andes",
+      "position": { "coordinates": [ -70.604966, -32.843585 ] }
+    },
+    "format": "EKONO",
+    "name": "Guayanas"
+  },
+  {
+    "id": 583,
+    "location": {
+      "address": "Rosas/Blanco",
+      "position": { "coordinates": [ -72.40532, -35.335479 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Constitucion"
+  },
+  {
+    "id": 469,
+    "location": {
+      "address": "Lo Ovalle 1395",
+      "position": { "coordinates": [ -70.66476, -33.51261 ] }
+    },
+    "format": "EKONO",
+    "name": "Ovalle"
+  },
+  {
+    "id": 477,
+    "location": {
+      "address": "Rafael Tagle 100",
+      "position": { "coordinates": [ -70.817619, -34.286283 ] }
+    },
+    "format": "EKONO",
+    "name": "Requinoa"
+  },
+  {
+    "id": 556,
+    "location": {
+      "address": "Echaurren",
+      "position": { "coordinates": [ -71.265928, -33.002536 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Limache"
+  },
+  {
+    "id": 593,
+    "location": {
+      "address": "Ignacio Carrera Pinto 0170",
+      "position": { "coordinates": [ -71.682024, -35.439192 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Talca -Florida"
+  },
+  {
+    "id": 473,
+    "location": {
+      "address": "Los Olmos 4117",
+      "position": { "coordinates": [ -70.588923, -33.480076 ] }
+    },
+    "format": "EKONO",
+    "name": "Macul"
+  },
+  {
+    "id": 588,
+    "location": {
+      "address": "Las Azaleas",
+      "position": { "coordinates": [ -72.367222, -37.466758 ] }
+    },
+    "format": "BODEGA",
+    "name": "Los Angeles (Las Azaleas)"
+  },
+  {
+    "id": 582,
+    "location": {
+      "address": "Independencia II, San Carlos",
+      "position": { "coordinates": [ -71.955277, -36.423347 ] }
+    },
+    "format": "BODEGA",
+    "name": "San Carlos (Independencia)"
+  },
+  {
+    "id": 652,
+    "location": {
+      "address": "Av. Recabarren esq. Av Franklin",
+      "position": { "coordinates": [ -72.639186, -38.757125 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Ex Temuco Recabarren"
+  },
+  {
+    "id": 578,
+    "location": {
+      "address": "Luis Guevara Ortuzar 2002",
+      "position": { "coordinates": [ -71.646936, -33.043819 ] }
+    },
+    "format": "BODEGA",
+    "name": "Valparaiso (Playa Ancha)"
+  },
+  {
+    "id": 569,
+    "location": {
+      "address": "San Miguel",
+      "position": { "coordinates": [ -71.632216, -35.434847 ] }
+    },
+    "format": "BODEGA",
+    "name": "Talca (Carlos Trup)"
+  },
+  {
+    "id": 654,
+    "location": {
+      "address": "Av. Ramón Barros Luco con 12 Sur",
+      "position": { "coordinates": [ -71.613137, -33.607087 ] }
+    },
+    "format": "LIDER",
+    "name": "Hiper   San Antonio"
+  },
+  {
+    "id": 445,
+    "location": {
+      "address": "Cuatro Poniente 350",
+      "position": { "coordinates": [ -70.792114, -33.524669 ] }
+    },
+    "format": "EKONO",
+    "name": "Cuatro Poniente"
+  },
+  {
+    "id": 496,
+    "location": {
+      "address": "Gran Avenida José Miguel Carrera 8540",
+      "position": { "coordinates": [ -70.663171, -33.533823 ] }
+    },
+    "format": "EKONO",
+    "name": "La Cisterna"
+  },
+  {
+    "id": 674,
+    "location": {
+      "address": "Guanaco Esquina Pedro Fontova",
+      "position": { "coordinates": [ -70.670732, -33.352748 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Ex Pedro Fontova"
+  },
+  {
+    "id": 587,
+    "location": {
+      "address": "Avenida Egaña",
+      "position": { "coordinates": [ -72.955707, -36.619592 ] }
+    },
+    "format": "BODEGA",
+    "name": "Tome (Av. Egaña)"
+  },
+  {
+    "id": 586,
+    "location": {
+      "address": "Infante 205",
+      "position": { "coordinates": [ -72.988393, -36.734325 ] }
+    },
+    "format": "BODEGA",
+    "name": "Penco (Infante)"
+  },
+  {
+    "id": 572,
+    "location": {
+      "address": "Centro",
+      "position": { "coordinates": [ -70.102862, -20.269846 ] }
+    },
+    "format": "BODEGA",
+    "name": "Alto Hospicio (Centro)"
+  },
+  {
+    "id": 592,
+    "location": {
+      "address": "12 Oriente 848",
+      "position": { "coordinates": [ -71.647735, -35.431275 ] }
+    },
+    "format": "BODEGA",
+    "name": "Talca (Terminal)"
+  },
+  {
+    "id": 589,
+    "location": {
+      "address": "Av. Portales 1271",
+      "position": { "coordinates": [ -71.240905, -32.453353 ] }
+    },
+    "format": "BODEGA",
+    "name": "La Ligua (Av. Portales)"
+  },
+  {
+    "id": 685,
+    "location": {
+      "address": "Santo Domingo 1031",
+      "position": { "coordinates": [ -70.651645, -33.436325 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Santo Domingo"
+  },
+  {
+    "id": 684,
+    "location": {
+      "address": "Cuatro Esquinas / Ulriksen Lote B1",
+      "position": { "coordinates": [ -71.24196, -29.944054 ] }
+    },
+    "format": "LIDER",
+    "name": "Hiper 4 Esquinas"
+  },
+  {
+    "id": 902,
+    "location": {
+      "address": "Av. Brasil 66",
+      "position": { "coordinates": [ -70.664833, -33.445137 ] }
+    },
+    "format": "EKONO",
+    "name": "Brasil"
+  },
+  {
+    "id": 687,
+    "location": {
+      "address": "Rudecindo Ortega s/n.",
+      "position": { "coordinates": [ -72.565506, -38.718122 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Temuco Caupolican"
+  },
+  {
+    "id": 676,
+    "location": {
+      "address": "San Pablo esquina  General Bulnes",
+      "position": { "coordinates": [ -70.670461, -33.435517 ] }
+    },
+    "format": "EXPRESS",
+    "name": "San Pablo"
+  },
+  {
+    "id": 686,
+    "location": {
+      "address": "Av. Regimiento Arica 6145",
+      "position": { "coordinates": [ -71.269585, -29.949199 ] }
+    },
+    "format": "LIDER",
+    "name": "Hiper Reg. Arica"
+  },
+  {
+    "id": 590,
+    "location": {
+      "address": "Av. Michaihue",
+      "position": { "coordinates": [ -73.132138, -36.844088 ] }
+    },
+    "format": "BODEGA",
+    "name": "San Pedro de La Paz (Boca Sur)"
+  },
+  {
+    "id": 680,
+    "location": {
+      "address": "Saturnino Epulef - Colo Colo",
+      "position": { "coordinates": [ -72.223735, -39.290198 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Villarrica"
+  },
+  {
+    "id": 681,
+    "location": {
+      "address": "O' Higgins",
+      "position": { "coordinates": [ -71.965319, -39.275987 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Pucon"
+  },
+  {
+    "id": 498,
+    "location": {
+      "address": "Froilan Roa 5308",
+      "position": { "coordinates": [ -70.600701, -33.502317 ] }
+    },
+    "format": "EKONO",
+    "name": "Froilan Roa"
+  },
+  {
+    "id": 594,
+    "location": {
+      "address": "Comercio, Riquelme",
+      "position": { "coordinates": [ -73.079571, -40.297688 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba La  Union"
+  },
+  {
+    "id": 577,
+    "location": {
+      "address": "Calle Riquelme",
+      "position": { "coordinates": [ -70.8623, -34.403653 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Rengo"
+  },
+  {
+    "id": 581,
+    "location": {
+      "address": "Los Clarines S/N",
+      "position": { "coordinates": [ -71.330141, -29.992293 ] }
+    },
+    "format": "BODEGA",
+    "name": "Coquimbo (Los Clarines)"
+  },
+  {
+    "id": 579,
+    "location": {
+      "address": "Av Baquedano 862",
+      "position": { "coordinates": [ -70.878394, -33.284408 ] }
+    },
+    "format": "BODEGA",
+    "name": "Lampa (Av. Baquedano)"
+  },
+  {
+    "id": 598,
+    "location": {
+      "address": "Avenida la compañía 459",
+      "position": { "coordinates": [ -70.7301, -34.067425 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Granero"
+  },
+  {
+    "id": 11,
+    "location": {
+      "address": "Ramón Nuñez 036",
+      "position": { "coordinates": [ -70.579458, -33.613831 ] }
+    },
+    "format": "MAYORISTA",
+    "name": "Cm Puente Alto"
+  },
+  {
+    "id": 655,
+    "location": {
+      "address": "Av. Pedro Aguirre Cerda esquina Caparrosa",
+      "position": { "coordinates": [ -70.390432, -23.564941 ] }
+    },
+    "format": "LIDER",
+    "name": "Hiper Antofagasta"
+  },
+  {
+    "id": 683,
+    "location": {
+      "address": "Av. Ramón Picarte 640",
+      "position": { "coordinates": [ -73.241006, -39.814886 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Valdivia"
+  },
+  {
+    "id": 12,
+    "location": {
+      "address": "Avenida Las Delicias Sur 302",
+      "position": { "coordinates": [ -71.829862, -36.145028 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Parral"
+  },
+  {
+    "id": 682,
+    "location": {
+      "address": "Vicuña Mackenna 3361",
+      "position": { "coordinates": [ -70.621414, -33.48401 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider San Joaquin"
+  },
+  {
+    "id": 697,
+    "location": {
+      "address": "Av. Bernardo O´Higgins 0450",
+      "position": { "coordinates": [ -70.986898, -34.600666 ] }
+    },
+    "format": "LIDER",
+    "name": "San Fernando"
+  },
+  {
+    "id": 595,
+    "location": {
+      "address": "Manuel Bulnes 340",
+      "position": { "coordinates": [ -70.962782, -31.78256 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Salamanca"
+  },
+  {
+    "id": 454,
+    "location": {
+      "address": "Avenida Matta 1202",
+      "position": { "coordinates": [ -72.43583, -38.536036 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Lautaro"
+  },
+  {
+    "id": 453,
+    "location": {
+      "address": "Catorce de La Fama 2841",
+      "position": { "coordinates": [ -70.68046, -33.402241 ] }
+    },
+    "format": "MAYORISTA",
+    "name": "Cm Conchali"
+  },
+  {
+    "id": 155,
+    "location": {
+      "address": "Av. Cienfuegos 1475",
+      "position": { "coordinates": [ -71.733487, -35.595507 ] }
+    },
+    "format": "BODEGA",
+    "name": "San Javier (Cienfuegos)"
+  },
+  {
+    "id": 567,
+    "location": {
+      "address": "Ruta A-16 S/N",
+      "position": { "coordinates": [ -70.094898, -20.275442 ] }
+    },
+    "format": "BODEGA",
+    "name": "Alto Hospicio (Ruta A16)"
+  },
+  {
+    "id": 591,
+    "location": {
+      "address": "Los Carrera 1420",
+      "position": { "coordinates": [ -72.342507, -37.487707 ] }
+    },
+    "format": "BODEGA",
+    "name": "Los Angeles (Carrera)"
+  },
+  {
+    "id": 13,
+    "location": {
+      "address": "Pedro de Valdivia",
+      "position": { "coordinates": [ -72.626116, -38.716906 ] }
+    },
+    "format": "BODEGA",
+    "name": "Temuco (Pedro de Valdivia)"
+  },
+  {
+    "id": 693,
+    "location": {
+      "address": "Santa Rosa 13100",
+      "position": { "coordinates": [ -70.627438, -33.586566 ] }
+    },
+    "format": "LIDER",
+    "name": "Hi  Santa Rosa"
+  },
+  {
+    "id": 160,
+    "location": {
+      "address": "Diego Echeverría 085",
+      "position": { "coordinates": [ -71.241718, -32.883636 ] }
+    },
+    "format": "BODEGA",
+    "name": "Quillota (Condell)"
+  },
+  {
+    "id": 678,
+    "location": {
+      "address": "Av. Valparaiso 589",
+      "position": { "coordinates": [ -71.373166, -33.044454 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Villa Alemana 1"
+  },
+  {
+    "id": 156,
+    "location": {
+      "address": "El Arenal 686",
+      "position": { "coordinates": [ -71.667062, -35.435753 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Talca Piduco"
+  },
+  {
+    "id": 7,
+    "location": {
+      "address": "Av. 18 de Septiembre 311",
+      "position": { "coordinates": [ -70.737659, -33.808038 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Paine"
+  },
+  {
+    "id": 463,
+    "location": {
+      "address": "Av. Colón esq Morris",
+      "position": { "coordinates": [ -71.609628, -33.050645 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Express Chile Tabaco"
+  },
+  {
+    "id": 154,
+    "location": {
+      "address": "Peñafiel con Padre Damián Heredia",
+      "position": { "coordinates": [ -71.189422, -30.584884 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ovalle (Peñafiel)"
+  },
+  {
+    "id": 585,
+    "location": {
+      "address": "San Miguel 781",
+      "position": { "coordinates": [ -71.59399, -33.537681 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Cartagena"
+  },
+  {
+    "id": 440,
+    "location": {
+      "address": "Andres Bello 140",
+      "position": { "coordinates": [ -73.654819, -37.610973 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Lebu"
+  },
+  {
+    "id": 467,
+    "location": {
+      "address": "Calle Maestranza S/N Lote 4",
+      "position": { "coordinates": [ -71.192951, -30.59826 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ovalle (Maestranza)"
+  },
+  {
+    "id": 439,
+    "location": {
+      "address": "Av. I. Dubournais 0398",
+      "position": { "coordinates": [ -71.690262, -33.38616 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba El Quisco"
+  },
+  {
+    "id": 149,
+    "location": {
+      "address": "San Martin S/N",
+      "position": { "coordinates": [ -70.685404, -33.217677 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Colina"
+  },
+  {
+    "id": 164,
+    "location": {
+      "address": "Av. Valparaiso 239",
+      "position": { "coordinates": [ -71.560321, -33.024008 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Viña Del Mar"
+  },
+  {
+    "id": 193,
+    "location": {
+      "address": "Domingo Tocornal 369",
+      "position": { "coordinates": [ -70.58276, -33.602936 ] }
+    },
+    "format": "BODEGA",
+    "name": "Puente Alto (Domingo Tocornal)"
+  },
+  {
+    "id": 699,
+    "location": {
+      "address": "Av. Santa Rosa 115",
+      "position": { "coordinates": [ -70.645908, -33.445643 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Santa Rosa"
+  },
+  {
+    "id": 524,
+    "location": {
+      "address": "Santiago Rosas 1560 y 1670",
+      "position": { "coordinates": [ -73.122671, -40.587557 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Express Osorno"
+  },
+  {
+    "id": 167,
+    "location": {
+      "address": "Huelén 1894",
+      "position": { "coordinates": [ -70.74275, -33.415741 ] }
+    },
+    "format": "BODEGA",
+    "name": "Cerro Navia (Huelen)"
+  },
+  {
+    "id": 171,
+    "location": {
+      "address": "Eucaliptus 81",
+      "position": { "coordinates": [ -70.703562, -33.609254 ] }
+    },
+    "format": "BODEGA",
+    "name": "San Bernardo (Eucaliptus)"
+  },
+  {
+    "id": 695,
+    "location": {
+      "address": "Diagonal Doñihue",
+      "position": { "coordinates": [ -70.767847, -34.179274 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Ex Rancagua Diagonal DoñIhue"
+  },
+  {
+    "id": 514,
+    "location": {
+      "address": "Av. San Juan, S/N",
+      "position": { "coordinates": [ -70.670209, -34.166669 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Express Machali"
+  },
+  {
+    "id": 184,
+    "location": {
+      "address": "Av. Principal 1195",
+      "position": { "coordinates": [ -70.665404, -33.37922 ] }
+    },
+    "format": "BODEGA",
+    "name": "Conchali (Principal)"
+  },
+  {
+    "id": 168,
+    "location": {
+      "address": "Gran Bretaña 4041, Hualpen",
+      "position": { "coordinates": [ -73.107046, -36.79454 ] }
+    },
+    "format": "BODEGA",
+    "name": "Ba Hualpen"
+  },
+  {
+    "id": 459,
+    "location": {
+      "address": "Huaytiquina 1425 B",
+      "position": { "coordinates": [ -68.913958, -22.436057 ] }
+    },
+    "format": "LIDER",
+    "name": "Hiper Calama, Huaytiquina"
+  },
+  {
+    "id": 170,
+    "location": {
+      "address": "Avenida Matta 1400",
+      "position": { "coordinates": [ -70.714713, -33.366826 ] }
+    },
+    "format": "BODEGA",
+    "name": "Quilicura (Av. Matta)"
+  },
+  {
+    "id": 456,
+    "location": {
+      "address": "Av. Barros Arana 308",
+      "position": { "coordinates": [ -72.574035, -38.731827 ] }
+    },
+    "format": "LIDER",
+    "name": "Temuco Barros Arana"
+  },
+  {
+    "id": 580,
+    "location": {
+      "address": "Av Los Libertadores 453, El Monte",
+      "position": { "coordinates": [ -70.983646, -33.680906 ] }
+    },
+    "format": "BODEGA",
+    "name": "El Monte (Av. Los Libertadores)"
+  },
+  {
+    "id": 523,
+    "location": {
+      "address": "Alcazar 635",
+      "position": { "coordinates": [ -72.36358, -37.479573 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Los Angeles (Vicuña Mackena)"
+  },
+  {
+    "id": 677,
+    "location": {
+      "address": "Santa Isabel 0168",
+      "position": { "coordinates": [ -70.629214, -33.446551 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Providencia (Santa Isabel)"
+  },
+  {
+    "id": 513,
+    "location": {
+      "address": "Ruta 5 Sur 2085, Parque Industrial",
+      "position": { "coordinates": [ -71.63453, -35.422757 ] }
+    },
+    "format": "MAYORISTA",
+    "name": "Talca (Ruta 5 Sur)"
+  },
+  {
+    "id": 727,
+    "location": {
+      "address": "Ortúzar 323, Pichilemu",
+      "position": { "coordinates": [ -72.003753, -34.386477 ] }
+    },
+    "format": "BODEGA",
+    "name": "Pichilemu"
+  },
+  {
+    "id": 161,
+    "location": {
+      "address": "Eyzaguirre Oriente",
+      "position": { "coordinates": [ -70.597608, -33.614524 ] }
+    },
+    "format": "BODEGA",
+    "name": "Puente Alto (Eyzaguirre)"
+  },
+  {
+    "id": 191,
+    "location": {
+      "address": "Sofía Carmona 0301",
+      "position": { "coordinates": [ -70.627181, -33.557503 ] }
+    },
+    "format": "BODEGA",
+    "name": "La Granja (Sofía Carmona)"
+  },
+  {
+    "id": 194,
+    "location": {
+      "address": "Jorge Alessandri sitio 3 y 4",
+      "position": { "coordinates": [ -72.983503, -41.473184 ] }
+    },
+    "format": "BODEGA",
+    "name": "Puerto Montt (Alessandri)"
+  },
+  {
+    "id": 169,
+    "location": {
+      "address": "Villagran 951-957",
+      "position": { "coordinates": [ -72.239668, -37.72292 ] }
+    },
+    "format": "BODEGA",
+    "name": "Mulchen"
+  },
+  {
+    "id": 195,
+    "location": {
+      "address": "Balmaceda 212",
+      "position": { "coordinates": [ -72.945665, -41.47126 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Puerto Montt (Balmaceda)"
+  },
+  {
+    "id": 425,
+    "location": {
+      "address": "Los Carrera s/n esq. El Inca",
+      "position": { "coordinates": [ -70.301749, -27.389914 ] }
+    },
+    "format": "LIDER",
+    "name": "Copiapo"
+  },
+  {
+    "id": 426,
+    "location": {
+      "address": "Sor Vicenta 2575",
+      "position": { "coordinates": [ -72.331919, -37.446208 ] }
+    },
+    "format": "LIDER",
+    "name": "Los Angeles (Sor Vicenta)"
+  },
+  {
+    "id": 490,
+    "location": {
+      "address": "Manuel Rodriguez 684",
+      "position": { "coordinates": [ -70.901099, -33.751597 ] }
+    },
+    "format": "BODEGA",
+    "name": "Isla de Maipo (Manuel Rodriguez)"
+  },
+  {
+    "id": 689,
+    "location": {
+      "address": "San Martín 35",
+      "position": { "coordinates": [ -70.656822, -33.443851 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Santiago (San Martín)"
+  },
+  {
+    "id": 478,
+    "location": {
+      "address": "Carlos Prats 0901",
+      "position": { "coordinates": [ -73.158824, -37.012902 ] }
+    },
+    "format": "BODEGA",
+    "name": "Coronel"
+  },
+  {
+    "id": 744,
+    "location": {
+      "address": "Av. El Rosal 6361",
+      "position": { "coordinates": [ -70.757402, -33.477479 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Maipú (El Rosal)"
+  },
+  {
+    "id": 648,
+    "location": {
+      "address": "Salvador Allende 824",
+      "position": { "coordinates": [ -71.175123, -31.637411 ] }
+    },
+    "format": "BODEGA",
+    "name": "Illapel 2"
+  },
+  {
+    "id": 767,
+    "location": {
+      "address": "Huanhualí 1331",
+      "position": { "coordinates": [ -71.386158, -33.058533 ] }
+    },
+    "format": "BODEGA",
+    "name": "Villa Alemana (Huanhuali)"
+  },
+  {
+    "id": 198,
+    "location": {
+      "address": "Santa Inés 2189",
+      "position": { "coordinates": [ -70.679537, -33.396685 ] }
+    },
+    "format": "BODEGA",
+    "name": "Conchalí (Santa Inés)"
+  },
+  {
+    "id": 483,
+    "location": {
+      "address": "Sotero del Rio 831",
+      "position": { "coordinates": [ -70.603996, -33.539469 ] }
+    },
+    "format": "BODEGA",
+    "name": "La Florida (Sotero del Rio)"
+  },
+  {
+    "id": 658,
+    "location": {
+      "address": "Avenida San Francisco 666",
+      "position": { "coordinates": [ -72.98578, -41.319124 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Puerto Varas (Mall)"
+  },
+  {
+    "id": 180,
+    "location": {
+      "address": "Irarrázaval Av. 2410",
+      "position": { "coordinates": [ -70.606219, -33.45422 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Ñuñoa (Irarrazaval)"
+  },
+  {
+    "id": 657,
+    "location": {
+      "address": "Eleuterio Ramirez 180, Esquina Serrano",
+      "position": { "coordinates": [ -73.762645, -42.479868 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Castro (Mall)"
+  },
+  {
+    "id": 696,
+    "location": {
+      "address": "Avenida Lomas de la Luz S/N",
+      "position": { "coordinates": [ -71.563078, -33.129278 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Valparaiso (Curauma)"
+  },
+  {
+    "id": 179,
+    "location": {
+      "address": "Av. Rinconada 2525",
+      "position": { "coordinates": [ -70.789992, -33.504865 ] }
+    },
+    "format": "BODEGA",
+    "name": "Maipu (Rinconada)"
+  },
+  {
+    "id": 636,
+    "location": {
+      "address": "O'Higgins 240",
+      "position": { "coordinates": [ -72.343373, -38.233312 ] }
+    },
+    "format": "BODEGA",
+    "name": "Victoria"
+  },
+  {
+    "id": 622,
+    "location": {
+      "address": "Mapocho 5041",
+      "position": { "coordinates": [ -70.704215, -33.42804 ] }
+    },
+    "format": "BODEGA",
+    "name": "Quinta Normal (Mapocho)"
+  },
+  {
+    "id": 186,
+    "location": {
+      "address": "Lo Martines/Tucapel",
+      "position": { "coordinates": [ -70.665764, -33.57311 ] }
+    },
+    "format": "BODEGA",
+    "name": "El Bosque (Los Martines)"
+  },
+  {
+    "id": 670,
+    "location": {
+      "address": "Cardonal/Pdte Ibañez, Puerto Montt",
+      "position": { "coordinates": [ -72.966473, -41.471213 ] }
+    },
+    "format": "LIDER",
+    "name": "Puerto Montt (Cardonal)"
+  },
+  {
+    "id": 189,
+    "location": {
+      "address": "Av. Salvador 1824-1848",
+      "position": { "coordinates": [ -70.621407, -33.449833 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Ñuñoa (Salvador)"
+  },
+  {
+    "id": 457,
+    "location": {
+      "address": "Camino Troncal 1591",
+      "position": { "coordinates": [ -71.348685, -33.047758 ] }
+    },
+    "format": "LIDER",
+    "name": "Villa Alemana (Camino Troncal)"
+  },
+  {
+    "id": 746,
+    "location": {
+      "address": "Avenida Arturo Prat 81",
+      "position": { "coordinates": [ -71.410188, -33.310822 ] }
+    },
+    "format": "BODEGA",
+    "name": "Casablanca (Arturo Prat)"
+  },
+  {
+    "id": 728,
+    "location": {
+      "address": "Av Portugal 622",
+      "position": { "coordinates": [ -70.634551, -33.450036 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Santiago (Portugal)"
+  },
+  {
+    "id": 174,
+    "location": {
+      "address": "Isabel Riquelme Sur S/N",
+      "position": { "coordinates": [ -70.73874, -33.484884 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Maipu (Isabel Riquelme)"
+  },
+  {
+    "id": 525,
+    "location": {
+      "address": "Ex fundo las Compuertas, Laguna del Sol",
+      "position": { "coordinates": [ -70.827695, -33.561185 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Padre Hurtado"
+  },
+  {
+    "id": 519,
+    "location": {
+      "address": "Av. Maquehue 1243",
+      "position": { "coordinates": [ -72.597099, -38.772416 ] }
+    },
+    "format": "BODEGA",
+    "name": "Padre de las Casas (Maquehue)"
+  },
+  {
+    "id": 671,
+    "location": {
+      "address": "Av Lo Marcoleta 361, con Santa Laura",
+      "position": { "coordinates": [ -70.746717, -33.358643 ] }
+    },
+    "format": "LIDER",
+    "name": "Quilicura (Lo Marcoleta)"
+  },
+  {
+    "id": 742,
+    "location": {
+      "address": "Av. Paicavi 1376",
+      "position": { "coordinates": [ -73.04731, -36.813909 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Concepción (Paicaví)"
+  },
+  {
+    "id": 773,
+    "location": {
+      "address": "Yungay 303",
+      "position": { "coordinates": [ -70.712595, -30.032012 ] }
+    },
+    "format": "BODEGA",
+    "name": "Vicuña (Yungay)"
+  },
+  {
+    "id": 656,
+    "location": {
+      "address": "San Martín 555",
+      "position": { "coordinates": [ -70.736465, -33.736408 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Buin (San Martin)"
+  },
+  {
+    "id": 748,
+    "location": {
+      "address": "Av. Miraflores 8710",
+      "position": { "coordinates": [ -70.757386, -33.40045 ] }
+    },
+    "format": "LIDER",
+    "name": "Renca (Miraflores)"
+  },
+  {
+    "id": 159,
+    "location": {
+      "address": "San Luis de Macul 4335",
+      "position": { "coordinates": [ -70.588877, -33.507035 ] }
+    },
+    "format": "MAYORISTA",
+    "name": "Peñalolen (San Luis de Macul)"
+  },
+  {
+    "id": 751,
+    "location": {
+      "address": "Avenida Luco 365",
+      "position": { "coordinates": [ -70.710068, -33.977422 ] }
+    },
+    "format": "BODEGA",
+    "name": "Mostazal"
+  },
+  {
+    "id": 745,
+    "location": {
+      "address": "Villa Alegre 675",
+      "position": { "coordinates": [ -72.674216, -37.499155 ] }
+    },
+    "format": "BODEGA",
+    "name": "Nacimiento (Villa Alegre)"
+  },
+  {
+    "id": 772,
+    "location": {
+      "address": "Rodelillo 6071",
+      "position": { "coordinates": [ -71.564328, -33.064934 ] }
+    },
+    "format": "BODEGA",
+    "name": "Valparaíso (Juan Pablo II)"
+  },
+  {
+    "id": 784,
+    "location": {
+      "address": "Pedro Lagos 1219",
+      "position": { "coordinates": [ -72.954281, -40.334997 ] }
+    },
+    "format": "BODEGA",
+    "name": "Río Bueno (Pedro Lagos)"
+  },
+  {
+    "id": 177,
+    "location": {
+      "address": "Iquique 5201 corner Perez Zujovic",
+      "position": { "coordinates": [ -70.392005, -23.620172 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Antofagasta (Perez Zujovic)"
+  },
+  {
+    "id": 165,
+    "location": {
+      "address": "Av. Irarrázaval 5353",
+      "position": { "coordinates": [ -70.574443, -33.45385 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Ñuñoa (Plaza Egaña)"
+  },
+  {
+    "id": 521,
+    "location": {
+      "address": "Galvarino Riveros 1703",
+      "position": { "coordinates": [ -73.785486, -42.467676 ] }
+    },
+    "format": "BODEGA",
+    "name": "Castro (Galvarino)"
+  },
+  {
+    "id": 771,
+    "location": {
+      "address": "Pascual Baburizza 716",
+      "position": { "coordinates": [ -70.59144, -32.8486 ] }
+    },
+    "format": "BODEGA",
+    "name": "Los Andes (Pascual Baburizza)"
+  },
+  {
+    "id": 522,
+    "location": {
+      "address": "Carlos Anwandter 930, Terminal",
+      "position": { "coordinates": [ -73.235594, -39.81563 ] }
+    },
+    "format": "BODEGA",
+    "name": "Valdivia (Terminal)"
+  },
+  {
+    "id": 182,
+    "location": {
+      "address": "Maipu s/n, Lote 4-A",
+      "position": { "coordinates": [ -70.445641, -30.44529 ] }
+    },
+    "format": "LIDER",
+    "name": "Buin (Bernardo O´Higgins)"
+  },
+  {
+    "id": 196,
+    "location": {
+      "address": "Jose Domingo Cañas 1580",
+      "position": { "coordinates": [ -70.614919, -33.45593 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Ñuñoa (JD Cañas)"
+  },
+  {
+    "id": 679,
+    "location": {
+      "address": "Bilbao  4110",
+      "position": { "coordinates": [ -70.126767, -20.269203 ] }
+    },
+    "format": "LIDER",
+    "name": "Iquique (Sur)"
+  },
+  {
+    "id": 878,
+    "location": {
+      "address": "Eleuterio Ramirez 156, Purranque",
+      "position": { "coordinates": [ -73.16277, -40.91065 ] }
+    },
+    "format": "BODEGA",
+    "name": "Purranque"
+  },
+  {
+    "id": 805,
+    "location": {
+      "address": "Bombero Perret 248",
+      "position": { "coordinates": [ -72.93233, -36.970551 ] }
+    },
+    "format": "BODEGA",
+    "name": "Hualqui, (Hualqui Bombero Perret 248)"
+  },
+  {
+    "id": 939,
+    "location": {
+      "address": "Américo Vespucio 2500, Cerrillos",
+      "position": { "coordinates": [ -70.7086, -33.5166 ] }
+    },
+    "format": "MAYORISTA",
+    "name": "Cerrillos (Velasquez)"
+  },
+  {
+    "id": 764,
+    "location": {
+      "address": "Av. Las Rastras 1800",
+      "position": { "coordinates": [ -71.60875, -35.43252 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Talca (Las Rastras)"
+  },
+  {
+    "id": 739,
+    "location": {
+      "address": "Las Industrias 15560",
+      "position": { "coordinates": [ -70.768647, -33.540786 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider MidMall"
+  },
+  {
+    "id": 766,
+    "location": {
+      "address": "Ruta 43 a ovalle, lote 59",
+      "position": { "coordinates": [ -71.26386, -29.97069 ] }
+    },
+    "format": "BODEGA",
+    "name": "Coquimbo (Tierras Blancas)"
+  },
+  {
+    "id": 690,
+    "location": {
+      "address": "Puerto Rico 8421, Pudahuel",
+      "position": { "coordinates": [ -70.742403, -33.437208 ] }
+    },
+    "format": "LIDER",
+    "name": "Pudahuel (San Francisco)"
+  },
+  {
+    "id": 518,
+    "location": {
+      "address": "Av argentina esquina juana Ross",
+      "position": { "coordinates": [ -71.6032, -33.0502 ] }
+    },
+    "format": "LIDER",
+    "name": "Valparaiso (Av. Argentina)"
+  },
+  {
+    "id": 871,
+    "location": {
+      "address": "San Bernardo, Padre Hurtado c/ Condell",
+      "position": { "coordinates": [ -70.6815, -33.5994 ] }
+    },
+    "format": "MAYORISTA",
+    "name": "San Bernardo (Padre Hurtado)"
+  },
+  {
+    "id": 635,
+    "location": {
+      "address": "Pedro Montt esquina Diego Portales S/N",
+      "position": { "coordinates": [ -70.309053, -18.46995 ] }
+    },
+    "format": "LIDER",
+    "name": "Arica (Pedro Montt)"
+  },
+  {
+    "id": 736,
+    "location": {
+      "address": "Balmaceda 750, Peñaflor",
+      "position": { "coordinates": [ -70.855833, -33.60829 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Peñaflor"
+  },
+  {
+    "id": 516,
+    "location": {
+      "address": "Av. Bellavista 1273",
+      "position": { "coordinates": [ -73.037587, -36.786398 ] }
+    },
+    "format": "EXPRESS",
+    "name": "Concepción (Bellavista)"
+  },
+  {
+    "id": 9990001,
+    "location": {
+      "address": "Av. Del Valle 725",
+      "position": { "coordinates": [ -70.6147186, -33.3922996 ] }
+    },
+    "format": "CR_ASISTIDO",
+    "name": "Colaboradores Ciudad Empresarial"
+  },
+  {
+    "id": 9990002,
+    "location": {
+      "address": "Av. Eduardo Frei Montalva 8301",
+      "position": { "coordinates": [ -70.7016857, -33.361884 ] }
+    },
+    "format": "CR_ASISTIDO",
+    "name": "Colaboradores Escuela de Servicio"
+  },
+  {
+    "id": 988,
+    "location": {
+      "address": "Av. Grecia 1120",
+      "position": { "coordinates": [ -68.9324224, -22.4709634 ] }
+    },
+    "format": "LIDER",
+    "name": "Lider Calama"
+  }
+]

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c381e779-0162-4053-87b0-f65a40d545a6" name="dsac@DESKTOP-6C41CE1 2018-11-16 14:28:41" runUser="DESKTOP-6C41CE1\dsac" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f5a00435-1d3d-48f7-a262-d7a2291b6f77">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment enabled="false" runDeploymentRoot="dsac_DESKTOP-6C41CE1 2018-11-16 14_28_41">
+      <DeploymentItem filename="C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Services\bin\TrazabilidadCarne.Services.dll" />
+      <DeploymentItem filename="C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2018-11-16T14:28:41.8878415-06:00" queuing="2018-11-16T14:28:44.9955453-06:00" start="2018-11-16T14:28:45.3000312-06:00" finish="2018-11-19T06:55:59.1373091-06:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="11" executed="6" error="0" failed="5" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="5" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="DESKTOP-6C41CE1" outcome="Error" timestamp="2018-11-19T06:55:59.1273379-06:00">
+        <Text>El proceso del host de pruebas terminó inesperadamente.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod2" storage="c:\users\dsac\desktop\solucion trazabilidadcarneservices-desarrollo\trazabilidadcarne.test\bin\debug\trazabilidadcarne.test.dll" id="1044bab0-5e6a-fc84-19f3-26f2aed1ca9d">
+      <Execution id="3de0105d-83d8-46f5-a0f4-40a7824284cf" />
+      <TestMethod codeBase="C:/Users/dsac/Desktop/Solucion TrazabilidadCarneServices-Desarrollo/TrazabilidadCarne.Test/bin/Debug/TrazabilidadCarne.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TrazabilidadCarne.Test.UnitTest1, TrazabilidadCarne.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod2" />
+    </UnitTest>
+    <UnitTest name="TestObtieneParidades" storage="c:\users\dsac\desktop\solucion trazabilidadcarneservices-desarrollo\trazabilidadcarne.test\bin\debug\trazabilidadcarne.test.dll" id="d01648ea-c0dd-fb75-9284-ba0d221ca290">
+      <Execution id="5a4afec8-2271-47ed-b871-b9fc612e8f9e" />
+      <TestMethod codeBase="C:/Users/dsac/Desktop/Solucion TrazabilidadCarneServices-Desarrollo/TrazabilidadCarne.Test/bin/Debug/TrazabilidadCarne.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TrazabilidadCarne.Test.UnitTest1, TrazabilidadCarne.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestObtieneParidades" />
+    </UnitTest>
+    <UnitTest name="ObtieneItemCaniceriaTest" storage="c:\users\dsac\desktop\solucion trazabilidadcarneservices-desarrollo\trazabilidadcarne.test\bin\debug\trazabilidadcarne.test.dll" id="5e7f710f-9ca2-928b-ef88-cddcb8c06f14">
+      <Execution id="ab54175e-0941-4445-84a8-0c3d85fa8a5a" />
+      <TestMethod codeBase="C:/Users/dsac/Desktop/Solucion TrazabilidadCarneServices-Desarrollo/TrazabilidadCarne.Test/bin/Debug/TrazabilidadCarne.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TrazabilidadCarne.Test.InventarioCarnesTest, TrazabilidadCarne.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtieneItemCaniceriaTest" />
+      <AspNet webSiteUrl="http://dsac.dyndns.info:8084/TrazabilidadCarnesService/InventarioCarnes.svc" />
+    </UnitTest>
+    <UnitTest name="IngresoItemMotivoPalletTest" storage="c:\users\dsac\desktop\solucion trazabilidadcarneservices-desarrollo\trazabilidadcarne.test\bin\debug\trazabilidadcarne.test.dll" id="4be8aa03-ce71-a750-25d8-57a0f1dc4bff">
+      <Execution id="1b56e759-67b4-42de-9747-9437ae501e1e" />
+      <TestMethod codeBase="C:/Users/dsac/Desktop/Solucion TrazabilidadCarneServices-Desarrollo/TrazabilidadCarne.Test/bin/Debug/TrazabilidadCarne.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TrazabilidadCarne.Test.InventarioCarnesTest, TrazabilidadCarne.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IngresoItemMotivoPalletTest" />
+      <AspNet webSiteUrl="http://dsac.dyndns.info:8084/TrazabilidadCarnesService/" />
+    </UnitTest>
+    <UnitTest name="TestObtieneItemBalanza" storage="c:\users\dsac\desktop\solucion trazabilidadcarneservices-desarrollo\trazabilidadcarne.test\bin\debug\trazabilidadcarne.test.dll" id="30bf5f4d-153c-88c4-f1e7-f7e0f611075a">
+      <Execution id="f484f272-55c2-4085-91ca-cf550b100a93" />
+      <TestMethod codeBase="C:/Users/dsac/Desktop/Solucion TrazabilidadCarneServices-Desarrollo/TrazabilidadCarne.Test/bin/Debug/TrazabilidadCarne.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TrazabilidadCarne.Test.UnitTest1, TrazabilidadCarne.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestObtieneItemBalanza" />
+    </UnitTest>
+    <UnitTest name="TestObtieneLocales" storage="c:\users\dsac\desktop\solucion trazabilidadcarneservices-desarrollo\trazabilidadcarne.test\bin\debug\trazabilidadcarne.test.dll" id="b267c5dd-eee7-dd8c-b094-9445c8f1213a">
+      <Execution id="b8b56433-6bab-439d-8444-d55881861882" />
+      <TestMethod codeBase="C:/Users/dsac/Desktop/Solucion TrazabilidadCarneServices-Desarrollo/TrazabilidadCarne.Test/bin/Debug/TrazabilidadCarne.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TrazabilidadCarne.Test.UnitTest1, TrazabilidadCarne.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestObtieneLocales" />
+    </UnitTest>
+    <UnitTest name="IngresoItemMotivoLecturaTest" storage="c:\users\dsac\desktop\solucion trazabilidadcarneservices-desarrollo\trazabilidadcarne.test\bin\debug\trazabilidadcarne.test.dll" id="ea5b57eb-f4d0-59af-08a7-a4bd20064877">
+      <Execution id="2a46beca-ece4-4c38-adc7-415363adc9f7" />
+      <TestMethod codeBase="C:/Users/dsac/Desktop/Solucion TrazabilidadCarneServices-Desarrollo/TrazabilidadCarne.Test/bin/Debug/TrazabilidadCarne.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TrazabilidadCarne.Test.InventarioCarnesTest, TrazabilidadCarne.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IngresoItemMotivoLecturaTest" />
+      <AspNet webSiteUrl="http://dsac.dyndns.info:8084/TrazabilidadCarnesService/" />
+    </UnitTest>
+    <UnitTest name="TestObtieneFrigorificos" storage="c:\users\dsac\desktop\solucion trazabilidadcarneservices-desarrollo\trazabilidadcarne.test\bin\debug\trazabilidadcarne.test.dll" id="7075f3dc-6ca9-b695-505a-578c307acf47">
+      <Execution id="23fd118d-32f4-4d35-9f9b-5b19ec22913d" />
+      <TestMethod codeBase="C:/Users/dsac/Desktop/Solucion TrazabilidadCarneServices-Desarrollo/TrazabilidadCarne.Test/bin/Debug/TrazabilidadCarne.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TrazabilidadCarne.Test.UnitTest1, TrazabilidadCarne.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestObtieneFrigorificos" />
+    </UnitTest>
+    <UnitTest name="ObtieneMotivoInventarioTest" storage="c:\users\dsac\desktop\solucion trazabilidadcarneservices-desarrollo\trazabilidadcarne.test\bin\debug\trazabilidadcarne.test.dll" id="932d1f2a-4cd7-638f-1f1f-9a66cc9bbeae">
+      <Execution id="77f56b86-a2ad-4ebe-8885-3760752c9694" />
+      <TestMethod codeBase="C:/Users/dsac/Desktop/Solucion TrazabilidadCarneServices-Desarrollo/TrazabilidadCarne.Test/bin/Debug/TrazabilidadCarne.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TrazabilidadCarne.Test.InventarioCarnesTest, TrazabilidadCarne.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtieneMotivoInventarioTest" />
+      <AspNet webSiteUrl="http://dsac.dyndns.info:8084/TrazabilidadCarnesService/InventarioCarnes.svc" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="c:\users\dsac\desktop\solucion trazabilidadcarneservices-desarrollo\trazabilidadcarne.test\bin\debug\trazabilidadcarne.test.dll" id="8a967699-7776-b534-0aaa-cf136d12a51f">
+      <Execution id="5173e9ad-c832-47d1-b067-22df5555b76c" />
+      <TestMethod codeBase="C:/Users/dsac/Desktop/Solucion TrazabilidadCarneServices-Desarrollo/TrazabilidadCarne.Test/bin/Debug/TrazabilidadCarne.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TrazabilidadCarne.Test.UnitTest1, TrazabilidadCarne.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="TestBaraMensaje" storage="c:\users\dsac\desktop\solucion trazabilidadcarneservices-desarrollo\trazabilidadcarne.test\bin\debug\trazabilidadcarne.test.dll" id="3a2a987a-8cca-879d-093d-4ff2736cfa92">
+      <Execution id="4ad300d6-f566-4eee-a156-b5e78e546fcf" />
+      <TestMethod codeBase="C:/Users/dsac/Desktop/Solucion TrazabilidadCarneServices-Desarrollo/TrazabilidadCarne.Test/bin/Debug/TrazabilidadCarne.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TrazabilidadCarne.Test.UnitTest1, TrazabilidadCarne.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestBaraMensaje" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1044bab0-5e6a-fc84-19f3-26f2aed1ca9d" executionId="3de0105d-83d8-46f5-a0f4-40a7824284cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30bf5f4d-153c-88c4-f1e7-f7e0f611075a" executionId="f484f272-55c2-4085-91ca-cf550b100a93" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a2a987a-8cca-879d-093d-4ff2736cfa92" executionId="4ad300d6-f566-4eee-a156-b5e78e546fcf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4be8aa03-ce71-a750-25d8-57a0f1dc4bff" executionId="1b56e759-67b4-42de-9747-9437ae501e1e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5e7f710f-9ca2-928b-ef88-cddcb8c06f14" executionId="ab54175e-0941-4445-84a8-0c3d85fa8a5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7075f3dc-6ca9-b695-505a-578c307acf47" executionId="23fd118d-32f4-4d35-9f9b-5b19ec22913d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a967699-7776-b534-0aaa-cf136d12a51f" executionId="5173e9ad-c832-47d1-b067-22df5555b76c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="932d1f2a-4cd7-638f-1f1f-9a66cc9bbeae" executionId="77f56b86-a2ad-4ebe-8885-3760752c9694" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b267c5dd-eee7-dd8c-b094-9445c8f1213a" executionId="b8b56433-6bab-439d-8444-d55881861882" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d01648ea-c0dd-fb75-9284-ba0d221ca290" executionId="5a4afec8-2271-47ed-b871-b9fc612e8f9e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ea5b57eb-f4d0-59af-08a7-a4bd20064877" executionId="2a46beca-ece4-4c38-adc7-415363adc9f7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3de0105d-83d8-46f5-a0f4-40a7824284cf" testId="1044bab0-5e6a-fc84-19f3-26f2aed1ca9d" testName="TestMethod2" computerName="DESKTOP-6C41CE1" duration="00:03:17.2936276" startTime="2018-11-16T14:28:45.4208785-06:00" endTime="2018-11-16T14:32:03.4704140-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3de0105d-83d8-46f5-a0f4-40a7824284cf">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de prueba TrazabilidadCarne.Test.UnitTest1.TestMethod2 produjo la excepción: 
+System.ServiceModel.EndpointNotFoundException: No había ningún extremo escuchando en http://dsac.dyndns.info:8084/TrazabilidadCarnesService/Barra.svc que pudiera aceptar el mensaje. La causa suele ser una dirección o una acción SOAP incorrecta. Consulte InnerException, si está presente, para obtener más información. ---&gt; System.Net.WebException: No es posible conectar con el servidor remoto ---&gt; System.Net.Sockets.SocketException: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder 186.67.64.92:8084</Message>
+          <StackTrace>    en System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   en System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en System.Net.HttpWebRequest.GetRequestStream(TransportContext&amp; context)
+   en System.Net.HttpWebRequest.GetRequestStream()
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+ --- Fin del seguimiento de la pila de la excepción interna ---
+ 
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)
+   en TrazabilidadCarne.Test.TrazabilidadCarnesService.IBarra.ProcesaBarrasMSG(String Mensaje, String codigoLocal)
+   en TrazabilidadCarne.Test.TrazabilidadCarnesService.BarraClient.ProcesaBarrasMSG(String Mensaje, String codigoLocal) en C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\Service References\TrazabilidadCarnesService\Reference.cs:línea 85
+   en TrazabilidadCarne.Test.UnitTest1.TestMethod2() en C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\UnitTest1.cs:línea 124
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f484f272-55c2-4085-91ca-cf550b100a93" testId="30bf5f4d-153c-88c4-f1e7-f7e0f611075a" testName="TestObtieneItemBalanza" computerName="DESKTOP-6C41CE1" duration="2.16:23:02.3218784" startTime="2018-11-16T14:32:03.4769429-06:00" endTime="2018-11-19T06:54:54.1691436-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f484f272-55c2-4085-91ca-cf550b100a93">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de prueba TrazabilidadCarne.Test.UnitTest1.TestObtieneItemBalanza produjo la excepción: 
+System.ServiceModel.EndpointNotFoundException: No había ningún extremo escuchando en http://dsac.dyndns.info:8084/TrazabilidadCarnesService/Barra.svc que pudiera aceptar el mensaje. La causa suele ser una dirección o una acción SOAP incorrecta. Consulte InnerException, si está presente, para obtener más información. ---&gt; System.Net.WebException: No es posible conectar con el servidor remoto ---&gt; System.Net.Sockets.SocketException: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder 186.67.64.92:8084</Message>
+          <StackTrace>    en System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   en System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en System.Net.HttpWebRequest.GetRequestStream(TransportContext&amp; context)
+   en System.Net.HttpWebRequest.GetRequestStream()
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+ --- Fin del seguimiento de la pila de la excepción interna ---
+ 
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)
+   en TrazabilidadCarne.Test.TrazabilidadCarnesService.IBarra.ObtieneItemBalanza()
+   en TrazabilidadCarne.Test.TrazabilidadCarnesService.BarraClient.ObtieneItemBalanza() en C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\Service References\TrazabilidadCarnesService\Reference.cs:línea 69
+   en TrazabilidadCarne.Test.UnitTest1.TestObtieneItemBalanza() en C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\UnitTest1.cs:línea 86
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4ad300d6-f566-4eee-a156-b5e78e546fcf" testId="3a2a987a-8cca-879d-093d-4ff2736cfa92" testName="TestBaraMensaje" computerName="DESKTOP-6C41CE1" duration="00:00:41.6239843" startTime="2018-11-19T06:54:54.1771214-06:00" endTime="2018-11-19T06:55:35.8155403-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ad300d6-f566-4eee-a156-b5e78e546fcf">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de prueba TrazabilidadCarne.Test.UnitTest1.TestBaraMensaje produjo la excepción: 
+System.ServiceModel.EndpointNotFoundException: No había ningún extremo escuchando en http://dsac.dyndns.info:8084/TrazabilidadCarnesService/Barra.svc que pudiera aceptar el mensaje. La causa suele ser una dirección o una acción SOAP incorrecta. Consulte InnerException, si está presente, para obtener más información. ---&gt; System.Net.WebException: No es posible conectar con el servidor remoto ---&gt; System.Net.Sockets.SocketException: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder 186.67.64.92:8084</Message>
+          <StackTrace>    en System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   en System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en System.Net.HttpWebRequest.GetRequestStream(TransportContext&amp; context)
+   en System.Net.HttpWebRequest.GetRequestStream()
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+ --- Fin del seguimiento de la pila de la excepción interna ---
+ 
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)
+   en TrazabilidadCarne.Test.TrazabilidadCarnesService.IBarra.ProcesaBarrasMSG(String Mensaje, String codigoLocal)
+   en TrazabilidadCarne.Test.TrazabilidadCarnesService.BarraClient.ProcesaBarrasMSG(String Mensaje, String codigoLocal) en C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\Service References\TrazabilidadCarnesService\Reference.cs:línea 85
+   en TrazabilidadCarne.Test.UnitTest1.TestBaraMensaje() en C:\Users\dsac\Desktop\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\UnitTest1.cs:línea 131
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1b56e759-67b4-42de-9747-9437ae501e1e" testId="4be8aa03-ce71-a750-25d8-57a0f1dc4bff" testName="IngresoItemMotivoPalletTest" computerName="DESKTOP-6C41CE1" startTime="2018-11-19T06:55:35.9950606-06:00" endTime="2018-11-19T06:55:36.1366815-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b56e759-67b4-42de-9747-9437ae501e1e">
+      <Output>
+        <ErrorInfo>
+          <Message>La prueba o la ejecución de pruebas está configurada para que se ejecute en ASP.NET en IIS, pero el usuario actual (DESKTOP-6C41CE1\dsac) no pertenece al grupo de administradores. Para ejecutar pruebas en ASP.NET en IIS es necesario que el usuario pertenezca al grupo de administradores.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ab54175e-0941-4445-84a8-0c3d85fa8a5a" testId="5e7f710f-9ca2-928b-ef88-cddcb8c06f14" testName="ObtieneItemCaniceriaTest" computerName="DESKTOP-6C41CE1" startTime="2018-11-19T06:55:36.1576261-06:00" endTime="2018-11-19T06:55:36.1805637-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab54175e-0941-4445-84a8-0c3d85fa8a5a">
+      <Output>
+        <ErrorInfo>
+          <Message>La prueba o la ejecución de pruebas está configurada para que se ejecute en ASP.NET en IIS, pero el usuario actual (DESKTOP-6C41CE1\dsac) no pertenece al grupo de administradores. Para ejecutar pruebas en ASP.NET en IIS es necesario que el usuario pertenezca al grupo de administradores.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="23fd118d-32f4-4d35-9f9b-5b19ec22913d" testId="7075f3dc-6ca9-b695-505a-578c307acf47" testName="TestObtieneFrigorificos" computerName="DESKTOP-6C41CE1" duration="00:00:22.9497638" startTime="2018-11-19T06:55:36.1865486-06:00" endTime="2018-11-19T06:55:59.1363124-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23fd118d-32f4-4d35-9f9b-5b19ec22913d">
+    </UnitTestResult>
+    <UnitTestResult executionId="5173e9ad-c832-47d1-b067-22df5555b76c" testId="8a967699-7776-b534-0aaa-cf136d12a51f" testName="TestMethod1" computerName="DESKTOP-6C41CE1" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5173e9ad-c832-47d1-b067-22df5555b76c">
+    </UnitTestResult>
+    <UnitTestResult executionId="77f56b86-a2ad-4ebe-8885-3760752c9694" testId="932d1f2a-4cd7-638f-1f1f-9a66cc9bbeae" testName="ObtieneMotivoInventarioTest" computerName="DESKTOP-6C41CE1" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="77f56b86-a2ad-4ebe-8885-3760752c9694">
+    </UnitTestResult>
+    <UnitTestResult executionId="b8b56433-6bab-439d-8444-d55881861882" testId="b267c5dd-eee7-dd8c-b094-9445c8f1213a" testName="TestObtieneLocales" computerName="DESKTOP-6C41CE1" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8b56433-6bab-439d-8444-d55881861882">
+    </UnitTestResult>
+    <UnitTestResult executionId="5a4afec8-2271-47ed-b871-b9fc612e8f9e" testId="d01648ea-c0dd-fb75-9284-ba0d221ca290" testName="TestObtieneParidades" computerName="DESKTOP-6C41CE1" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a4afec8-2271-47ed-b871-b9fc612e8f9e">
+    </UnitTestResult>
+    <UnitTestResult executionId="2a46beca-ece4-4c38-adc7-415363adc9f7" testId="ea5b57eb-f4d0-59af-08a7-a4bd20064877" testName="IngresoItemMotivoLecturaTest" computerName="DESKTOP-6C41CE1" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a46beca-ece4-4c38-adc7-415363adc9f7">
+    </UnitTestResult>
+  </Results>
+</TestRun>

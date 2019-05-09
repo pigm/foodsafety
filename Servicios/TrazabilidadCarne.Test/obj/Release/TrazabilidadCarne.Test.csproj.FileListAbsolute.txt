@@ -1,0 +1,9 @@
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\bin\Release\TrazabilidadCarne.Test.dll.config
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\bin\Release\TrazabilidadCarne.Test.dll
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\bin\Release\TrazabilidadCarne.Test.pdb
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\bin\Release\Elmah.dll
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\bin\Release\TrazabilidadCarne.Services.dll
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\bin\Release\TrazabilidadCarne.Services.pdb
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\obj\Release\TrazabilidadCarne.Test.csprojResolveAssemblyReference.cache
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\obj\Release\TrazabilidadCarne.Test.dll
+C:\Proyectos\Trazabilidad\Solucion TrazabilidadCarneServices-Desarrollo\TrazabilidadCarne.Test\obj\Release\TrazabilidadCarne.Test.pdb

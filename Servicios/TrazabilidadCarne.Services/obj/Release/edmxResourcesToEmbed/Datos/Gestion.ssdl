@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DWH_VW_GestionDYSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="DWH_VW_GestionDYSModelStoreContainer">
+    <EntitySet Name="vw_DM_LOCAL" EntityType="DWH_VW_GestionDYSModel.Store.vw_DM_LOCAL" store:Type="Views" store:Schema="dvw" store:Name="vw_DM_LOCAL">
+      <DefiningQuery>SELECT 
+      [vw_DM_LOCAL].[LOCAL_ID] AS [LOCAL_ID], 
+      [vw_DM_LOCAL].[LOCAL_COD] AS [LOCAL_COD], 
+      [vw_DM_LOCAL].[LOCAL_DESC] AS [LOCAL_DESC], 
+      [vw_DM_LOCAL].[LOCAL_DESC_COMPL] AS [LOCAL_DESC_COMPL], 
+      [vw_DM_LOCAL].[LOCAL_TIPO_ID] AS [LOCAL_TIPO_ID], 
+      [vw_DM_LOCAL].[CADENA_ID] AS [CADENA_ID], 
+      [vw_DM_LOCAL].[MERCADO_ID] AS [MERCADO_ID], 
+      [vw_DM_LOCAL].[MERCADO_COD] AS [MERCADO_COD], 
+      [vw_DM_LOCAL].[MERCADO_DESC] AS [MERCADO_DESC], 
+      [vw_DM_LOCAL].[FORMATO_ID] AS [FORMATO_ID], 
+      [vw_DM_LOCAL].[FORMATO_COD] AS [FORMATO_COD], 
+      [vw_DM_LOCAL].[FORMATO_DESC] AS [FORMATO_DESC], 
+      [vw_DM_LOCAL].[COMUNA_ID] AS [COMUNA_ID], 
+      [vw_DM_LOCAL].[CIUDAD_ID] AS [CIUDAD_ID], 
+      [vw_DM_LOCAL].[REGION_ID] AS [REGION_ID], 
+      [vw_DM_LOCAL].[PAIS_ID] AS [PAIS_ID]
+      FROM [dvw].[vw_DM_LOCAL] AS [vw_DM_LOCAL]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'DWH_VW_GestionDYS.dvw.vw_DM_LOCAL' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="vw_DM_LOCAL">
+    <Key>
+      <PropertyRef Name="LOCAL_ID" />
+      <PropertyRef Name="MERCADO_ID" />
+      <PropertyRef Name="FORMATO_ID" />
+      <PropertyRef Name="CIUDAD_ID" />
+      <PropertyRef Name="REGION_ID" />
+      <PropertyRef Name="PAIS_ID" />
+    </Key>
+    <Property Name="LOCAL_ID" Type="numeric" Nullable="false" Precision="5" />
+    <Property Name="LOCAL_COD" Type="varchar" MaxLength="3" />
+    <Property Name="LOCAL_DESC" Type="varchar" MaxLength="54" />
+    <Property Name="LOCAL_DESC_COMPL" Type="varchar" MaxLength="54" />
+    <Property Name="LOCAL_TIPO_ID" Type="numeric" Precision="2" />
+    <Property Name="CADENA_ID" Type="numeric" Precision="2" />
+    <Property Name="MERCADO_ID" Type="numeric" Nullable="false" Precision="3" />
+    <Property Name="MERCADO_COD" Type="varchar" MaxLength="20" />
+    <Property Name="MERCADO_DESC" Type="varchar" MaxLength="50" />
+    <Property Name="FORMATO_ID" Type="numeric" Nullable="false" Precision="2" />
+    <Property Name="FORMATO_COD" Type="varchar" MaxLength="20" />
+    <Property Name="FORMATO_DESC" Type="varchar" MaxLength="50" />
+    <Property Name="COMUNA_ID" Type="numeric" Precision="5" />
+    <Property Name="CIUDAD_ID" Type="numeric" Nullable="false" Precision="4" />
+    <Property Name="REGION_ID" Type="numeric" Nullable="false" Precision="3" />
+    <Property Name="PAIS_ID" Type="numeric" Nullable="false" Precision="2" />
+  </EntityType>
+</Schema>

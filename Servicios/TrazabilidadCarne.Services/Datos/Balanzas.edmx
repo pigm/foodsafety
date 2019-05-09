@@ -1,0 +1,1086 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BalanzasModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="BalanzasModelStoreContainer">
+          <EntitySet Name="Informacion_Art_Local_Sesma" EntityType="BalanzasModel.Store.Informacion_Art_Local_Sesma" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Informacion_Articulo_Prov" EntityType="BalanzasModel.Store.Informacion_Articulo_Prov" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Informacion_Refresh" EntityType="BalanzasModel.Store.Informacion_Refresh" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Inventario_Carnes" EntityType="BalanzasModel.Store.Inventario_Carnes" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Item_Hijo" EntityType="BalanzasModel.Store.Item_Hijo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Item_Padre" EntityType="BalanzasModel.Store.Item_Padre" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Motivo_Inventario" EntityType="BalanzasModel.Store.Motivo_Inventario" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Paridad" EntityType="BalanzasModel.Store.Paridad" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Procedencia" EntityType="BalanzasModel.Store.Procedencia" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Procedencia_Proveedor" EntityType="BalanzasModel.Store.Procedencia_Proveedor" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="WM_Barra_Carga" EntityType="BalanzasModel.Store.WM_Barra_Carga" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="WM_Barra_Carga_Bitacora" EntityType="BalanzasModel.Store.WM_Barra_Carga_Bitacora" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ITEM_BALANZA" EntityType="BalanzasModel.Store.ITEM_BALANZA" store:Type="Views" store:Schema="dbo" store:Name="ITEM_BALANZA">
+            <DefiningQuery>SELECT 
+      [ITEM_BALANZA].[OLD_NBR] AS [OLD_NBR], 
+      [ITEM_BALANZA].[PLU_NBR] AS [PLU_NBR], 
+      [ITEM_BALANZA].[VENDOR_STOCK_ID] AS [VENDOR_STOCK_ID], 
+      [ITEM_BALANZA].[UPC_NBR] AS [UPC_NBR], 
+      [ITEM_BALANZA].[UPC_FORMAT_CODE] AS [UPC_FORMAT_CODE], 
+      [ITEM_BALANZA].[ITEM1_DESC] AS [ITEM1_DESC], 
+      [ITEM_BALANZA].[BRAND_ID] AS [BRAND_ID], 
+      [ITEM_BALANZA].[BACKRM_SCALE_IND] AS [BACKRM_SCALE_IND], 
+      [ITEM_BALANZA].[VARIABLE_WT_IND] AS [VARIABLE_WT_IND], 
+      [ITEM_BALANZA].[SHLFLBL1_COLR_DESC] AS [SHLFLBL1_COLR_DESC], 
+      [ITEM_BALANZA].[VNPK_QTY] AS [VNPK_QTY], 
+      [ITEM_BALANZA].[SELL_QTY] AS [SELL_QTY], 
+      [ITEM_BALANZA].[SELL_UOM_CODE] AS [SELL_UOM_CODE], 
+      [ITEM_BALANZA].[MIN_WHSE_LIFE_QTY] AS [MIN_WHSE_LIFE_QTY], 
+      [ITEM_BALANZA].[MDSE_SEGMENT_NBR] AS [MDSE_SEGMENT_NBR], 
+      [ITEM_BALANZA].[MDSE_SEGMENT_DESC] AS [MDSE_SEGMENT_DESC], 
+      [ITEM_BALANZA].[MDSE_SUBGROUP_NBR] AS [MDSE_SUBGROUP_NBR], 
+      [ITEM_BALANZA].[MDSE_SUBGROUP_DESC] AS [MDSE_SUBGROUP_DESC], 
+      [ITEM_BALANZA].[DEPT_NBR] AS [DEPT_NBR], 
+      [ITEM_BALANZA].[DEPT_DESC] AS [DEPT_DESC], 
+      [ITEM_BALANZA].[DEPT_CATEGORY_NBR] AS [DEPT_CATEGORY_NBR], 
+      [ITEM_BALANZA].[DEPT_CATEGORY_DESC] AS [DEPT_CATEGORY_DESC], 
+      [ITEM_BALANZA].[DEPT_SUBCATG_NBR] AS [DEPT_SUBCATG_NBR], 
+      [ITEM_BALANZA].[DEPT_SUBCATG_DESC] AS [DEPT_SUBCATG_DESC], 
+      [ITEM_BALANZA].[FINELINE_NBR] AS [FINELINE_NBR], 
+      [ITEM_BALANZA].[FINELINE_DESC] AS [FINELINE_DESC], 
+      [ITEM_BALANZA].[BASE_DIV_NBR] AS [BASE_DIV_NBR], 
+      [ITEM_BALANZA].[BUYER_USERID] AS [BUYER_USERID], 
+      [ITEM_BALANZA].[BUYER_FULL_NAME] AS [BUYER_FULL_NAME]
+      FROM [dbo].[ITEM_BALANZA] AS [ITEM_BALANZA]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_Inventario_Carnes_Motivo_Inventario" Association="BalanzasModel.Store.FK_Inventario_Carnes_Motivo_Inventario">
+            <End Role="Motivo_Inventario" EntitySet="Motivo_Inventario" />
+            <End Role="Inventario_Carnes" EntitySet="Inventario_Carnes" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Informacion_Art_Local_Sesma">
+          <Key>
+            <PropertyRef Name="STORE_NBR" />
+            <PropertyRef Name="OLD_NBR" />
+            <PropertyRef Name="ORIGEN" />
+          </Key>
+          <Property Name="STORE_NBR" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="OLD_NBR" Type="numeric" Nullable="false" Precision="10" />
+          <Property Name="ORIGEN" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="RESSNS" Type="char" MaxLength="25" />
+          <Property Name="MDSE_SUBGROUP_NBR" Type="numeric" Precision="5" />
+          <Property Name="DEPT_NBR" Type="numeric" Precision="5" />
+          <Property Name="DEPT_CATEGORY_NBR" Type="numeric" Precision="10" />
+          <Property Name="BUFOUT" Type="varchar" MaxLength="3000" />
+          <Property Name="FECFAE" Type="numeric" Precision="8" />
+          <Property Name="NRDIAPE" Type="numeric" Precision="3" />
+          <Property Name="INDPROC" Type="char" MaxLength="1" />
+          <Property Name="INDVIGE" Type="char" MaxLength="1" />
+          <Property Name="PRCVTAOL" Type="float" />
+          <Property Name="Certificado_Embarque" Type="numeric" Precision="17" />
+          <Property Name="Origen_Frigorifico" Type="numeric" Precision="3" />
+          <Property Name="USUCRE" Type="char" MaxLength="10" />
+          <Property Name="FECCRE" Type="numeric" Precision="8" />
+          <Property Name="HORCRE" Type="numeric" Precision="6" />
+          <Property Name="USUACT" Type="char" MaxLength="10" />
+          <Property Name="FECACT" Type="numeric" Precision="8" />
+          <Property Name="HORACT" Type="numeric" Precision="6" />
+          <Property Name="CodigoTipoEtiqueta" Type="int" />
+        </EntityType>
+        <EntityType Name="Informacion_Articulo_Prov">
+          <Key>
+            <PropertyRef Name="STORE_NBR" />
+            <PropertyRef Name="OLD_NBR" />
+            <PropertyRef Name="ORIGEN" />
+          </Key>
+          <Property Name="STORE_NBR" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="OLD_NBR" Type="numeric" Nullable="false" Precision="10" />
+          <Property Name="ORIGEN" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="RESSNS" Type="char" MaxLength="40" />
+          <Property Name="MDSE_SUBGROUP_NBR" Type="numeric" Precision="5" />
+          <Property Name="DEPT_NBR" Type="numeric" Precision="5" />
+          <Property Name="DEPT_CATEGORY_NBR" Type="numeric" Precision="10" />
+          <Property Name="DPLPRV" Type="char" MaxLength="40" />
+          <Property Name="RAZSOC30" Type="char" MaxLength="30" />
+          <Property Name="FECINI" Type="numeric" Precision="8" />
+          <Property Name="FECTER" Type="numeric" Precision="8" />
+          <Property Name="INDFRIG" Type="char" MaxLength="1" />
+          <Property Name="USUCRE" Type="char" MaxLength="10" />
+          <Property Name="FECCRE" Type="numeric" Precision="8" />
+          <Property Name="HORCRE" Type="numeric" Precision="6" />
+          <Property Name="USUACT" Type="char" MaxLength="10" />
+          <Property Name="FECACT" Type="numeric" Precision="8" />
+          <Property Name="HORACT" Type="numeric" Precision="6" />
+          <Property Name="TEXTOCONTINGENCIA" Type="varchar" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="Informacion_Refresh">
+          <Key>
+            <PropertyRef Name="ID_INFO_REFRESH" />
+          </Key>
+          <Property Name="ID_INFO_REFRESH" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OLD_NBR" Type="numeric" Nullable="false" Precision="9" />
+          <Property Name="FECHA_ELABORACION" Type="datetime" />
+          <Property Name="LOTEPRODUCCION" Type="varchar" MaxLength="50" />
+          <Property Name="FECHADESCONGELADO" Type="datetime" Nullable="false" />
+          <Property Name="ID_PARAMETRO" Type="int" Nullable="false" />
+          <Property Name="CANTIDAD_UNIDADES" Type="int" Nullable="false" />
+          <Property Name="TEMPERATURA" Type="numeric" Nullable="false" Precision="5" Scale="2" />
+          <Property Name="ETIQ_PROPIA" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="COMENTARIO" Type="varchar" MaxLength="200" />
+          <Property Name="USUCRE" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="FECCRE" Type="numeric" Nullable="false" Precision="8" />
+          <Property Name="HORCRE" Type="numeric" Nullable="false" Precision="8" />
+          <Property Name="USUACT" Type="char" MaxLength="10" />
+          <Property Name="FECACT" Type="numeric" Precision="8" />
+          <Property Name="HORACT" Type="numeric" Precision="8" />
+          <Property Name="FOTOETIQUETA" Type="varbinary(max)" />
+          <Property Name="CORRELATIVO" Type="int" />
+        </EntityType>
+        <EntityType Name="Inventario_Carnes">
+          <Key>
+            <PropertyRef Name="IdInventario" />
+          </Key>
+          <Property Name="IdInventario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Item_Padre" Type="numeric" Nullable="false" Precision="10" />
+          <Property Name="STORE_NBR" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="Item" Type="numeric" Nullable="false" Precision="10" />
+          <Property Name="Fecha_Inventario" Type="datetime" Nullable="false" />
+          <Property Name="Fecha_Lectura" Type="datetime" Nullable="false" />
+          <Property Name="Origen_Frigorifico" Type="numeric" Precision="3" />
+          <Property Name="Certificado_Embarque" Type="numeric" Precision="17" />
+          <Property Name="Fecha_Faena" Type="numeric" Precision="6" />
+          <Property Name="Peso_Neto" Type="numeric" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="Peso_Bruto" Type="numeric" Nullable="false" Precision="10" Scale="4" />
+          <Property Name="Cajas" Type="int" Nullable="false" />
+          <Property Name="Responsable" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="IdMotivoInventario" Type="int" Nullable="false" />
+          <Property Name="USUCRE" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="FECCRE" Type="numeric" Nullable="false" Precision="8" />
+          <Property Name="HORCRE" Type="numeric" Nullable="false" Precision="6" />
+        </EntityType>
+        <EntityType Name="Item_Hijo">
+          <Key>
+            <PropertyRef Name="NU1pA" />
+            <PropertyRef Name="OLD_NBR" />
+          </Key>
+          <Property Name="NU1pA" Type="numeric" Nullable="false" Precision="10" />
+          <Property Name="OLD_NBR" Type="numeric" Nullable="false" Precision="10" />
+          <Property Name="INDEST" Type="char" MaxLength="1" />
+          <Property Name="USUCRE" Type="char" MaxLength="10" />
+          <Property Name="FECCRE" Type="numeric" Precision="8" />
+          <Property Name="HORCRE" Type="numeric" Precision="6" />
+          <Property Name="USUACT" Type="char" MaxLength="10" />
+          <Property Name="FECACT" Type="numeric" Precision="8" />
+          <Property Name="HORACT" Type="numeric" Precision="6" />
+        </EntityType>
+        <EntityType Name="Item_Padre">
+          <Key>
+            <PropertyRef Name="OLD_NBR" />
+          </Key>
+          <Property Name="OLD_NBR" Type="numeric" Nullable="false" Precision="10" />
+          <Property Name="INDEST" Type="char" MaxLength="1" />
+          <Property Name="USUCRE" Type="char" MaxLength="10" />
+          <Property Name="FECCRE" Type="numeric" Precision="8" />
+          <Property Name="HORCRE" Type="numeric" Precision="6" />
+          <Property Name="USUACT" Type="char" MaxLength="10" />
+          <Property Name="FECACT" Type="numeric" Precision="8" />
+          <Property Name="HORACT" Type="numeric" Precision="6" />
+        </EntityType>
+        <EntityType Name="Motivo_Inventario">
+          <Key>
+            <PropertyRef Name="IdMotivoInventario" />
+          </Key>
+          <Property Name="IdMotivoInventario" Type="int" Nullable="false" />
+          <Property Name="Descripcion" Type="varchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Paridad">
+          <Key>
+            <PropertyRef Name="Item_Compra" />
+          </Key>
+          <Property Name="Item_Compra" Type="numeric" Nullable="false" Precision="6" />
+          <Property Name="Item_Venta" Type="numeric" Nullable="false" Precision="6" />
+        </EntityType>
+        <EntityType Name="Procedencia">
+          <Key>
+            <PropertyRef Name="ORIGEN" />
+          </Key>
+          <Property Name="ORIGEN" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="DESORI" Type="char" MaxLength="25" />
+          <Property Name="USUCRE" Type="char" MaxLength="10" />
+          <Property Name="FECCRE" Type="numeric" Precision="8" />
+          <Property Name="HORCRE" Type="numeric" Precision="6" />
+          <Property Name="USUACT" Type="char" MaxLength="10" />
+          <Property Name="FECACT" Type="numeric" Precision="8" />
+          <Property Name="HORACT" Type="numeric" Precision="6" />
+        </EntityType>
+        <EntityType Name="Procedencia_Proveedor">
+          <Key>
+            <PropertyRef Name="ORIGEN" />
+            <PropertyRef Name="Origen_Frigorifico" />
+          </Key>
+          <Property Name="ORIGEN" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="Origen_Frigorifico" Type="numeric" Nullable="false" Precision="3" />
+          <Property Name="RAZSOC30" Type="char" MaxLength="30" />
+          <Property Name="INDFRIG" Type="char" MaxLength="1" />
+          <Property Name="USUCRE" Type="char" MaxLength="10" />
+          <Property Name="FECCRE" Type="numeric" Precision="8" />
+          <Property Name="HORCRE" Type="numeric" Precision="6" />
+          <Property Name="USUACT" Type="char" MaxLength="10" />
+          <Property Name="FECACT" Type="numeric" Precision="8" />
+          <Property Name="HORACT" Type="numeric" Precision="6" />
+          <Property Name="Nro_Unico_SAG" Type="varchar" MaxLength="100" />
+          <Property Name="Descripcion_SAG" Type="varchar" MaxLength="200" />
+          <Property Name="DIAS_DURACION" Type="int" />
+        </EntityType>
+        <EntityType Name="WM_Barra_Carga">
+          <Key>
+            <PropertyRef Name="Item_Barras" />
+            <PropertyRef Name="STORE_NBR" />
+          </Key>
+          <Property Name="Item_Barras" Type="char" Nullable="false" MaxLength="6" />
+          <Property Name="STORE_NBR" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="ORIGEN" Type="char" MaxLength="3" />
+          <Property Name="Origen_Frigorifico" Type="numeric" Precision="3" />
+          <Property Name="Certificado_Embarque" Type="numeric" Precision="17" />
+          <Property Name="Fecha_Faena" Type="numeric" Precision="6" />
+          <Property Name="Peso_Neto" Type="numeric" Precision="6" />
+          <Property Name="Peso_Bruto" Type="numeric" Precision="6" />
+          <Property Name="Barra_Larga" Type="char" MaxLength="100" />
+          <Property Name="INDPROC" Type="char" MaxLength="1" />
+          <Property Name="USUCRE" Type="char" MaxLength="10" />
+          <Property Name="FECCRE" Type="numeric" Precision="8" />
+          <Property Name="HORCRE" Type="numeric" Precision="6" />
+          <Property Name="USUACT" Type="char" MaxLength="10" />
+          <Property Name="FECACT" Type="numeric" Precision="8" />
+          <Property Name="HORACT" Type="numeric" Precision="6" />
+          <Property Name="FOTOETIQUETA" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="WM_Barra_Carga_Bitacora">
+          <Key>
+            <PropertyRef Name="IdBitacora" />
+          </Key>
+          <Property Name="IdBitacora" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Item_Barras" Type="char" Nullable="false" MaxLength="6" />
+          <Property Name="STORE_NBR" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="ORIGEN" Type="char" MaxLength="3" />
+          <Property Name="Origen_Frigorifico" Type="numeric" Precision="3" />
+          <Property Name="Certificado_Embarque" Type="numeric" Precision="17" />
+          <Property Name="Fecha_Faena" Type="numeric" Precision="6" />
+          <Property Name="Peso_Neto" Type="numeric" Precision="6" />
+          <Property Name="Peso_Bruto" Type="numeric" Precision="6" />
+          <Property Name="Barra_Larga" Type="char" MaxLength="100" />
+          <Property Name="INDPROC" Type="char" MaxLength="1" />
+          <Property Name="USUCRE" Type="char" MaxLength="10" />
+          <Property Name="FECCRE" Type="numeric" Precision="8" />
+          <Property Name="HORCRE" Type="numeric" Precision="6" />
+          <Property Name="Responsable" Type="varchar" MaxLength="100" />
+          <Property Name="FOTOETIQUETA" Type="varbinary(max)" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'dbBalanzasQA.dbo.ITEM_BALANZA' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="ITEM_BALANZA">
+          <Key>
+            
+            <PropertyRef Name="OLD_NBR" />
+          </Key>
+          <Property Name="OLD_NBR" Type="numeric" Precision="10" Nullable="false" />
+          <Property Name="PLU_NBR" Type="numeric" Precision="10" />
+          <Property Name="VENDOR_STOCK_ID" Type="varchar" MaxLength="20" />
+          <Property Name="UPC_NBR" Type="numeric" />
+          <Property Name="UPC_FORMAT_CODE" Type="numeric" Precision="5" />
+          <Property Name="ITEM1_DESC" Type="varchar" MaxLength="25" />
+          <Property Name="BRAND_ID" Type="numeric" Precision="10" />
+          <Property Name="BACKRM_SCALE_IND" Type="char" MaxLength="1" />
+          <Property Name="VARIABLE_WT_IND" Type="char" MaxLength="1" />
+          <Property Name="SHLFLBL1_COLR_DESC" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="VNPK_QTY" Type="numeric" Precision="10" />
+          <Property Name="SELL_QTY" Type="numeric" Precision="9" Scale="4" />
+          <Property Name="SELL_UOM_CODE" Type="char" MaxLength="2" />
+          <Property Name="MIN_WHSE_LIFE_QTY" Type="numeric" Precision="5" />
+          <Property Name="MDSE_SEGMENT_NBR" Type="numeric" Precision="5" />
+          <Property Name="MDSE_SEGMENT_DESC" Type="varchar" MaxLength="80" />
+          <Property Name="MDSE_SUBGROUP_NBR" Type="numeric" Precision="5" />
+          <Property Name="MDSE_SUBGROUP_DESC" Type="varchar" MaxLength="80" />
+          <Property Name="DEPT_NBR" Type="numeric" Precision="5" />
+          <Property Name="DEPT_DESC" Type="varchar" MaxLength="80" />
+          <Property Name="DEPT_CATEGORY_NBR" Type="numeric" Precision="5" />
+          <Property Name="DEPT_CATEGORY_DESC" Type="varchar" MaxLength="80" />
+          <Property Name="DEPT_SUBCATG_NBR" Type="numeric" Precision="5" />
+          <Property Name="DEPT_SUBCATG_DESC" Type="varchar" MaxLength="80" />
+          <Property Name="FINELINE_NBR" Type="numeric" Precision="5" />
+          <Property Name="FINELINE_DESC" Type="varchar" MaxLength="80" />
+          <Property Name="BASE_DIV_NBR" Type="numeric" Precision="5" />
+          <Property Name="BUYER_USERID" Type="char" MaxLength="8" />
+          <Property Name="BUYER_FULL_NAME" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <Association Name="FK_Inventario_Carnes_Motivo_Inventario">
+          <End Role="Motivo_Inventario" Type="BalanzasModel.Store.Motivo_Inventario" Multiplicity="1" />
+          <End Role="Inventario_Carnes" Type="BalanzasModel.Store.Inventario_Carnes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Motivo_Inventario">
+              <PropertyRef Name="IdMotivoInventario" />
+            </Principal>
+            <Dependent Role="Inventario_Carnes">
+              <PropertyRef Name="IdMotivoInventario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="Actualiza_ArticuloProveedor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="STORE_NBR" Type="numeric" Mode="In" />
+          <Parameter Name="OLD_NBR" Type="numeric" Mode="In" />
+          <Parameter Name="ORIGEN" Type="char" Mode="In" />
+          <Parameter Name="ORIGEN_PROCEDENCIA" Type="numeric" Mode="In" />
+          <Parameter Name="RESSNS" Type="char" Mode="In" />
+          <Parameter Name="USUACT" Type="char" Mode="In" />
+          <Parameter Name="FECACT" Type="numeric" Mode="In" />
+          <Parameter Name="HORACT" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Actualiza_ArtLocalSesma" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="STORE_NBR" Type="numeric" Mode="In" />
+          <Parameter Name="OLD_NBR" Type="numeric" Mode="In" />
+          <Parameter Name="ORIGEN" Type="char" Mode="In" />
+          <Parameter Name="RESSNS" Type="char" Mode="In" />
+          <Parameter Name="INDPROC" Type="char" Mode="In" />
+          <Parameter Name="USUACT" Type="char" Mode="In" />
+          <Parameter Name="FECACT" Type="numeric" Mode="In" />
+          <Parameter Name="HORACT" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="Lista_ItemCarniceria" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Lista_ItemRefresh" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BalanzasModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="BalanzasContenedor" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Item_Hijo" EntityType="BalanzasModel.Item_Hijo" />
+          <EntitySet Name="Item_Padre" EntityType="BalanzasModel.Item_Padre" />
+          <EntitySet Name="Paridads" EntityType="BalanzasModel.Paridad" />
+          <AssociationSet Name="FK__Item_Hijo__NU1pA__117F9D94" Association="BalanzasModel.FK__Item_Hijo__NU1pA__117F9D94">
+            <End Role="Item_Padre" EntitySet="Item_Padre" />
+            <End Role="Item_Hijo" EntitySet="Item_Hijo" />
+          </AssociationSet>
+          <EntitySet Name="Informacion_Art_Local_Sesma" EntityType="BalanzasModel.Informacion_Art_Local_Sesma" />
+          <EntitySet Name="WM_Barra_Carga" EntityType="BalanzasModel.WM_Barra_Carga" />
+          <EntitySet Name="Procedencia" EntityType="BalanzasModel.Procedencia" />
+          <EntitySet Name="ITEM_BALANZA" EntityType="BalanzasModel.ITEM_BALANZA" />
+          <EntitySet Name="Procedencia_Proveedor" EntityType="BalanzasModel.Procedencia_Proveedor" />
+          <AssociationSet Name="FK__Procedenc__ORIGE__35BCFE0A" Association="BalanzasModel.FK__Procedenc__ORIGE__35BCFE0A">
+            <End Role="Procedencia" EntitySet="Procedencia" />
+            <End Role="Procedencia_Proveedor" EntitySet="Procedencia_Proveedor" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Procedenc__ORIGE__36B12243" Association="BalanzasModel.FK__Procedenc__ORIGE__36B12243">
+            <End Role="Procedencia" EntitySet="Procedencia" />
+            <End Role="Procedencia_Proveedor" EntitySet="Procedencia_Proveedor" />
+          </AssociationSet>
+          <EntitySet Name="Informacion_Articulo_Prov" EntityType="BalanzasModel.Informacion_Articulo_Prov" />
+          <FunctionImport Name="Actualiza_ArtLocalSesma">
+            <Parameter Name="STORE_NBR" Mode="In" Type="Decimal" />
+            <Parameter Name="OLD_NBR" Mode="In" Type="Decimal" />
+            <Parameter Name="ORIGEN" Mode="In" Type="String" />
+            <Parameter Name="RESSNS" Mode="In" Type="String" />
+            <Parameter Name="INDPROC" Mode="In" Type="String" />
+            <Parameter Name="USUACT" Mode="In" Type="String" />
+            <Parameter Name="FECACT" Mode="In" Type="Decimal" />
+            <Parameter Name="HORACT" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Actualiza_ArticuloProveedor">
+            <Parameter Name="STORE_NBR" Mode="In" Type="Decimal" />
+            <Parameter Name="OLD_NBR" Mode="In" Type="Decimal" />
+            <Parameter Name="ORIGEN" Mode="In" Type="String" />
+            <Parameter Name="ORIGEN_PROCEDENCIA" Mode="In" Type="Decimal" />
+            <Parameter Name="RESSNS" Mode="In" Type="String" />
+            <Parameter Name="USUACT" Mode="In" Type="String" />
+            <Parameter Name="FECACT" Mode="In" Type="Decimal" />
+            <Parameter Name="HORACT" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="Lista_ItemCarniceria" ReturnType="Collection(BalanzasModel.ItemCarniceria_Result)" />
+          <EntitySet Name="Inventario_Carnes" EntityType="BalanzasModel.Inventario_Carnes" />
+          <EntitySet Name="Motivo_Inventario" EntityType="BalanzasModel.Motivo_Inventario" />
+          <AssociationSet Name="FK_Inventario_Carnes_Motivo_Inventario" Association="BalanzasModel.FK_Inventario_Carnes_Motivo_Inventario">
+            <End Role="Motivo_Inventario" EntitySet="Motivo_Inventario" />
+            <End Role="Inventario_Carnes" EntitySet="Inventario_Carnes" />
+          </AssociationSet>
+          <EntitySet Name="Informacion_Refresh" EntityType="BalanzasModel.Informacion_Refresh" />
+          <FunctionImport Name="Lista_ItemRefresh" ReturnType="Collection(BalanzasModel.Lista_ItemRefresh_Result)" />
+          <EntitySet Name="WM_Barra_Carga_Bitacora" EntityType="BalanzasModel.WM_Barra_Carga_Bitacora" />
+          </EntityContainer>
+        <EntityType Name="Item_Hijo">
+          <Key>
+            <PropertyRef Name="NU1pA" />
+            <PropertyRef Name="OLD_NBR" />
+          </Key>
+          <Property Name="NU1pA" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+          <Property Name="OLD_NBR" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+          <Property Name="INDEST" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="USUCRE" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="FECCRE" Type="Decimal" Precision="8" Scale="0" />
+          <Property Name="HORCRE" Type="Decimal" Precision="6" Scale="0" />
+          <Property Name="USUACT" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="FECACT" Type="Decimal" Precision="8" Scale="0" />
+          <Property Name="HORACT" Type="Decimal" Precision="6" Scale="0" />
+          <NavigationProperty Name="Item_Padre" Relationship="BalanzasModel.FK__Item_Hijo__NU1pA__117F9D94" FromRole="Item_Hijo" ToRole="Item_Padre" />
+        </EntityType>
+        <EntityType Name="Item_Padre">
+          <Key>
+            <PropertyRef Name="OLD_NBR" />
+          </Key>
+          <Property Name="OLD_NBR" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+          <Property Name="INDEST" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="USUCRE" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="FECCRE" Type="Decimal" Precision="8" Scale="0" />
+          <Property Name="HORCRE" Type="Decimal" Precision="6" Scale="0" />
+          <Property Name="USUACT" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="FECACT" Type="Decimal" Precision="8" Scale="0" />
+          <Property Name="HORACT" Type="Decimal" Precision="6" Scale="0" />
+          <NavigationProperty Name="Item_Hijo" Relationship="BalanzasModel.FK__Item_Hijo__NU1pA__117F9D94" FromRole="Item_Padre" ToRole="Item_Hijo" />
+        </EntityType>
+        <EntityType Name="Paridad">
+          <Key>
+            <PropertyRef Name="Item_Compra" />
+          </Key>
+          <Property Name="Item_Compra" Type="Decimal" Nullable="false" Precision="6" Scale="0" />
+          <Property Name="Item_Venta" Type="Decimal" Nullable="false" Precision="6" Scale="0" />
+        </EntityType>
+        <Association Name="FK__Item_Hijo__NU1pA__117F9D94">
+          <End Role="Item_Padre" Type="BalanzasModel.Item_Padre" Multiplicity="1" />
+          <End Role="Item_Hijo" Type="BalanzasModel.Item_Hijo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Item_Padre">
+              <PropertyRef Name="OLD_NBR" />
+            </Principal>
+            <Dependent Role="Item_Hijo">
+              <PropertyRef Name="NU1pA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="LocalesFormatos_Result">
+          <Property Type="String" Name="LOCAL_COD" Nullable="true" MaxLength="3" />
+          <Property Type="String" Name="LOCAL_DESC" Nullable="true" MaxLength="54" />
+          <Property Type="String" Name="FORMATO_COD" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="FORMATO_DESC" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <EntityType Name="Informacion_Art_Local_Sesma">
+          <Key>
+            <PropertyRef Name="STORE_NBR" />
+            <PropertyRef Name="OLD_NBR" />
+            <PropertyRef Name="ORIGEN" />
+          </Key>
+          <Property Type="Decimal" Name="STORE_NBR" Nullable="false" Precision="5" Scale="0" />
+          <Property Type="Decimal" Name="OLD_NBR" Nullable="false" Precision="10" Scale="0" />
+          <Property Type="String" Name="ORIGEN" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="RESSNS" MaxLength="25" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="MDSE_SUBGROUP_NBR" Precision="5" Scale="0" />
+          <Property Type="Decimal" Name="DEPT_NBR" Precision="5" Scale="0" />
+          <Property Type="Decimal" Name="DEPT_CATEGORY_NBR" Precision="10" Scale="0" />
+          <Property Type="String" Name="BUFOUT" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="FECFAE" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="NRDIAPE" Precision="3" Scale="0" />
+          <Property Type="String" Name="INDPROC" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="INDVIGE" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="Double" Name="PRCVTAOL" />
+          <Property Type="Decimal" Name="Certificado_Embarque" Precision="17" Scale="0" />
+          <Property Type="Decimal" Name="Origen_Frigorifico" Precision="3" Scale="0" />
+          <Property Type="String" Name="USUCRE" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECCRE" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="HORCRE" Precision="6" Scale="0" />
+          <Property Type="String" Name="USUACT" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECACT" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="HORACT" Precision="6" Scale="0" />
+          <Property Type="Int32" Name="CodigoTipoEtiqueta" />
+        </EntityType>
+        <EntityType Name="WM_Barra_Carga">
+          <Key>
+            <PropertyRef Name="Item_Barras" />
+            <PropertyRef Name="STORE_NBR" />
+          </Key>
+          <Property Type="String" Name="Item_Barras" Nullable="false" MaxLength="6" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="STORE_NBR" Nullable="false" Precision="5" Scale="0" />
+          <Property Type="String" Name="ORIGEN" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="Origen_Frigorifico" Precision="3" Scale="0" />
+          <Property Type="Decimal" Name="Certificado_Embarque" Precision="17" Scale="0" />
+          <Property Type="Decimal" Name="Fecha_Faena" Precision="6" Scale="0" />
+          <Property Type="Decimal" Name="Peso_Neto" Precision="6" Scale="0" />
+          <Property Type="Decimal" Name="Peso_Bruto" Precision="6" Scale="0" />
+          <Property Type="String" Name="Barra_Larga" MaxLength="100" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="INDPROC" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="USUCRE" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECCRE" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="HORCRE" Precision="6" Scale="0" />
+          <Property Type="String" Name="USUACT" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECACT" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="HORACT" Precision="6" Scale="0" />
+          <Property Type="Binary" Name="FOTOETIQUETA" MaxLength="Max" />
+        </EntityType>
+        <EntityType Name="Procedencia">
+          <Key>
+            <PropertyRef Name="ORIGEN" />
+          </Key>
+          <Property Type="String" Name="ORIGEN" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="DESORI" MaxLength="25" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="USUCRE" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECCRE" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="HORCRE" Precision="6" Scale="0" />
+          <Property Type="String" Name="USUACT" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECACT" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="HORACT" Precision="6" Scale="0" />
+          <NavigationProperty Name="Procedencia_Proveedor" Relationship="BalanzasModel.FK__Procedenc__ORIGE__35BCFE0A" FromRole="Procedencia" ToRole="Procedencia_Proveedor" />
+          <NavigationProperty Name="Procedencia_Proveedor1" Relationship="BalanzasModel.FK__Procedenc__ORIGE__36B12243" FromRole="Procedencia" ToRole="Procedencia_Proveedor" />
+          </EntityType>
+        <EntityType Name="ITEM_BALANZA">
+          <Key>
+            <PropertyRef Name="OLD_NBR" />
+          </Key>
+          <Property Type="Decimal" Name="OLD_NBR" Precision="10" Scale="0" Nullable="false" />
+          <Property Type="Decimal" Name="PLU_NBR" Precision="10" Scale="0" />
+          <Property Type="String" Name="VENDOR_STOCK_ID" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="UPC_NBR" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="UPC_FORMAT_CODE" Precision="5" Scale="0" />
+          <Property Type="String" Name="ITEM1_DESC" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="BRAND_ID" Precision="10" Scale="0" />
+          <Property Type="String" Name="BACKRM_SCALE_IND" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="VARIABLE_WT_IND" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="SHLFLBL1_COLR_DESC" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="VNPK_QTY" Precision="10" Scale="0" />
+          <Property Type="Decimal" Name="SELL_QTY" Precision="9" Scale="4" />
+          <Property Type="String" Name="SELL_UOM_CODE" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="MIN_WHSE_LIFE_QTY" Precision="5" Scale="0" />
+          <Property Type="Decimal" Name="MDSE_SEGMENT_NBR" Precision="5" Scale="0" />
+          <Property Type="String" Name="MDSE_SEGMENT_DESC" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="MDSE_SUBGROUP_NBR" Precision="5" Scale="0" />
+          <Property Type="String" Name="MDSE_SUBGROUP_DESC" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="DEPT_NBR" Precision="5" Scale="0" />
+          <Property Type="String" Name="DEPT_DESC" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="DEPT_CATEGORY_NBR" Precision="10" Scale="0" />
+          <Property Type="String" Name="DEPT_CATEGORY_DESC" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="DEPT_SUBCATG_NBR" Precision="10" Scale="0" />
+          <Property Type="String" Name="DEPT_SUBCATG_DESC" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="FINELINE_NBR" Precision="5" Scale="0" />
+          <Property Type="String" Name="FINELINE_DESC" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="BASE_DIV_NBR" Precision="5" Scale="0" />
+          <Property Type="String" Name="BUYER_USERID" MaxLength="8" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="BUYER_FULL_NAME" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Procedencia_Proveedor">
+          <Key>
+            <PropertyRef Name="ORIGEN" />
+            <PropertyRef Name="Origen_Frigorifico" />
+          </Key>
+          <Property Type="String" Name="ORIGEN" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="Origen_Frigorifico" Nullable="false" Precision="3" Scale="0" />
+          <Property Type="String" Name="RAZSOC30" MaxLength="30" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="INDFRIG" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="USUCRE" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECCRE" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="HORCRE" Precision="6" Scale="0" />
+          <Property Type="String" Name="USUACT" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECACT" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="HORACT" Precision="6" Scale="0" />
+          <Property Type="String" Name="Nro_Unico_SAG" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion_SAG" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Procedencia" Relationship="BalanzasModel.FK__Procedenc__ORIGE__35BCFE0A" FromRole="Procedencia_Proveedor" ToRole="Procedencia" />
+          <NavigationProperty Name="Procedencia1" Relationship="BalanzasModel.FK__Procedenc__ORIGE__36B12243" FromRole="Procedencia_Proveedor" ToRole="Procedencia" />
+          <Property Type="Int32" Name="DIAS_DURACION" />
+        </EntityType>
+        <Association Name="FK__Procedenc__ORIGE__35BCFE0A">
+          <End Type="BalanzasModel.Procedencia" Role="Procedencia" Multiplicity="1" />
+          <End Type="BalanzasModel.Procedencia_Proveedor" Role="Procedencia_Proveedor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Procedencia">
+              <PropertyRef Name="ORIGEN" />
+            </Principal>
+            <Dependent Role="Procedencia_Proveedor">
+              <PropertyRef Name="ORIGEN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Procedenc__ORIGE__36B12243">
+          <End Type="BalanzasModel.Procedencia" Role="Procedencia" Multiplicity="1" />
+          <End Type="BalanzasModel.Procedencia_Proveedor" Role="Procedencia_Proveedor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Procedencia">
+              <PropertyRef Name="ORIGEN" />
+            </Principal>
+            <Dependent Role="Procedencia_Proveedor">
+              <PropertyRef Name="ORIGEN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Informacion_Articulo_Prov">
+          <Key>
+            <PropertyRef Name="STORE_NBR" />
+            <PropertyRef Name="OLD_NBR" />
+            <PropertyRef Name="ORIGEN" />
+          </Key>
+          <Property Type="Decimal" Name="STORE_NBR" Nullable="false" Precision="5" Scale="0" />
+          <Property Type="Decimal" Name="OLD_NBR" Nullable="false" Precision="10" Scale="0" />
+          <Property Type="String" Name="ORIGEN" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="RESSNS" MaxLength="25" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="MDSE_SUBGROUP_NBR" Precision="5" Scale="0" />
+          <Property Type="Decimal" Name="DEPT_NBR" Precision="5" Scale="0" />
+          <Property Type="Decimal" Name="DEPT_CATEGORY_NBR" Precision="10" Scale="0" />
+          <Property Type="String" Name="DPLPRV" MaxLength="30" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="RAZSOC30" MaxLength="30" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECINI" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="FECTER" Precision="8" Scale="0" />
+          <Property Type="String" Name="INDFRIG" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="USUCRE" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECCRE" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="HORCRE" Precision="6" Scale="0" />
+          <Property Type="String" Name="USUACT" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECACT" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="HORACT" Precision="6" Scale="0" />
+          <Property Type="String" Name="TEXTOCONTINGENCIA" MaxLength="40" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Inventario_Carnes">
+          <Key>
+            <PropertyRef Name="IdInventario" />
+          </Key>
+          <Property Type="Int32" Name="IdInventario" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Decimal" Name="Item_Padre" Nullable="false" Precision="10" Scale="0" />
+          <Property Type="Decimal" Name="STORE_NBR" Nullable="false" Precision="5" Scale="0" />
+          <Property Type="Decimal" Name="Item" Nullable="false" Precision="10" Scale="0" />
+          <Property Type="DateTime" Name="Fecha_Inventario" Nullable="false" />
+          <Property Type="DateTime" Name="Fecha_Lectura" Nullable="false" />
+          <Property Type="Decimal" Name="Origen_Frigorifico" Precision="3" Scale="0" />
+          <Property Type="Decimal" Name="Certificado_Embarque" Precision="17" Scale="0" />
+          <Property Type="Decimal" Name="Fecha_Faena" Precision="6" Scale="0" />
+          <Property Type="Decimal" Name="Peso_Neto" Nullable="false" Precision="10" Scale="4" />
+          <Property Type="Decimal" Name="Peso_Bruto" Nullable="false" Precision="10" Scale="4" />
+          <Property Type="Int32" Name="Cajas" Nullable="false" />
+          <Property Type="String" Name="Responsable" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="IdMotivoInventario" Nullable="false" />
+          <Property Type="String" Name="USUCRE" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECCRE" Nullable="false" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="HORCRE" Nullable="false" Precision="6" Scale="0" />
+          <NavigationProperty Name="Motivo_Inventario" Relationship="BalanzasModel.FK_Inventario_Carnes_Motivo_Inventario" FromRole="Inventario_Carnes" ToRole="Motivo_Inventario" />
+        </EntityType>
+        <EntityType Name="Motivo_Inventario">
+          <Key>
+            <PropertyRef Name="IdMotivoInventario" />
+          </Key>
+          <Property Type="Int32" Name="IdMotivoInventario" Nullable="false" />
+          <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Inventario_Carnes" Relationship="BalanzasModel.FK_Inventario_Carnes_Motivo_Inventario" FromRole="Motivo_Inventario" ToRole="Inventario_Carnes" />
+        </EntityType>
+        <Association Name="FK_Inventario_Carnes_Motivo_Inventario">
+          <End Type="BalanzasModel.Motivo_Inventario" Role="Motivo_Inventario" Multiplicity="1" />
+          <End Type="BalanzasModel.Inventario_Carnes" Role="Inventario_Carnes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Motivo_Inventario">
+              <PropertyRef Name="IdMotivoInventario" />
+            </Principal>
+            <Dependent Role="Inventario_Carnes">
+              <PropertyRef Name="IdMotivoInventario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="ItemCarniceria_Result">
+          <Property Type="Decimal" Name="OLD_NBR" Nullable="true" Precision="10" Scale="0" />
+          <Property Type="String" Name="ITEM1_DESC" Nullable="true" MaxLength="25" />
+          <Property Type="Decimal" Name="FINELINE_NBR" Nullable="true" Precision="5" Scale="0" />
+        </ComplexType>
+        <EntityType Name="Informacion_Refresh">
+          <Key>
+            <PropertyRef Name="ID_INFO_REFRESH" />
+          </Key>
+          <Property Type="Int32" Name="ID_INFO_REFRESH" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Decimal" Name="OLD_NBR" Nullable="false" Precision="9" Scale="0" />
+          <Property Type="DateTime" Name="FECHA_ELABORACION" />
+          <Property Type="String" Name="LOTEPRODUCCION" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="FECHADESCONGELADO" Nullable="false" />
+          <Property Type="Int32" Name="ID_PARAMETRO" Nullable="false" />
+          <Property Type="Decimal" Name="TEMPERATURA" Nullable="false" Precision="5" Scale="0" />
+          <Property Type="String" Name="ETIQ_PROPIA" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="USUCRE" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECCRE" Nullable="false" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="HORCRE" Nullable="false" Precision="8" Scale="0" />
+          <Property Type="String" Name="USUACT" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECACT" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="HORACT" Precision="8" Scale="0" />
+          <Property Type="Int32" Name="CANTIDAD_UNIDADES" Nullable="false" />
+          <Property Type="String" Name="COMENTARIO" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="Binary" Name="FOTOETIQUETA" MaxLength="Max" FixedLength="false" />
+          <Property Type="Int32" Name="CORRELATIVO" />
+        </EntityType>
+        <ComplexType Name="Lista_ItemRefresh_Result">
+          <Property Type="Decimal" Name="ItemNumber" Nullable="true" Precision="10" Scale="0" />
+          <Property Type="Decimal" Name="OldNumber" Nullable="true" Precision="10" Scale="0" />
+          <Property Type="Decimal" Name="CodigoBalanza" Nullable="false" Precision="10" Scale="0" />
+          <Property Type="Decimal" Name="Barra" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="NumeroDepartamento" Nullable="true" Precision="5" Scale="0" />
+          <Property Type="String" Name="NombreDepartamento" Nullable="false" MaxLength="80" />
+          <Property Type="String" Name="DescripcionItem1" Nullable="false" MaxLength="25" />
+          <Property Type="String" Name="DescripcionItem2" Nullable="false" MaxLength="25" />
+          <Property Type="Decimal" Name="DiasPericibilidad" Nullable="true" Precision="3" Scale="0" />
+          <Property Type="Int32" Name="Temperatura" Nullable="false" />
+          <Property Type="Decimal" Name="TemperaturaIdeal" Nullable="true" Precision="5" Scale="0" />
+          <Property Type="Decimal" Name="HoraTemperaturaIdeal" Nullable="true" Precision="5" Scale="2" />
+        </ComplexType>
+        <EntityType Name="WM_Barra_Carga_Bitacora">
+          <Key>
+            <PropertyRef Name="IdBitacora" />
+          </Key>
+          <Property Type="Int32" Name="IdBitacora" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Item_Barras" Nullable="false" MaxLength="6" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="STORE_NBR" Nullable="false" Precision="5" Scale="0" />
+          <Property Type="String" Name="ORIGEN" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="Origen_Frigorifico" Precision="3" Scale="0" />
+          <Property Type="Decimal" Name="Certificado_Embarque" Precision="17" Scale="0" />
+          <Property Type="Decimal" Name="Fecha_Faena" Precision="6" Scale="0" />
+          <Property Type="Decimal" Name="Peso_Neto" Precision="6" Scale="0" />
+          <Property Type="Decimal" Name="Peso_Bruto" Precision="6" Scale="0" />
+          <Property Type="String" Name="Barra_Larga" MaxLength="100" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="INDPROC" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="USUCRE" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Decimal" Name="FECCRE" Precision="8" Scale="0" />
+          <Property Type="Decimal" Name="HORCRE" Precision="6" Scale="0" />
+          <Property Type="String" Name="Responsable" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Binary" Name="FOTOETIQUETA" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BalanzasModelStoreContainer" CdmEntityContainer="BalanzasContenedor">
+          <EntitySetMapping Name="Item_Hijo">
+            <EntityTypeMapping TypeName="BalanzasModel.Item_Hijo">
+              <MappingFragment StoreEntitySet="Item_Hijo">
+                <ScalarProperty Name="NU1pA" ColumnName="NU1pA" />
+                <ScalarProperty Name="OLD_NBR" ColumnName="OLD_NBR" />
+                <ScalarProperty Name="INDEST" ColumnName="INDEST" />
+                <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+                <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+                <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+                <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+                <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+                <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Item_Padre">
+            <EntityTypeMapping TypeName="BalanzasModel.Item_Padre">
+              <MappingFragment StoreEntitySet="Item_Padre">
+                <ScalarProperty Name="OLD_NBR" ColumnName="OLD_NBR" />
+                <ScalarProperty Name="INDEST" ColumnName="INDEST" />
+                <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+                <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+                <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+                <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+                <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+                <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Paridads">
+            <EntityTypeMapping TypeName="BalanzasModel.Paridad">
+              <MappingFragment StoreEntitySet="Paridad">
+                <ScalarProperty Name="Item_Compra" ColumnName="Item_Compra" />
+                <ScalarProperty Name="Item_Venta" ColumnName="Item_Venta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Informacion_Art_Local_Sesma">
+            <EntityTypeMapping TypeName="BalanzasModel.Informacion_Art_Local_Sesma">
+              <MappingFragment StoreEntitySet="Informacion_Art_Local_Sesma">
+                <ScalarProperty Name="CodigoTipoEtiqueta" ColumnName="CodigoTipoEtiqueta" />
+                <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+                <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+                <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+                <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+                <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+                <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+                <ScalarProperty Name="Origen_Frigorifico" ColumnName="Origen_Frigorifico" />
+                <ScalarProperty Name="Certificado_Embarque" ColumnName="Certificado_Embarque" />
+                <ScalarProperty Name="PRCVTAOL" ColumnName="PRCVTAOL" />
+                <ScalarProperty Name="INDVIGE" ColumnName="INDVIGE" />
+                <ScalarProperty Name="INDPROC" ColumnName="INDPROC" />
+                <ScalarProperty Name="NRDIAPE" ColumnName="NRDIAPE" />
+                <ScalarProperty Name="FECFAE" ColumnName="FECFAE" />
+                <ScalarProperty Name="BUFOUT" ColumnName="BUFOUT" />
+                <ScalarProperty Name="DEPT_CATEGORY_NBR" ColumnName="DEPT_CATEGORY_NBR" />
+                <ScalarProperty Name="DEPT_NBR" ColumnName="DEPT_NBR" />
+                <ScalarProperty Name="MDSE_SUBGROUP_NBR" ColumnName="MDSE_SUBGROUP_NBR" />
+                <ScalarProperty Name="RESSNS" ColumnName="RESSNS" />
+                <ScalarProperty Name="ORIGEN" ColumnName="ORIGEN" />
+                <ScalarProperty Name="OLD_NBR" ColumnName="OLD_NBR" />
+                <ScalarProperty Name="STORE_NBR" ColumnName="STORE_NBR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WM_Barra_Carga">
+            <EntityTypeMapping TypeName="BalanzasModel.WM_Barra_Carga">
+              <MappingFragment StoreEntitySet="WM_Barra_Carga">
+                <ScalarProperty Name="FOTOETIQUETA" ColumnName="FOTOETIQUETA" />
+                <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+                <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+                <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+                <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+                <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+                <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+                <ScalarProperty Name="INDPROC" ColumnName="INDPROC" />
+                <ScalarProperty Name="Barra_Larga" ColumnName="Barra_Larga" />
+                <ScalarProperty Name="Peso_Bruto" ColumnName="Peso_Bruto" />
+                <ScalarProperty Name="Peso_Neto" ColumnName="Peso_Neto" />
+                <ScalarProperty Name="Fecha_Faena" ColumnName="Fecha_Faena" />
+                <ScalarProperty Name="Certificado_Embarque" ColumnName="Certificado_Embarque" />
+                <ScalarProperty Name="Origen_Frigorifico" ColumnName="Origen_Frigorifico" />
+                <ScalarProperty Name="ORIGEN" ColumnName="ORIGEN" />
+                <ScalarProperty Name="STORE_NBR" ColumnName="STORE_NBR" />
+                <ScalarProperty Name="Item_Barras" ColumnName="Item_Barras" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Procedencia">
+            <EntityTypeMapping TypeName="BalanzasModel.Procedencia">
+              <MappingFragment StoreEntitySet="Procedencia">
+                <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+                <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+                <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+                <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+                <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+                <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+                <ScalarProperty Name="DESORI" ColumnName="DESORI" />
+                <ScalarProperty Name="ORIGEN" ColumnName="ORIGEN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ITEM_BALANZA">
+            <EntityTypeMapping TypeName="BalanzasModel.ITEM_BALANZA">
+              <MappingFragment StoreEntitySet="ITEM_BALANZA">
+                <ScalarProperty Name="BUYER_FULL_NAME" ColumnName="BUYER_FULL_NAME" />
+                <ScalarProperty Name="BUYER_USERID" ColumnName="BUYER_USERID" />
+                <ScalarProperty Name="BASE_DIV_NBR" ColumnName="BASE_DIV_NBR" />
+                <ScalarProperty Name="FINELINE_DESC" ColumnName="FINELINE_DESC" />
+                <ScalarProperty Name="FINELINE_NBR" ColumnName="FINELINE_NBR" />
+                <ScalarProperty Name="DEPT_SUBCATG_DESC" ColumnName="DEPT_SUBCATG_DESC" />
+                <ScalarProperty Name="DEPT_SUBCATG_NBR" ColumnName="DEPT_SUBCATG_NBR" />
+                <ScalarProperty Name="DEPT_CATEGORY_DESC" ColumnName="DEPT_CATEGORY_DESC" />
+                <ScalarProperty Name="DEPT_CATEGORY_NBR" ColumnName="DEPT_CATEGORY_NBR" />
+                <ScalarProperty Name="DEPT_DESC" ColumnName="DEPT_DESC" />
+                <ScalarProperty Name="DEPT_NBR" ColumnName="DEPT_NBR" />
+                <ScalarProperty Name="MDSE_SUBGROUP_DESC" ColumnName="MDSE_SUBGROUP_DESC" />
+                <ScalarProperty Name="MDSE_SUBGROUP_NBR" ColumnName="MDSE_SUBGROUP_NBR" />
+                <ScalarProperty Name="MDSE_SEGMENT_DESC" ColumnName="MDSE_SEGMENT_DESC" />
+                <ScalarProperty Name="MDSE_SEGMENT_NBR" ColumnName="MDSE_SEGMENT_NBR" />
+                <ScalarProperty Name="MIN_WHSE_LIFE_QTY" ColumnName="MIN_WHSE_LIFE_QTY" />
+                <ScalarProperty Name="SELL_UOM_CODE" ColumnName="SELL_UOM_CODE" />
+                <ScalarProperty Name="SELL_QTY" ColumnName="SELL_QTY" />
+                <ScalarProperty Name="VNPK_QTY" ColumnName="VNPK_QTY" />
+                <ScalarProperty Name="SHLFLBL1_COLR_DESC" ColumnName="SHLFLBL1_COLR_DESC" />
+                <ScalarProperty Name="VARIABLE_WT_IND" ColumnName="VARIABLE_WT_IND" />
+                <ScalarProperty Name="BACKRM_SCALE_IND" ColumnName="BACKRM_SCALE_IND" />
+                <ScalarProperty Name="BRAND_ID" ColumnName="BRAND_ID" />
+                <ScalarProperty Name="ITEM1_DESC" ColumnName="ITEM1_DESC" />
+                <ScalarProperty Name="UPC_FORMAT_CODE" ColumnName="UPC_FORMAT_CODE" />
+                <ScalarProperty Name="UPC_NBR" ColumnName="UPC_NBR" />
+                <ScalarProperty Name="VENDOR_STOCK_ID" ColumnName="VENDOR_STOCK_ID" />
+                <ScalarProperty Name="PLU_NBR" ColumnName="PLU_NBR" />
+                <ScalarProperty Name="OLD_NBR" ColumnName="OLD_NBR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Procedencia_Proveedor">
+            <EntityTypeMapping TypeName="BalanzasModel.Procedencia_Proveedor">
+              <MappingFragment StoreEntitySet="Procedencia_Proveedor">
+                <ScalarProperty Name="DIAS_DURACION" ColumnName="DIAS_DURACION" />
+                <ScalarProperty Name="Descripcion_SAG" ColumnName="Descripcion_SAG" />
+                <ScalarProperty Name="Nro_Unico_SAG" ColumnName="Nro_Unico_SAG" />
+                <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+                <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+                <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+                <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+                <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+                <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+                <ScalarProperty Name="INDFRIG" ColumnName="INDFRIG" />
+                <ScalarProperty Name="RAZSOC30" ColumnName="RAZSOC30" />
+                <ScalarProperty Name="Origen_Frigorifico" ColumnName="Origen_Frigorifico" />
+                <ScalarProperty Name="ORIGEN" ColumnName="ORIGEN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Informacion_Articulo_Prov">
+            <EntityTypeMapping TypeName="BalanzasModel.Informacion_Articulo_Prov">
+              <MappingFragment StoreEntitySet="Informacion_Articulo_Prov">
+                <ScalarProperty Name="TEXTOCONTINGENCIA" ColumnName="TEXTOCONTINGENCIA" />
+                <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+                <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+                <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+                <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+                <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+                <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+                <ScalarProperty Name="INDFRIG" ColumnName="INDFRIG" />
+                <ScalarProperty Name="FECTER" ColumnName="FECTER" />
+                <ScalarProperty Name="FECINI" ColumnName="FECINI" />
+                <ScalarProperty Name="RAZSOC30" ColumnName="RAZSOC30" />
+                <ScalarProperty Name="DPLPRV" ColumnName="DPLPRV" />
+                <ScalarProperty Name="DEPT_CATEGORY_NBR" ColumnName="DEPT_CATEGORY_NBR" />
+                <ScalarProperty Name="DEPT_NBR" ColumnName="DEPT_NBR" />
+                <ScalarProperty Name="MDSE_SUBGROUP_NBR" ColumnName="MDSE_SUBGROUP_NBR" />
+                <ScalarProperty Name="RESSNS" ColumnName="RESSNS" />
+                <ScalarProperty Name="ORIGEN" ColumnName="ORIGEN" />
+                <ScalarProperty Name="OLD_NBR" ColumnName="OLD_NBR" />
+                <ScalarProperty Name="STORE_NBR" ColumnName="STORE_NBR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Actualiza_ArtLocalSesma" FunctionName="BalanzasModel.Store.Actualiza_ArtLocalSesma" />
+          <FunctionImportMapping FunctionImportName="Actualiza_ArticuloProveedor" FunctionName="BalanzasModel.Store.Actualiza_ArticuloProveedor" />
+          <FunctionImportMapping FunctionImportName="Lista_ItemCarniceria" FunctionName="BalanzasModel.Store.Lista_ItemCarniceria">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BalanzasModel.ItemCarniceria_Result">
+                <ScalarProperty Name="OLD_NBR" ColumnName="OLD_NBR" />
+                <ScalarProperty Name="ITEM1_DESC" ColumnName="ITEM1_DESC" />
+                <ScalarProperty Name="FINELINE_NBR" ColumnName="FINELINE_NBR" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="Inventario_Carnes">
+            <EntityTypeMapping TypeName="BalanzasModel.Inventario_Carnes">
+              <MappingFragment StoreEntitySet="Inventario_Carnes">
+                <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+                <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+                <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+                <ScalarProperty Name="IdMotivoInventario" ColumnName="IdMotivoInventario" />
+                <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+                <ScalarProperty Name="Cajas" ColumnName="Cajas" />
+                <ScalarProperty Name="Peso_Bruto" ColumnName="Peso_Bruto" />
+                <ScalarProperty Name="Peso_Neto" ColumnName="Peso_Neto" />
+                <ScalarProperty Name="Fecha_Faena" ColumnName="Fecha_Faena" />
+                <ScalarProperty Name="Certificado_Embarque" ColumnName="Certificado_Embarque" />
+                <ScalarProperty Name="Origen_Frigorifico" ColumnName="Origen_Frigorifico" />
+                <ScalarProperty Name="Fecha_Lectura" ColumnName="Fecha_Lectura" />
+                <ScalarProperty Name="Fecha_Inventario" ColumnName="Fecha_Inventario" />
+                <ScalarProperty Name="Item" ColumnName="Item" />
+                <ScalarProperty Name="STORE_NBR" ColumnName="STORE_NBR" />
+                <ScalarProperty Name="Item_Padre" ColumnName="Item_Padre" />
+                <ScalarProperty Name="IdInventario" ColumnName="IdInventario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Motivo_Inventario">
+            <EntityTypeMapping TypeName="BalanzasModel.Motivo_Inventario">
+              <MappingFragment StoreEntitySet="Motivo_Inventario">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="IdMotivoInventario" ColumnName="IdMotivoInventario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Informacion_Refresh">
+            <EntityTypeMapping TypeName="BalanzasModel.Informacion_Refresh">
+              <MappingFragment StoreEntitySet="Informacion_Refresh">
+                <ScalarProperty Name="CORRELATIVO" ColumnName="CORRELATIVO" />
+                <ScalarProperty Name="FOTOETIQUETA" ColumnName="FOTOETIQUETA" />
+                <ScalarProperty Name="COMENTARIO" ColumnName="COMENTARIO" />
+                <ScalarProperty Name="CANTIDAD_UNIDADES" ColumnName="CANTIDAD_UNIDADES" />
+                <ScalarProperty Name="HORACT" ColumnName="HORACT" />
+                <ScalarProperty Name="FECACT" ColumnName="FECACT" />
+                <ScalarProperty Name="USUACT" ColumnName="USUACT" />
+                <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+                <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+                <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+                <ScalarProperty Name="ETIQ_PROPIA" ColumnName="ETIQ_PROPIA" />
+                <ScalarProperty Name="TEMPERATURA" ColumnName="TEMPERATURA" />
+                <ScalarProperty Name="ID_PARAMETRO" ColumnName="ID_PARAMETRO" />
+                <ScalarProperty Name="FECHADESCONGELADO" ColumnName="FECHADESCONGELADO" />
+                <ScalarProperty Name="LOTEPRODUCCION" ColumnName="LOTEPRODUCCION" />
+                <ScalarProperty Name="FECHA_ELABORACION" ColumnName="FECHA_ELABORACION" />
+                <ScalarProperty Name="OLD_NBR" ColumnName="OLD_NBR" />
+                <ScalarProperty Name="ID_INFO_REFRESH" ColumnName="ID_INFO_REFRESH" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Lista_ItemRefresh" FunctionName="BalanzasModel.Store.Lista_ItemRefresh">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BalanzasModel.Lista_ItemRefresh_Result">
+                <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+                <ScalarProperty Name="OldNumber" ColumnName="OldNumber" />
+                <ScalarProperty Name="CodigoBalanza" ColumnName="CodigoBalanza" />
+                <ScalarProperty Name="Barra" ColumnName="Barra" />
+                <ScalarProperty Name="NumeroDepartamento" ColumnName="NumeroDepartamento" />
+                <ScalarProperty Name="NombreDepartamento" ColumnName="NombreDepartamento" />
+                <ScalarProperty Name="DescripcionItem1" ColumnName="DescripcionItem1" />
+                <ScalarProperty Name="DescripcionItem2" ColumnName="DescripcionItem2" />
+                <ScalarProperty Name="DiasPericibilidad" ColumnName="DiasPericibilidad" />
+                <ScalarProperty Name="Temperatura" ColumnName="Temperatura" />
+                <ScalarProperty Name="TemperaturaIdeal" ColumnName="TemperaturaIdeal" />
+                <ScalarProperty Name="HoraTemperaturaIdeal" ColumnName="HoraTemperaturaIdeal" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="WM_Barra_Carga_Bitacora">
+            <EntityTypeMapping TypeName="BalanzasModel.WM_Barra_Carga_Bitacora">
+              <MappingFragment StoreEntitySet="WM_Barra_Carga_Bitacora">
+                <ScalarProperty Name="FOTOETIQUETA" ColumnName="FOTOETIQUETA" />
+                <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+                <ScalarProperty Name="HORCRE" ColumnName="HORCRE" />
+                <ScalarProperty Name="FECCRE" ColumnName="FECCRE" />
+                <ScalarProperty Name="USUCRE" ColumnName="USUCRE" />
+                <ScalarProperty Name="INDPROC" ColumnName="INDPROC" />
+                <ScalarProperty Name="Barra_Larga" ColumnName="Barra_Larga" />
+                <ScalarProperty Name="Peso_Bruto" ColumnName="Peso_Bruto" />
+                <ScalarProperty Name="Peso_Neto" ColumnName="Peso_Neto" />
+                <ScalarProperty Name="Fecha_Faena" ColumnName="Fecha_Faena" />
+                <ScalarProperty Name="Certificado_Embarque" ColumnName="Certificado_Embarque" />
+                <ScalarProperty Name="Origen_Frigorifico" ColumnName="Origen_Frigorifico" />
+                <ScalarProperty Name="ORIGEN" ColumnName="ORIGEN" />
+                <ScalarProperty Name="STORE_NBR" ColumnName="STORE_NBR" />
+                <ScalarProperty Name="Item_Barras" ColumnName="Item_Barras" />
+                <ScalarProperty Name="IdBitacora" ColumnName="IdBitacora" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Predeterminados" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Balanzas" ZoomLevel="72">
+        <EntityTypeShape EntityType="BalanzasModel.Item_Hijo" Width="1.5" PointX="3" PointY="1" Height="2.9417936197916665" IsExpanded="true" />
+        <EntityTypeShape EntityType="BalanzasModel.Item_Padre" Width="1.5" PointX="0.75" PointY="1.125" Height="2.7494921874999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="BalanzasModel.Paridad" Width="1.5" PointX="0.75" PointY="4.75" Height="1.4033821614583317" IsExpanded="true" />
+        <AssociationConnector Association="BalanzasModel.FK__Item_Hijo__NU1pA__117F9D94" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.49974609375" />
+          <ConnectorPoint PointX="3" PointY="2.49974609375" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="BalanzasModel.Informacion_Art_Local_Sesma" Width="1.5" PointX="6.375" PointY="0.75" Height="5.057109375" />
+        <EntityTypeShape EntityType="BalanzasModel.WM_Barra_Carga" Width="2" PointX="3" PointY="6.75" Height="4.0956022135416674" />
+        <EntityTypeShape EntityType="BalanzasModel.Procedencia" Width="1.5" PointX="8.375" PointY="1.25" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="BalanzasModel.ITEM_BALANZA" Width="1.5" PointX="10.375" PointY="5.75" Height="6.5955208333333317" />
+        <EntityTypeShape EntityType="BalanzasModel.Procedencia_Proveedor" Width="1.5" PointX="10.625" PointY="0.875" Height="3.7109993489583317" />
+        <AssociationConnector Association="BalanzasModel.FK__Procedenc__ORIGE__35BCFE0A" >
+          <ConnectorPoint PointX="9.875" PointY="2.7208968098958328" />
+          <ConnectorPoint PointX="10.625" PointY="2.7208968098958328" />
+        </AssociationConnector>
+        <AssociationConnector Association="BalanzasModel.FK__Procedenc__ORIGE__36B12243" >
+          <ConnectorPoint PointX="9.875" PointY="1.9229484049479164" />
+          <ConnectorPoint PointX="10.625" PointY="1.9229484049479164" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="BalanzasModel.Informacion_Articulo_Prov" Width="2.375" PointX="0.75" PointY="11.75" Height="4.4802050781250031" />
+        <EntityTypeShape EntityType="BalanzasModel.Inventario_Carnes" Width="1.5" PointX="14.625" PointY="6" Height="4.480205078124996" />
+        <EntityTypeShape EntityType="BalanzasModel.Motivo_Inventario" Width="1.5" PointX="12.375" PointY="7.5" Height="1.595683593749996" />
+        <AssociationConnector Association="BalanzasModel.FK_Inventario_Carnes_Motivo_Inventario" >
+          <ConnectorPoint PointX="13.875" PointY="8.297841796874998" />
+          <ConnectorPoint PointX="14.625" PointY="8.297841796874998" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="BalanzasModel.Informacion_Refresh" Width="2.125" PointX="6.375" PointY="6.75" Height="4.2879036458333335" />
+        <EntityTypeShape EntityType="BalanzasModel.WM_Barra_Carga_Bitacora" Width="1.5" PointX="4.375" PointY="12.75" Height="4.0956022135416674" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

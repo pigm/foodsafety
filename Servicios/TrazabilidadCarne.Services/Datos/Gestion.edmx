@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DWH_VW_GestionDYSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="DWH_VW_GestionDYSModelStoreContainer">
+          <EntitySet Name="vw_DM_LOCAL" EntityType="DWH_VW_GestionDYSModel.Store.vw_DM_LOCAL" store:Type="Views" store:Schema="dvw" store:Name="vw_DM_LOCAL">
+            <DefiningQuery>SELECT 
+      [vw_DM_LOCAL].[LOCAL_ID] AS [LOCAL_ID], 
+      [vw_DM_LOCAL].[LOCAL_COD] AS [LOCAL_COD], 
+      [vw_DM_LOCAL].[LOCAL_DESC] AS [LOCAL_DESC], 
+      [vw_DM_LOCAL].[LOCAL_DESC_COMPL] AS [LOCAL_DESC_COMPL], 
+      [vw_DM_LOCAL].[LOCAL_TIPO_ID] AS [LOCAL_TIPO_ID], 
+      [vw_DM_LOCAL].[CADENA_ID] AS [CADENA_ID], 
+      [vw_DM_LOCAL].[MERCADO_ID] AS [MERCADO_ID], 
+      [vw_DM_LOCAL].[MERCADO_COD] AS [MERCADO_COD], 
+      [vw_DM_LOCAL].[MERCADO_DESC] AS [MERCADO_DESC], 
+      [vw_DM_LOCAL].[FORMATO_ID] AS [FORMATO_ID], 
+      [vw_DM_LOCAL].[FORMATO_COD] AS [FORMATO_COD], 
+      [vw_DM_LOCAL].[FORMATO_DESC] AS [FORMATO_DESC], 
+      [vw_DM_LOCAL].[COMUNA_ID] AS [COMUNA_ID], 
+      [vw_DM_LOCAL].[CIUDAD_ID] AS [CIUDAD_ID], 
+      [vw_DM_LOCAL].[REGION_ID] AS [REGION_ID], 
+      [vw_DM_LOCAL].[PAIS_ID] AS [PAIS_ID]
+      FROM [dvw].[vw_DM_LOCAL] AS [vw_DM_LOCAL]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'DWH_VW_GestionDYS.dvw.vw_DM_LOCAL' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="vw_DM_LOCAL">
+          <Key>
+            <PropertyRef Name="LOCAL_ID" />
+            <PropertyRef Name="MERCADO_ID" />
+            <PropertyRef Name="FORMATO_ID" />
+            <PropertyRef Name="CIUDAD_ID" />
+            <PropertyRef Name="REGION_ID" />
+            <PropertyRef Name="PAIS_ID" />
+          </Key>
+          <Property Name="LOCAL_ID" Type="numeric" Nullable="false" Precision="5" />
+          <Property Name="LOCAL_COD" Type="varchar" MaxLength="3" />
+          <Property Name="LOCAL_DESC" Type="varchar" MaxLength="54" />
+          <Property Name="LOCAL_DESC_COMPL" Type="varchar" MaxLength="54" />
+          <Property Name="LOCAL_TIPO_ID" Type="numeric" Precision="2" />
+          <Property Name="CADENA_ID" Type="numeric" Precision="2" />
+          <Property Name="MERCADO_ID" Type="numeric" Nullable="false" Precision="3" />
+          <Property Name="MERCADO_COD" Type="varchar" MaxLength="20" />
+          <Property Name="MERCADO_DESC" Type="varchar" MaxLength="50" />
+          <Property Name="FORMATO_ID" Type="numeric" Nullable="false" Precision="2" />
+          <Property Name="FORMATO_COD" Type="varchar" MaxLength="20" />
+          <Property Name="FORMATO_DESC" Type="varchar" MaxLength="50" />
+          <Property Name="COMUNA_ID" Type="numeric" Precision="5" />
+          <Property Name="CIUDAD_ID" Type="numeric" Nullable="false" Precision="4" />
+          <Property Name="REGION_ID" Type="numeric" Nullable="false" Precision="3" />
+          <Property Name="PAIS_ID" Type="numeric" Nullable="false" Precision="2" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GestionModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="GestionContenedor" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="vw_DM_LOCAL" EntityType="GestionModel.vw_DM_LOCAL" />
+        </EntityContainer>
+        <EntityType Name="vw_DM_LOCAL">
+          <Key>
+            <PropertyRef Name="LOCAL_ID" />
+            <PropertyRef Name="MERCADO_ID" />
+            <PropertyRef Name="FORMATO_ID" />
+            <PropertyRef Name="CIUDAD_ID" />
+            <PropertyRef Name="REGION_ID" />
+            <PropertyRef Name="PAIS_ID" />
+          </Key>
+          <Property Name="LOCAL_ID" Type="Decimal" Nullable="false" Precision="5" Scale="0" />
+          <Property Name="LOCAL_COD" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="LOCAL_DESC" Type="String" MaxLength="54" Unicode="false" FixedLength="false" />
+          <Property Name="LOCAL_DESC_COMPL" Type="String" MaxLength="54" Unicode="false" FixedLength="false" />
+          <Property Name="LOCAL_TIPO_ID" Type="Decimal" Precision="2" Scale="0" />
+          <Property Name="CADENA_ID" Type="Decimal" Precision="2" Scale="0" />
+          <Property Name="MERCADO_ID" Type="Decimal" Nullable="false" Precision="3" Scale="0" />
+          <Property Name="MERCADO_COD" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="MERCADO_DESC" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FORMATO_ID" Type="Decimal" Nullable="false" Precision="2" Scale="0" />
+          <Property Name="FORMATO_COD" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="FORMATO_DESC" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="COMUNA_ID" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="CIUDAD_ID" Type="Decimal" Nullable="false" Precision="4" Scale="0" />
+          <Property Name="REGION_ID" Type="Decimal" Nullable="false" Precision="3" Scale="0" />
+          <Property Name="PAIS_ID" Type="Decimal" Nullable="false" Precision="2" Scale="0" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DWH_VW_GestionDYSModelStoreContainer" CdmEntityContainer="GestionContenedor">
+          <EntitySetMapping Name="vw_DM_LOCAL">
+            <EntityTypeMapping TypeName="GestionModel.vw_DM_LOCAL">
+              <MappingFragment StoreEntitySet="vw_DM_LOCAL">
+                <ScalarProperty Name="LOCAL_ID" ColumnName="LOCAL_ID" />
+                <ScalarProperty Name="LOCAL_COD" ColumnName="LOCAL_COD" />
+                <ScalarProperty Name="LOCAL_DESC" ColumnName="LOCAL_DESC" />
+                <ScalarProperty Name="LOCAL_DESC_COMPL" ColumnName="LOCAL_DESC_COMPL" />
+                <ScalarProperty Name="LOCAL_TIPO_ID" ColumnName="LOCAL_TIPO_ID" />
+                <ScalarProperty Name="CADENA_ID" ColumnName="CADENA_ID" />
+                <ScalarProperty Name="MERCADO_ID" ColumnName="MERCADO_ID" />
+                <ScalarProperty Name="MERCADO_COD" ColumnName="MERCADO_COD" />
+                <ScalarProperty Name="MERCADO_DESC" ColumnName="MERCADO_DESC" />
+                <ScalarProperty Name="FORMATO_ID" ColumnName="FORMATO_ID" />
+                <ScalarProperty Name="FORMATO_COD" ColumnName="FORMATO_COD" />
+                <ScalarProperty Name="FORMATO_DESC" ColumnName="FORMATO_DESC" />
+                <ScalarProperty Name="COMUNA_ID" ColumnName="COMUNA_ID" />
+                <ScalarProperty Name="CIUDAD_ID" ColumnName="CIUDAD_ID" />
+                <ScalarProperty Name="REGION_ID" ColumnName="REGION_ID" />
+                <ScalarProperty Name="PAIS_ID" ColumnName="PAIS_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Gestion">
+        <EntityTypeShape EntityType="GestionModel.vw_DM_LOCAL" Width="1.5" PointX="0.75" PointY="0.75" Height="4.0956022135416656" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
