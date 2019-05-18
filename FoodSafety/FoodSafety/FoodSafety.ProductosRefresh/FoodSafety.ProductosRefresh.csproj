@@ -27,7 +27,6 @@
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
     <JavaMaximumHeapSize></JavaMaximumHeapSize>
-    <AndroidSupportedAbis>arm64-v8a;armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -188,24 +187,24 @@
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Actividades\MainActivity.cs" />
-    <Compile Include="Actividades\AgregarProductoActivity.cs" />
-    <Compile Include="Actividades\HomeAgregaProductoActivity.cs" />
-    <Compile Include="Services\ActivityContexts.cs" />
     <Compile Include="Properties\Constantes.cs" />
-    <Compile Include="Actividades\IngresoUsuarioResponsableActivity.cs" />
-    <Compile Include="Actividades\UbicacionTiendaActivity.cs" />
-    <Compile Include="Adapters\AdapterSucursal.cs" />
-    <Compile Include="Fragments\FragmentSucursales.cs" />
-    <Compile Include="Services\ItemReceiver.cs" />
-    <Compile Include="Actividades\AgregarProductoConfirmacionActivity.cs" />
-    <Compile Include="Services\AnalyticService.cs" />
-    <Compile Include="Fragments\GaleriaFragment.cs" />
-    <Compile Include="Actividades\ProductosPendientesActivity.cs" />
-    <Compile Include="Adapters\AdapterProductoPendiente.cs" />
-    <Compile Include="Services\NotificacionAlert.cs" />
-    <Compile Include="Actividades\NotificacionAlertDialogActivity.cs" />
-    <Compile Include="Services\CheckPendingProducts.cs" />
+    <Compile Include="App\Adapters\AdapterProductoPendiente.cs" />
+    <Compile Include="App\Adapters\AdapterSucursal.cs" />
+    <Compile Include="App\Actividades\AgregarProductoActivity.cs" />
+    <Compile Include="App\Actividades\AgregarProductoConfirmacionActivity.cs" />
+    <Compile Include="App\Actividades\HomeAgregaProductoActivity.cs" />
+    <Compile Include="App\Actividades\IngresoUsuarioResponsableActivity.cs" />
+    <Compile Include="App\Actividades\MainActivity.cs" />
+    <Compile Include="App\Actividades\NotificacionAlertDialogActivity.cs" />
+    <Compile Include="App\Actividades\ProductosPendientesActivity.cs" />
+    <Compile Include="App\Actividades\UbicacionTiendaActivity.cs" />
+    <Compile Include="App\Fragments\FragmentSucursales.cs" />
+    <Compile Include="App\Fragments\GaleriaFragment.cs" />
+    <Compile Include="App\Services\ActivityContexts.cs" />
+    <Compile Include="App\Services\AnalyticService.cs" />
+    <Compile Include="App\Services\CheckPendingProducts.cs" />
+    <Compile Include="App\Services\ItemReceiver.cs" />
+    <Compile Include="App\Services\NotificacionAlert.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -514,13 +513,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
-    <Folder Include="Actividades\" />
     <Folder Include="Resources\values-land\" />
-    <Folder Include="Services\" />
-    <Folder Include="Adapters\" />
-    <Folder Include="Fragments\" />
     <Folder Include="Resources\anim\" />
     <Folder Include="Resources\raw\" />
+    <Folder Include="App\" />
+    <Folder Include="App\Adapters\" />
+    <Folder Include="App\Actividades\" />
+    <Folder Include="App\Fragments\" />
+    <Folder Include="App\Services\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\AboutAssets.txt" />

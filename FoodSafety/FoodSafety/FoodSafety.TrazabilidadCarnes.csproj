@@ -169,18 +169,18 @@
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Actividades\MainActivity.cs" />
-    <Compile Include="Actividades\UbicacionTiendaActivity.cs" />
-    <Compile Include="Fragments\FragmentSucursales.cs" />
-    <Compile Include="Adapters\AdapterSucursal.cs" />
-    <Compile Include="Actividades\HomeAgregaProductoActivity.cs" />
-    <Compile Include="Services\ItemReceiver.cs" />
     <Compile Include="Properties\Constantes.cs" />
-    <Compile Include="Services\ActivityContexts.cs" />
-    <Compile Include="Actividades\IngresoUsuarioResponsableActivity.cs" />
-    <Compile Include="Actividades\AgregarProductoActivity.cs" />
-    <Compile Include="Services\AnalyticService.cs" />
-    <Compile Include="Fragments\GaleriaFragment.cs" />
+    <Compile Include="App\Actividades\AgregarProductoActivity.cs" />
+    <Compile Include="App\Actividades\HomeAgregaProductoActivity.cs" />
+    <Compile Include="App\Actividades\IngresoUsuarioResponsableActivity.cs" />
+    <Compile Include="App\Actividades\MainActivity.cs" />
+    <Compile Include="App\Actividades\UbicacionTiendaActivity.cs" />
+    <Compile Include="App\Adapters\AdapterSucursal.cs" />
+    <Compile Include="App\Fragments\FragmentSucursales.cs" />
+    <Compile Include="App\Fragments\GaleriaFragment.cs" />
+    <Compile Include="App\Services\ActivityContexts.cs" />
+    <Compile Include="App\Services\AnalyticService.cs" />
+    <Compile Include="App\Services\ItemReceiver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -418,7 +418,6 @@
     <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\layout\" />
     <Folder Include="Resources\values-land\" />
-    <Folder Include="Services\" />
     <Folder Include="Resources\anim\" />
     <Folder Include="Resources\mipmap-hdpi\" />
     <Folder Include="Resources\mipmap-mdpi\" />
@@ -427,6 +426,11 @@
     <Folder Include="Resources\mipmap-xxxhdpi\" />
     <Folder Include="Resources\raw\" />
     <Folder Include="Assets\BD\" />
+    <Folder Include="App\" />
+    <Folder Include="App\Actividades\" />
+    <Folder Include="App\Adapters\" />
+    <Folder Include="App\Fragments\" />
+    <Folder Include="App\Services\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FoodSafety.Common.Models\FoodSafety.Common.Models.csproj">
